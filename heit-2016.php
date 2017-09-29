@@ -53,7 +53,6 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 
 	<!-- Image and description section -->
 	<div class="row clearfix common-height">
-
 		<!-- First column featuring background image -->
 		<div class="col-md-6 center col-padding" style="background: url(<?php echo $conference_image; ?>) center center no-repeat; background-size: cover;">
 		</div>
