@@ -63,7 +63,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 					<!-- Display and style information for each organiser in the array -->
 					<div class="team team-list clearfix">
 						<div class="team-image" style="width: 150px;">
-							<img class="img-circle" src="<?php the_field('organiser_image'); ?> ?>" alt="<?php the_title(); ?>">
+							<img class="img-circle" src="<?php the_field('organiser_image'); ?>" alt="<?php the_title(); ?>">
 						</div>
 						<div class="team-desc">
 							<div class="team-title">
@@ -101,7 +101,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 					<!-- Display and style information for each organiser in the array -->
 					<div class="team team-list clearfix">
 						<div class="team-image" style="width: 150px;">
-							<img class="img-circle" src="<?php the_field('organiser_image'); ?> ?>" alt="<?php the_title(); ?>">
+							<img class="img-circle" src="<?php the_field('organiser_image'); ?>" alt="<?php the_title(); ?>">
 						</div>
 						<div class="team-desc">
 							<div class="team-title">

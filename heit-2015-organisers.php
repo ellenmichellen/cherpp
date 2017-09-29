@@ -47,7 +47,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 		<div class="container clearfix">
 
 			<div id="section-couple" class="heading-block title-center page-section">
-				<h2><?php echo $first_organiser_category; ?></h2>
+				<h2>Program Committee</h2>
 			</div>
 
 			<!-- Program committee section -->
@@ -65,7 +65,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 					<!-- Display and style information for each organiser in the array -->
 					<div class="team team-list clearfix">
 						<div class="team-image" style="width: 150px;">
-							<img class="img-circle" src="<?php the_field('organiser_image'); ?> ?>" alt="<?php the_title(); ?>">
+							<img class="img-circle" src="<?php the_field('organiser_image'); ?>" alt="<?php the_title(); ?>">
 						</div>
 						<div class="team-desc">
 							<div class="team-title">
@@ -85,7 +85,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 			</div><!-- program committee section end -->
 
 			<div id="section-couple" class="heading-block title-center page-section">
-				<h2><?php echo $second_organiser_category; ?></h2>
+				<h2>Local Organising Committee</h2>
 			</div>
 
 			<!-- Local organising committee section -->
@@ -103,11 +103,11 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 					<!-- Display and style information for each organiser in the array -->
 					<div class="team team-list clearfix">
 						<div class="team-image" style="width: 150px;">
-							<img class="img-circle" src="<?php the_field('organiser_image'); ?> ?>" alt="<?php the_title(); ?>">
+							<img class="img-circle" src="<?php the_field('organiser_image'); ?>" alt="<?php the_title(); ?>">
 						</div>
 						<div class="team-desc">
 							<div class="team-title">
-								<h4><?php the_title(); ?></h4>
+								<h5><?php the_title(); ?></h5>
 								<span><?php the_field('organiser_title'); ?>, <em><?php the_field('affiliated_institution'); ?></em></span>
 								</div>
 							<div class="team-content more"><?php the_field('organiser_description'); ?></div>
