@@ -58,7 +58,7 @@ $page_title = get_field('page_title');	// Variable to store page title
 					<!-- Display and style information for each speaker in the array -->
 					<div class="team team-list clearfix">
 						<div class="team-image" style="width: 150px;">
-							<img class="img-circle" src="<?php the_field('speaker_image'); ?> ?>" alt="<?php the_title(); ?>">
+							<img class="img-circle" src="<?php the_field('speaker_image'); ?>" alt="<?php the_title(); ?>">
 						</div>
 						<div class="team-desc">
 							<div class="team-title">
