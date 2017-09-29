@@ -187,7 +187,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 				<?php 
 				
 				// Loop through array of 2016 institution organisers, ordered by name
-				$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => '2016_organiser', 'meta_value' => 'Yes', 'orderby' => 'location', 'order' => 'ASC') ); 
+				$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => '2016_organiser', 'meta_value' => 'Yes', 'orderby' => 'location', 'order' => 'DSC') ); 
 
 				// For each institution organiser in the array...
 				while( $loop->have_posts() ) : $loop->the_post(); ?>

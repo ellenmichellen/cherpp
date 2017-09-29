@@ -14,8 +14,8 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i|Open+Sans:400,400i,600,600i,700|Domine:400,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i|Open+Sans:400,400i,600,600i,700|Domine:400,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
 	<link rel="stylesheet" href="<?php  bloginfo('template_url');  ?>/css/bootstrap.css" type="text/css">
