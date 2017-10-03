@@ -13,9 +13,11 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image:  linear-gradient(rgba(122, 204, 200, 0.75), rgba(122, 204, 200, 0.75)), url('<?php  bloginfo('template_url');  ?>/images/planning.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title">
 	<div class="container clearfix">
-		<h1 class="white"><?php echo $page_title; ?></h1>
+		<div class="verticalLine">
+			<h1><?php echo $page_title; ?></h1>
+		</div>
 	</div>
 </section><!-- #page-title end -->
 
@@ -46,8 +48,8 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 		<div class="container clearfix">
 
-			<div id="section-couple" class="heading-block title-center page-section">
-				<h2>Program Committee</h2>
+			<div class="heading-block center">
+				<h3>Program Committee</h3>
 			</div>
 
 			<!-- Program committee section -->
@@ -84,8 +86,8 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 			</div><!-- program committee section end -->
 
-			<div id="section-couple" class="heading-block title-center page-section">
-				<h2>Local Organising Committee</h2>
+			<div lass="heading-block center">
+				<h3>Local Organising Committee</h3>
 			</div>
 
 			<!-- Local organising committee section -->

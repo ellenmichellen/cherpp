@@ -10,12 +10,14 @@ $first_organiser_category = get_field('first_organiser_category');		// Variable 
 $second_organiser_category = get_field('second_organiser_category');	// Variable to store second category of organisers
 
 ?>
-			
+
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image:  linear-gradient(rgba(122, 204, 200, 0.75), rgba(122, 204, 200, 0.75)), url('<?php  bloginfo('template_url');  ?>/images/planning.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title">
 	<div class="container clearfix">
-		<h1 class="white"><?php echo $page_title; ?></h1>
+		<div class="verticalLine">
+			<h1><?php echo $page_title; ?></h1>
+		</div>
 	</div>
 </section><!-- #page-title end -->
 
@@ -46,8 +48,8 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 		<div class="container clearfix">
 
 			<!-- Presidents section -->
-			<div id="section-couple" class="heading-block title-center page-section">
-				<h2><?php echo $first_organiser_category; ?></h2>
+			<div class="heading-block center">
+				<h3><?php echo $first_organiser_category; ?></h3>
 			</div>
 
 			<div class="col-md-12 bottommargin">
@@ -83,8 +85,8 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 			</div><!-- presidents section end -->
 
 			<!-- Steering committee section -->
-			<div id="section-couple" class="heading-block title-center page-section">
-				<h2><?php echo $second_organiser_category; ?></h2>
+			<div class="heading-block center">
+				<h3><?php echo $second_organiser_category; ?></h3>
 			</div>
 
 			<div class="col-md-12 bottommargin">

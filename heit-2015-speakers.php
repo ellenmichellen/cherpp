@@ -11,9 +11,11 @@ $page_title = get_field('page_title');
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image:  linear-gradient(rgba(122, 204, 200, 0.75), rgba(122, 204, 200, 0.75)), url('<?php  bloginfo('template_url');  ?>/images/speakers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title">
 	<div class="container clearfix">
-		<h1 class="white"><?php echo $page_title; ?></h1>
+		<div class="verticalLine">
+			<h1><?php echo $page_title; ?></h1>
+		</div>
 	</div>
 </section><!-- #page-title end -->
 

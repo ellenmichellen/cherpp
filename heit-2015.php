@@ -18,12 +18,11 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 
 <!-- Page Title
 ============================================= -->
-
-<section id="page-title" class="main-title">
+<section id="page-title">
 	<div class="container clearfix">
 		<div class="verticalLine">
 			<h1><?php echo $conference_name; ?></h1>
-			<span><?php echo $conference_date; ?>   |   <?php echo $conference_location; ?></span>
+			<span><?php echo $conference_date; ?> &nbsp; | &nbsp; <em><?php echo $conference_location; ?></em></span>
 		</div>
 	</div>
 </section><!-- #page-title end -->
