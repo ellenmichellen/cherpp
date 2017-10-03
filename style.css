@@ -185,6 +185,8 @@ h6 {
     line-height: 1.3em;
     margin: 0 0 30px 0;
     font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
 }
 
 h3 {
@@ -11198,7 +11200,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 .emphasis-title h1,
 .emphasis-title h2 {
 	margin-bottom: 0;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: 1px;
 	color: #333;
 }
@@ -13684,10 +13686,7 @@ a.morelink {
 
 }
 
-.lead {
-	font-size: 19px;
-}
-
+/* Styling for Themes section of HEIt pages */
 .themes {
 	font-size: 16px !important;
 	font-family: 'Raleway', sans-serif !important;
@@ -13698,6 +13697,7 @@ a.morelink {
 	color: #fff !important;
 }
 
+/* Styling for Downloads section of HEIT pages */
 a.downloads {
 	font-size: 17px !important;
 	font-weight: 500;
@@ -13709,16 +13709,7 @@ a.downloads:hover {
 	color: #7accc8;
 }
 
-
-.main {
-	font-size: 36px !important;
-}
-
-.lead {
-	font-size: 20px !important;
-	font-weight: 500;
-}
-
+/* Vertical line for tites */
 .verticalLine {
   border-left: 2.5px solid #4aaaa5;
 }

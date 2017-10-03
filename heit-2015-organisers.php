@@ -13,7 +13,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title">
+<section id="page-title" class="page-title-pattern">
 	<div class="container clearfix">
 		<div class="verticalLine">
 			<h1><?php echo $page_title; ?></h1>
@@ -86,7 +86,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 			</div><!-- program committee section end -->
 
-			<div lass="heading-block center">
+			<div class="heading-block center">
 				<h3>Local Organising Committee</h3>
 			</div>
 
