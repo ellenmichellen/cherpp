@@ -11,7 +11,7 @@ $page_title = get_field('page_title');
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" class="page-title-pattern">
+<section id="page-title">
 	<div class="container clearfix">
 		<div class="verticalLine">
 			<h1><?php echo $page_title; ?></h1>

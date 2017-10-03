@@ -18,7 +18,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" class="page-title-pattern">
+<section id="page-title">
 	<div class="container clearfix">
 		<div class="verticalLine">
 			<h1><?php echo $conference_name; ?></h1>

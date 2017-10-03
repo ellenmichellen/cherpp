@@ -13,7 +13,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" class="page-title-pattern">
+<section id="page-title">
 	<div class="container clearfix">
 		<div class="verticalLine">
 			<h1><?php echo $page_title; ?></h1>
