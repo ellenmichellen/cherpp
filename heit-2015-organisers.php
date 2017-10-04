@@ -15,7 +15,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 ============================================= -->
 <section id="page-title">
 	<div class="container clearfix">
-		<div class="verticalLine">
+		<div class="title-block">
 			<h1><?php echo $page_title; ?></h1>
 		</div>
 	</div>

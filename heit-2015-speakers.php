@@ -13,7 +13,7 @@ $page_title = get_field('page_title');
 ============================================= -->
 <section id="page-title">
 	<div class="container clearfix">
-		<div class="verticalLine">
+		<div class="title-block">
 			<h1><?php echo $page_title; ?></h1>
 		</div>
 	</div>

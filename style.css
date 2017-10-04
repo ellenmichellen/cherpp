@@ -3361,7 +3361,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
     font-size: 30px;
     line-height: 1;
     color: #333;
-    font-family: 'Raleway', sans-serif !important;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;	
     text-align: left;	
     letter-spacing: 1px;
@@ -3376,7 +3376,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
     font-weight: 400;
     color: #333;
     font-size: 20px;
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
     text-transform: uppercase;	
 }
 
@@ -7427,6 +7427,25 @@ body:not(.device-touch) .button.button-full strong {
 	left: 15px !important;
 }
 
+
+/* Promo - Less Padding
+-----------------------------------------------------------------*/
+
+.promo-small {
+	border-radius: 0 !important;
+	border-left: 0 !important;
+	border-right: 0 !important;
+	padding: 20px 0 !important;
+}
+
+.promo-small a.button { right: 15px !important; }
+
+.promo-small.promo-right a.button {
+	right: auto !important;
+	left: 15px !important;
+}
+
+
 /* Promo - Parallax
 -----------------------------------------------------------------*/
 
@@ -11154,7 +11173,6 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 .title-block {
 	padding: 2px 0 3px 20px;
 	border-left: 7px solid #4aaaa5;
-	margin-bottom: 30px;
 }
 
 .title-block-right {
@@ -13697,6 +13715,22 @@ a.morelink {
 	color: #fff !important;
 }
 
+.dark {
+	color: #333 !important;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.header-background-title {
+	text-align: center !important;
+	text-transform: none !important;
+	font-size: 38px !important;
+	font-weight: 600 !important;
+
+}
+
 /* Styling for Downloads section of HEIT pages */
 a.downloads {
 	font-size: 17px !important;
@@ -13713,4 +13747,13 @@ a.downloads:hover {
 .verticalLine {
   border-left: 2.5px solid #4aaaa5;
 }
+
+.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
 

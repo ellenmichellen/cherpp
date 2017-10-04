@@ -18,22 +18,18 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title">
+<section id="page-title" style="background-image:  linear-gradient(rgba(122, 204, 200, 0.8), rgba(122, 204, 200, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/heit-2015-main-image.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
-		<div class="verticalLine">
-			<h1><?php echo $conference_name; ?></h1>
-			<span><?php echo $conference_date; ?> &nbsp; | &nbsp; <em><?php echo $conference_location; ?></em></span>
-		</div>
+		<h1 class="white center header-background-title"><?php echo $conference_name; ?></h1>
+		<span class="white center subheading"><?php echo $conference_date; ?> &nbsp; | &nbsp; <?php echo $conference_location; ?></span>
 	</div>
 </section><!-- #page-title end -->
-
 
 <!-- Page Sub Menu
 ============================================= -->
 <div id="page-menu">
 	<div id="page-menu-wrap">
 		<div class="container clearfix">
-			<div class="menu-title">HEIT <span>2016</span></div>
 			<?php
 				// Display dynamic HEIT 2016 submenu
 				wp_nav_menu( array(
@@ -61,9 +57,9 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 		<div class="col-md-6 center col-padding" style="background-color: #303e48;">
 			<div id="chairs">
 				<div class="heading-block-intro">
-					<br><br>
+					<br>
 					<span class="before-heading white"><?php echo $leading_text; ?></span>
-				</div><br><br>
+				</div><br>
 			</div>
 		</div>
 	</div><!-- image and description section end -->
