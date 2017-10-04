@@ -57,9 +57,9 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 		<div class="col-md-6 center col-padding" style="background-color: #303e48;">
 			<div id="chairs">
 				<div class="heading-block-intro">
-					<br>
+					<br><br>
 					<span class="before-heading white"><?php echo $leading_text; ?></span>
-				</div><br>
+				</div><br><br>
 			</div>
 		</div>
 	</div><!-- image and description section end -->
