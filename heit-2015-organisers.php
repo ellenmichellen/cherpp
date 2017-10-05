@@ -13,11 +13,9 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title">
+<section id="page-title" style="background-image:  linear-gradient(rgba(122, 204, 200, 0.8), rgba(122, 204, 200, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/flags.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
-		<div class="title-block">
-			<h1><?php echo $page_title; ?></h1>
-		</div>
+		<h1 class="white center header-background-title"><?php echo $page_title; ?></h1>
 	</div>
 </section><!-- #page-title end -->
 
