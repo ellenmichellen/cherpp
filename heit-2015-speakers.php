@@ -56,7 +56,7 @@ $page_title = get_field('page_title');
 						
 					<!-- Display information for each speaker in the array -->
 					<div class="team team-list clearfix">
-						<div class="team-image" style="width: 150px;">
+						<div class="team-image filtered" style="width: 150px;">
 							<img class="img-circle" src="<?php the_field('speaker_image'); ?>" alt="<?php the_title(); ?>">
 						</div>
 						<div class="team-desc">

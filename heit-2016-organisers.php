@@ -13,7 +13,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image:  linear-gradient(rgba(122, 204, 200, 0.8), rgba(122, 204, 200, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/flags.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title" style="background-image:  linear-gradient(rgba(122, 204, 200, 0.8), rgba(122, 204, 200, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/organisers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center header-background-title"><?php echo $page_title; ?></h1>
 	</div>
@@ -63,7 +63,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 						
 					<!-- Display and style information for each organiser in the array -->
 					<div class="team team-list clearfix">
-						<div class="team-image" style="width: 150px;">
+						<div class="team-image filtered" style="width: 150px;">
 							<img class="img-circle" src="<?php the_field('organiser_image'); ?>" alt="<?php the_title(); ?>">
 						</div>
 						<div class="team-desc">
@@ -101,7 +101,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 						
 					<!-- Display and style information for each organiser in the array -->
 					<div class="team team-list clearfix">
-						<div class="team-image" style="width: 150px;">
+						<div class="team-image filtered" style="width: 150px;">
 							<img class="img-circle" src="<?php the_field('organiser_image'); ?>" alt="<?php the_title(); ?>">
 						</div>
 						<div class="team-desc">

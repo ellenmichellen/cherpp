@@ -107,7 +107,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 	<br><br>
 
 	<!-- Conference papers collection section -->
-	<div class="promo promo-light promo-full header-stick topborder-lg" style="background: #303e48">
+	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #303e48">
 		<div class="container clearfix">
 			<h3><?php echo $papers_description_text; ?></h3>
 			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-rounded button-reveal button-large button-white button-light tright"><i class="icon-line-arrow-right"></i><span>Browse</span></a>

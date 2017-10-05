@@ -7417,7 +7417,7 @@ body:not(.device-touch) .button.button-full strong {
 	border-radius: 0 !important;
 	border-left: 0 !important;
 	border-right: 0 !important;
-	padding: 40px 0 !important;
+	padding: 80px 0 !important;
 }
 
 .promo-full a.button { right: 15px !important; }
@@ -7435,7 +7435,7 @@ body:not(.device-touch) .button.button-full strong {
 	border-radius: 0 !important;
 	border-left: 0 !important;
 	border-right: 0 !important;
-	padding: 20px 0 !important;
+	padding: 40px 0 !important;
 }
 
 .promo-small a.button { right: 15px !important; }
@@ -13727,7 +13727,7 @@ a.morelink {
 	text-align: center !important;
 	text-transform: none !important;
 	font-size: 38px !important;
-	font-weight: 600 !important;
+	font-weight: 500 !important;
 
 }
 
@@ -13756,4 +13756,8 @@ a.downloads:hover {
   filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
+.filtered {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
 
