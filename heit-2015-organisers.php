@@ -13,7 +13,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image:  linear-gradient(rgba(122, 204, 200, 0.8), rgba(122, 204, 200, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/organisers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/organisers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center header-background-title"><?php echo $page_title; ?></h1>
 	</div>
@@ -38,19 +38,26 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 </div>
 <!-- #page-menu end -->
 
-<!-- Page Content
+<!-- Page Subtitle: Program Committee Section
+============================================= -->
+<section id="content">
+	<div class="first-subtitle-wrap">
+		<div class="container clearfix">
+			<div class="title-block">
+				<h2>Program Committee</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Page Content: Program Committee Section
 ============================================= -->
 <section id="content">
 
-	<div class="content-wrap">
+	<div class="subtitle-wrap">
 
 		<div class="container clearfix">
 
-			<div class="heading-block center">
-				<h3>Program Committee</h3>
-			</div>
-
-			<!-- Program committee section -->
 			<div class="col-md-12 bottommargin">
 
 				<!-- Sort by last name -->
@@ -84,11 +91,30 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 			</div><!-- program committee section end -->
 
-			<div class="heading-block center">
-				<h3>Local Organising Committee</h3>
-			</div>
+		</div>
 
-			<!-- Local organising committee section -->
+	</div>
+
+</section>
+
+<!-- Page Subtitle: Steering Committee Section
+============================================== -->
+<div class="sub-subtitle-wrap">
+	<div class="container clearfix">
+		<div class="title-block">
+			<h2>Local Organising Committee</h2>
+		</div>
+	</div>
+</div>
+
+<!-- Page Content: Steering Committee Section
+============================================== -->
+<section id="content">
+
+	<div class="subtitle-wrap">
+
+		<div class="container clearfix">
+
 			<div class="col-md-12 bottommargin">
 
 				<!-- Sort by last name -->

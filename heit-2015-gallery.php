@@ -13,7 +13,7 @@ $page_title = get_field('page_title');
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image:  linear-gradient(rgba(122, 204, 200, 0.8), rgba(122, 204, 200, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/gallery.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/gallery.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center header-background-title"><?php echo $page_title; ?></h1>
 	</div>

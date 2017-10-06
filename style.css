@@ -172,7 +172,7 @@ h2,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h1,
@@ -13761,3 +13761,19 @@ a.downloads:hover {
   filter: grayscale(100%);
 }
 
+.first-subtitle-wrap {
+	position: relative;
+	padding: 30px 0;
+	padding-top: 50px;
+}
+
+.subtitle-wrap {
+	position: relative;
+	padding: 30px 0;
+}
+
+.sub-subtitle-wrap {
+	position: relative;
+	padding: 30px 0;
+	margin-top: -75px;
+}
