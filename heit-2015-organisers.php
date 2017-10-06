@@ -44,7 +44,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 	<div class="first-subtitle-wrap">
 		<div class="container clearfix">
 			<div class="title-block">
-				<h2>Program Committee</h2>
+				<h2><?php echo $first_organiser_category; ?></h2>
 			</div>
 		</div>
 	</div>
@@ -102,7 +102,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 <div class="sub-subtitle-wrap">
 	<div class="container clearfix">
 		<div class="title-block">
-			<h2>Local Organising Committee</h2>
+			<h2><?php echo $second_organiser_category; ?></h2>
 		</div>
 	</div>
 </div>
