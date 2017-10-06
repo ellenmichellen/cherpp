@@ -218,7 +218,9 @@ h2 > span:not(.nocolor),
 h3 > span:not(.nocolor),
 h4 > span:not(.nocolor),
 h5 > span:not(.nocolor),
-h6 > span:not(.nocolor) { color: #7accc8; }
+h6 > span:not(.nocolor) { 
+	color: #7accc8;
+	font-family: 'Montserrat', sans-serif !important; }
 
 p,
 pre,
