@@ -24,7 +24,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 <div id="page-menu">
 	<div id="page-menu-wrap">
 		<div class="container clearfix">
-			<a href="<?php echo site_url(); ?>/heit-2016"><div class="menu-title">HEIT <span>2016</span></div></a>
+			<div class="menu-title">HEIT <span>2016</span></div>
 			<?php
 				// Display dynamic HEIT 2016 submenu
 				wp_nav_menu( array(

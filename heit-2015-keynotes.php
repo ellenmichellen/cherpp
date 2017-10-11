@@ -22,7 +22,7 @@ $page_title = get_field('page_title');
 <div id="page-menu">
 	<div id="page-menu-wrap">
 		<div class="container clearfix">
-			<a href="<?php echo site_url(); ?>/heit-2015"><div class="menu-title">HEIT <span>2015</span></div></a>
+			<div class="menu-title">HEIT <span>2015</span></div>
 			<?php
 				// Display dynamic HEIT 2015 submenu
 				wp_nav_menu( array(
