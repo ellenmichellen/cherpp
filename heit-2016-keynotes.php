@@ -1,11 +1,11 @@
 <?php
 /*
-	Template Name: heit-2015-keynotes
+	Template Name: heit-2016-keynotes
 */
 
 get_header();
 
-$page_title = get_field('page_title');
+$page_title = get_field('page_title');	// Variable to store page title 
 
 ?>
 
@@ -22,11 +22,11 @@ $page_title = get_field('page_title');
 <div id="page-menu">
 	<div id="page-menu-wrap">
 		<div class="container clearfix">
-			<div class="menu-title">HEIT <span>2015</span></div>
+			<div class="menu-title">HEIT <span>2016</span></div>
 			<?php
-				// Display dynamic HEIT 2015 submenu
+				// Display dynamic HEIT 2016 submenu
 				wp_nav_menu( array(
-					'theme_location' => 'heit_2015_submenu',
+					'theme_location' => 'heit_2016_submenu',
 					'container' => 'nav'
 				));
 			?>
@@ -48,13 +48,13 @@ $page_title = get_field('page_title');
 				<!-- Sort by last name -->
 				<?php add_filter( 'posts_orderby' , 'posts_orderby_lastname' );
 
-				// Loop through array of 2015 speakers
-	  			$loop = new WP_Query( array( 'post_type' => 'speakers', 'meta_key' => '2015_speaker', 'meta_value' => 'Yes' ) ); 
+				// Loop through array of 2016 speakers
+	  			$loop = new WP_Query( array( 'post_type' => 'speakers', 'meta_key' => '2016_speaker', 'meta_value' => 'Yes' ) ); 
 
 	  			// For each speaker in the array...
 				while( $loop->have_posts() ) : $loop->the_post(); ?>
 						
-					<!-- Display information for each speaker in the array -->
+					<!-- Display and style information for each speaker in the array -->
 					<div class="team team-list clearfix">
 						<div class="team-image filtered" style="width: 150px;">
 							<img class="img-circle" src="<?php the_field('speaker_image'); ?>" alt="<?php the_title(); ?>">
@@ -63,7 +63,7 @@ $page_title = get_field('page_title');
 							<div class="team-title">
 								<h5><?php the_title(); ?></h5>
 								<span><?php the_field('speaker_title'); ?>, <em><?php the_field('affiliated_institution'); ?></em></span>
-								</div>
+							</div>
 							<div class="team-content more"><?php the_field('speaker_description'); ?></div>
 						</div>
 					</div>
