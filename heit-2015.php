@@ -30,7 +30,6 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 <div id="page-menu">
 	<div id="page-menu-wrap">
 		<div class="container clearfix">
-			<div class="menu-title">HEIT <span>2015</span></div>
 			<?php
 				// Display dynamic HEIT 2015 submenu
 				wp_nav_menu( array(

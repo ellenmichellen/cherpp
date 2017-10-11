@@ -9,8 +9,6 @@ $page_title = get_field('page_title');
 
 ?>
 
-
-
 <!-- Page Title
 ============================================= -->
 <section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/gallery.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
@@ -24,7 +22,7 @@ $page_title = get_field('page_title');
 <div id="page-menu">
 	<div id="page-menu-wrap">
 		<div class="container clearfix">
-			<div class="menu-title">HEIT <span>2015</span></div>
+			<a href="<?php echo site_url(); ?>/heit-2015"><div class="menu-title">HEIT <span>2015</span></div></a>
 			<?php
 				// Display dynamic HEIT 2016 submenu
 				wp_nav_menu( array(
