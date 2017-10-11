@@ -3373,9 +3373,8 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
     margin-top: 10px;
     font-weight: 400;
     color: #333;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif !important;
-    text-transform: uppercase;	
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif !important;	
 }
 
 .main-title h1 {
@@ -13723,8 +13722,8 @@ a.morelink {
 .header-background-title {
 	text-align: center !important;
 	text-transform: none !important;
-	font-size: 38px !important;
-	font-weight: 500 !important;
+	font-size: 40px !important;
+	font-weight: 700 !important;
 
 }
 
