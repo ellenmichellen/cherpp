@@ -11215,7 +11215,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 .emphasis-title h1,
 .emphasis-title h2 {
 	margin-bottom: 0;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 1px;
 	color: #333;
 }
@@ -11231,7 +11231,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 
 .heading-block h2 { font-size: 30px; }
 
-.heading-block h3 { font-size: 26px; }
+.heading-block h3 { font-size: 28px; }
 
 .heading-block h4 {
 	font-size: 20px;
