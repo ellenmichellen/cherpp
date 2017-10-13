@@ -198,13 +198,16 @@ h2 { font-size: 30px; }
 
 h3 { font-size: 24px; }
 
-h4 { font-size: 18px; }
+h4 { 
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif; 
+}
 
 h5 { font-size: 14px; }
 
 h6 { font-size: 12px; }
 
-h4 { font-weight: 600; }
+h4 { font-weight: 500; }
 
 h5,
 h6 { font-weight: bold; }
@@ -3355,13 +3358,12 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 #page-title h1 {
 	padding: 0;
     margin: 0;
-    font-weight: 600;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 40px;
     line-height: 1;
     color: #333;
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;	
-    text-align: left;	
+    font-family: 'Raleway', sans-serif;	
+    text-align: center;	
     letter-spacing: 1px;
     padding-left: 20px;
 }
@@ -13717,14 +13719,6 @@ a.morelink {
 
 .center {
 	text-align: center !important;
-}
-
-.header-background-title {
-	text-align: center !important;
-	text-transform: none !important;
-	font-size: 40px !important;
-	font-weight: 700 !important;
-
 }
 
 /* Styling for Downloads section of HEIT pages */

@@ -20,7 +20,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 ============================================= -->
 <section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/heit-2015-main-image.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
-		<h1 class="white center header-background-title"><?php echo $conference_name; ?></h1>
+		<h1 class="white center"><?php echo $conference_name; ?></h1>
 		<span class="white center subheading"><?php echo $conference_date; ?> &nbsp; | &nbsp; <?php echo $conference_location; ?></span>
 	</div>
 </section><!-- #page-title end -->
@@ -48,17 +48,18 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 
 	<!-- Image and description section -->
 	<div class="row clearfix common-height">
-
-		<!-- First column featuring background image-->
+		<!-- First column featuring background image -->
 		<div class="col-md-6 center col-padding" style="background: url(<?php echo $conference_image; ?>) center center no-repeat; background-size: cover;">
-			<div> </div>
 		</div>
 
-		<!-- Second column -->
-		<div class="col-md-6 center col-padding" style="background-color: #2B364A;">
-				<div class="heading-block nobottomborder">
-					<span class="before-heading color"><?php echo $leading_text; ?></span>
-				</div>
+		<!-- Second column featuring leading text and chairs -->
+		<div class="col-md-6 center col-padding" style="background-color: #303e48;">
+			<div id="chairs">
+				<div class="heading-block-intro">
+					<br><br>
+					<span class="before-heading white"><?php echo $leading_text; ?></span>
+				</div><br><br>
+			</div>
 		</div>
 	</div><!-- image and description section end -->
 

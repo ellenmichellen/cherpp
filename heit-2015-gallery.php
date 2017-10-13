@@ -5,7 +5,9 @@
 
 get_header();
 
-$page_title = get_field('page_title');		
+$page_title = get_field('page_title');	
+$first_media_category = get_field('first_media_category');		// Variable to store first caregory of organisers
+$second_media_category = get_field('second_media_category');	// Variable to store second category of organisers	
 
 ?>
 
@@ -13,7 +15,7 @@ $page_title = get_field('page_title');
 ============================================= -->
 <section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/gallery.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
-		<h1 class="white center header-background-title"><?php echo $page_title; ?></h1>
+		<h1 class="white center"><?php echo $page_title; ?></h1>
 	</div>
 </section><!-- #page-title end -->
 
@@ -35,11 +37,23 @@ $page_title = get_field('page_title');
 	</div>
 </div><!-- #page-menu end -->
 
-<!-- Page Content
+<!-- Page Subtitle: Photo Gallery Section
+============================================= -->
+<section id="content">
+	<div class="first-subtitle-wrap">
+		<div class="container clearfix">
+			<div class="title-block">
+				<h2><?php echo $first_media_category; ?></h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Page Content: Photo Gallery
 ============================================= -->
 <section id="content">
 
-	<div class="content-wrap">
+	<div class="subtitle-wrap">
 
 		<div class="container clearfix">
 
@@ -71,9 +85,49 @@ $page_title = get_field('page_title');
 
 			</div><!-- lightbox gallery section end -->
 		</div>
-	</div><!-- Conference papers collection section -->
+	</div><!-- photo gallery section end -->
+</section>
 
-	<!-- Conference video section -->
+<!-- Page Subtitle: Conference Videos Section
+============================================= -->
+<section id="content">
+	<div class="first-subtitle-wrap">
+		<div class="container clearfix">
+			<div class="title-block">
+				<h2><?php echo $second_media_category; ?></h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Page Content: Conference Videos Section
+============================================= -->
+<section id="content">
+
+	<div class="subtitle-wrap">
+		<div class="row clearfix nobottomborder common-height">
+
+			<?php 
+
+			// Loop through array of 2016 themes
+			$loop = new WP_Query( array( 'post_type' => 'videos', 'meta_key' => '2015_video', 'meta_value' => 'Yes', 'order' => 'ASC' ) ); 
+
+			// For each theme in the array...
+			while( $loop->have_posts() ) : $loop->the_post(); ?>
+
+				<div class="col-md-4 dark center" style="background-color: <?php the_field('div_color'); ?>; padding-top: 60px; padding-bottom: 60px;">
+					<div>
+						<h4><?php the_title(); ?></h4>
+						<iframe width="320" height="240" frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="<?php the_field('video_url'); ?>" ></iframe><br>
+					</div>
+				</div>
+
+			<?php endwhile; ?>
+
+		</div>
+	</div><!-- conference video section end -->
+
+	<!-- Highlights video section -->
 	<div class="row clearfix common-height">
 		<div class="promo promo-light promo-small header-stick notopborder" style="background: #303e48">
 			<div class="container clearfix">
@@ -81,7 +135,7 @@ $page_title = get_field('page_title');
 				<a class="button button-rounded button-reveal button-large button-white button-light tright" data-toggle="modal" data-target="#myModal"><i class="icon-line-arrow-right"></i><span>Click here</span></a>
 			</div>
 		</div>
-	</div><!-- conference video section end -->
+	</div><!-- highlights video section end -->
 				
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -92,6 +146,6 @@ $page_title = get_field('page_title');
 		</div>
 	</div>
 	
-</section><!-- #content end -->
+</section><!-- #page content end -->
 
 <?php get_footer(); ?>
