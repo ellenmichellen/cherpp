@@ -13769,7 +13769,7 @@ a.downloads:hover {
 }
 
 .title {
-	text-align: left !important;
 	text-transform: uppercase !important;
-	font-size: 32px !important;
+	font-size: 28px !important;
+	font-family: 'Montserrat', sans-serif !important;
 }
