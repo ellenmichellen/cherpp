@@ -11,7 +11,7 @@ $page_title = get_field('page_title');
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/speakers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title" style="background-image: linear-gradient(rgba(135, 221, 217, 0.8), rgba(110, 183, 179, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/speakers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center"><?php echo $page_title; ?></h1>
 	</div>
@@ -22,7 +22,6 @@ $page_title = get_field('page_title');
 <div id="page-menu">
 	<div id="page-menu-wrap">
 		<div class="container clearfix">
-			<div class="menu-title">HEIT <span>2015</span></div>
 			<?php
 				// Display dynamic HEIT 2015 submenu
 				wp_nav_menu( array(

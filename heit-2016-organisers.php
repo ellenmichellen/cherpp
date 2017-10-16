@@ -13,7 +13,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/organisers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title" style="background-image: linear-gradient(rgba(135, 221, 217, 0.8), rgba(110, 183, 179, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/organisers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center"><?php echo $page_title; ?></h1>
 	</div>
@@ -24,7 +24,6 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 <div id="page-menu">
 	<div id="page-menu-wrap">
 		<div class="container clearfix">
-			<div class="menu-title">HEIT <span>2016</span></div>
 			<?php
 				// Display dynamic HEIT 2016 submenu
 				wp_nav_menu( array(
@@ -37,25 +36,17 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 	</div>
 </div><!-- #page-menu end -->
 
-<!-- Page Subtitle: Presidents Section
-============================================= -->
-<section id="content">
-	<div class="first-subtitle-wrap">
-		<div class="container clearfix">
-			<div class="title-block">
-				<h2><?php echo $first_organiser_category; ?></h2>
-			</div>
-		</div>
-	</div>
-</section>
-
 <!-- Page Content: Presidents Section
 ============================================= -->
 <section id="content">
 
-	<div class="subtitle-wrap">
+	<div class="content-wrap">
 
 		<div class="container clearfix">
+
+			<div class="heading-block center">
+				<h3><?php echo $first_organiser_category; ?></h3>
+			</div>
 
 			<div class="col-md-12 bottommargin">
 
@@ -89,29 +80,12 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 				
 			</div><!-- presidents section end -->
 
-		</div>
 
-	</div>
-
-</section>
-
-<!-- Page Subtitle: Steering Committee Section
-============================================== -->
-<div class="sub-subtitle-wrap">
-	<div class="container clearfix">
-		<div class="title-block">
-			<h2><?php echo $second_organiser_category; ?></h2>
-		</div>
-	</div>
-</div>
-
-<!-- Page Content: Steering Committee Section
-============================================== -->
-<section id="content">
-
-	<div class="subtitle-wrap">
-
-		<div class="container clearfix">
+			<!-- Page Contnet: Steering Committee Section
+			============================================== -->
+			<div class="heading-block center">
+				<h3><?php echo $second_organiser_category; ?></h3>
+			</div>
 
 			<div class="col-md-12 bottommargin">
 

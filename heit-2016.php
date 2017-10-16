@@ -18,7 +18,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/heit-2016-main-image.jpg?>'); padding: 100px 0;"" data-stellar-background-ratio="0.3">
+<section id="page-title" style="background-image: linear-gradient(rgba(135, 221, 217, 0.8), rgba(110, 183, 179, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/heit-2016.jpg?>'); padding: 100px 0;"" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center"><?php echo $conference_name; ?></h1>
 		<span class="white center subheading"><?php echo $conference_date; ?> &nbsp; | &nbsp; <?php echo $conference_location; ?></span>
@@ -110,7 +110,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #303e48">
 		<div class="container clearfix">
 			<h3><?php echo $papers_description_text; ?></h3>
-			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-rounded button-reveal button-large button-white button-light tright"><i class="icon-line-arrow-right"></i><span>Browse</span></a>
+			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-rounded button-large button-white button-light tright"><span>Browse</span></a>
 		</div>
 	</div><!-- conference papers collection section end -->
 

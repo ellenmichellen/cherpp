@@ -3350,7 +3350,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 #page-title {
 	position: relative;
 	padding: 50px 0;
-	background-color: #F5F5F5;
+	background-color: #f8f8f8;
 }
 
 #page-title .container { position: relative; }
@@ -3403,11 +3403,11 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 #header.transparent-header + #page-title.page-title-parallax .breadcrumb { margin-top: 35px !important; }
 
-.breadcrumb a { color: #ffffff; }
+.breadcrumb a { color: #333; }
 
-.breadcrumb a:hover { color: #4aaaa5; }
+.breadcrumb a:hover { color: #7accc8; }
 
-.breadcrumb > .active { color: #ffffff !important; }
+.breadcrumb > .active { color: #4aaaa5 !important; }
 
 .breadcrumb i { width: auto !important; }
 
@@ -6675,7 +6675,7 @@ body:not(.device-touch) .button {
 }
 
 .button:hover {
-	background-color: #444;
+	background-color: #7accc8;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -13766,4 +13766,10 @@ a.downloads:hover {
 	position: relative;
 	padding: 30px 0;
 	margin-top: -75px;
+}
+
+.title {
+	text-align: left !important;
+	text-transform: uppercase !important;
+	font-size: 32px !important;
 }
