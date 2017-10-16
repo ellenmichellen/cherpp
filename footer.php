@@ -13,37 +13,11 @@
 		<div class="container clearfix">
 
 			<div class="col_half">
-				Copyright © 2017 CHERPP<br>
+				© 2017 Centre for Higher Education Research, Policy &amp; Practice<br>
 			</div>
 
 			<div class="col_half col_last tright">
-				<div class="fright clearfix">
-					<a href="<?php  bloginfo('template_url');  ?>/#" class="social-icon si-small si-borderless si-facebook">
-						<i class="icon-facebook"></i>
-						<i class="icon-facebook"></i>
-					</a>
-
-					<a href="<?php  bloginfo('template_url');  ?>/#" class="social-icon si-small si-borderless si-twitter">
-						<i class="icon-twitter"></i>
-						<i class="icon-twitter"></i>
-					</a>
-
-					<a href="<?php  bloginfo('template_url');  ?>/#" class="social-icon si-small si-borderless si-gplus">
-						<i class="icon-gplus"></i>
-						<i class="icon-gplus"></i>
-					</a>
-
-					<a href="<?php  bloginfo('template_url');  ?>/#" class="social-icon si-small si-borderless si-pinterest">
-						<i class="icon-pinterest"></i>
-						<i class="icon-pinterest"></i>
-					</a>
-
-					<a href="<?php  bloginfo('template_url');  ?>/#" class="social-icon si-small si-borderless si-linkedin">
-						<i class="icon-linkedin"></i>
-						<i class="icon-linkedin"></i>
-					</a>
-				</div>
-
+				
 				<div class="clear"></div>
 
 				<i class="icon-envelope2"></i> email@cherpp.ca
