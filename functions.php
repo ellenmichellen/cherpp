@@ -78,3 +78,37 @@ add_filter( 'wp_nav_menu_items', 'wpse_remove_empty_links' );
 
 */
 
+/** 
+* Replaces the excerpt "more" text by a link.
+*/
+function new_excerpt_more($more) {
+	global $post;
+	return '... <br><br><a class="more-link" href="'. get_permalink($post->ID) . '"> Read More</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+/**
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function cherpp_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'cherpp' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'xherpp' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+}
+add_action( 'widgets_init', 'cherpp_widgets_init' );
+
+if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+
+function wpb_comment_reply_text( $link ) {
+$link = str_replace( 'Reply', '<i class="icon-reply"></i>', $link );
+return $link;
+}
+add_filter( 'comment_reply_link', 'wpb_comment_reply_text' );

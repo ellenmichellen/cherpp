@@ -4967,7 +4967,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 .entry {
 	position: relative;
 	margin: 0 0 50px;
-	padding: 0 0 50px;
+	padding: 0 0 50px; 
 	border-bottom: 2px solid #F5F5F5;
 }
 
@@ -5012,8 +5012,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	line-height: 14px;
 	margin: 0 10px 15px 0;
 	color: #999;
-	font-family: 'Crete Round', serif;
-	font-style: italic;
+	font-family: 'Raleway', sans-serif;
 }
 
 .entry-meta li:before {
@@ -5082,7 +5081,7 @@ body:not(.device-touch) .entry-link {
 .entry-link span {
 	display: block;
 	margin-top: 5px;
-	font-family: 'Crete Round', serif;
+	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	font-weight: normal;
 	text-transform: none;
@@ -5095,7 +5094,7 @@ body:not(.device-touch) .entry-link {
 
 .entry blockquote p {
 	font-weight: 400;
-	font-family: 'Crete Round', serif;
+	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 }
 
@@ -5437,12 +5436,17 @@ body:not(.device-touch) .entry-link {
 .more-link {
 	display: inline-block;
 	border-bottom: 1px solid #4aaaa5;
+	color: #4aaaa5;
 	padding: 0 2px;
 	font-family: 'Crete Round', serif;
+	font-weight: 400;
 	font-style: italic;
 }
 
-.more-link:hover { border-bottom-color: #555; }
+.more-link:hover { 
+	color: #555;
+	border-bottom-color: #555; 
+}
 
 
 /* Related Posts
@@ -5627,19 +5631,19 @@ body:not(.device-touch) .entry-link {
 
 #reviews .commentlist li { margin-top: 20px; }
 
-.comment-wrap {
+.comment-body {
 	position: relative;
 	border: 1px solid #E5E5E5;
 	border-radius: 5px;
 	padding: 20px 20px 20px 35px;
 }
 
-.commentlist ul .comment-wrap {
+.commentlist ul .comment-body {
 	margin-left: 25px;
 	padding-left: 20px;
 }
 
-#reviews .comment-wrap {
+#reviews .comment-body {
 	border: 0;
 	padding: 10px 0 0 35px;
 }
@@ -5716,13 +5720,15 @@ body:not(.device-touch) .entry-link {
 .comment-content .comment-author span a:hover { color: #888; }
 
 .comment-reply-link,
-.review-comment-ratings {
+.review-comment-ratings,
+.commentlist .reply,
+.commentlist .reply a {
 	display: block;
 	position: absolute;
-	top: 4px;
+	top: 12px;
 	left: auto;
 	text-align: center;
-	right: 0px;
+	right: 10px;
 	width: 14px;
 	height: 14px;
 	color: #CCC;
@@ -12124,7 +12130,6 @@ button.toast-close-button {
 .widget > h4 {
 	margin-bottom: 25px;
 	font-size: 15px;
-	font-weight: 600;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
@@ -13772,4 +13777,54 @@ a.downloads:hover {
 	text-transform: uppercase !important;
 	font-size: 28px !important;
 	font-family: 'Montserrat', sans-serif !important;
+}
+
+.fn {
+	margin-bottom: -10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    font-style: normal;
+}
+
+.says {
+	display: none !important;
+}
+
+.commentlist li .avatar {
+	position: absolute;
+    left: -35px;
+    padding: 4px;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.commentlist li p {
+	padding: 0 0 0 15px;
+	margin-top: 35px;
+
+}
+
+.commentlist .commentmetadata {
+	padding: 0 0 0 15px;
+}
+
+.commentlist .comment-author {
+	padding: 0 0 0 15px;
+	text-transform: none !important;
+}
+
+.commentlist .commentmetadata a {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Crete Round', serif;
+    font-style: italic;
+    color: #AAA;
+}
+
+.comment-body p {
+margin: 30px 200 0 0;
 }

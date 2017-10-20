@@ -1,69 +1,91 @@
 <?php
 /**
- * This is the default-template when no default.html is added during the conversion.
- * To create your own default-template during the converison consult our documentation.
+ * The main template file
  *
- * Your front-page can be found from front-page.php
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Bootstrap_to_WordPress
  */
 
-?>
-
-<?php
-/*
-	Template Name: home
-*/
-
-get_header();
-
-?>
+get_header(); ?>
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" class="page-title-pattern">
+<section id="page-title" style="background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('<?php  bloginfo('template_url');  ?>/images/cliffs.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
-		<h1>HEIT</h1>
+		<h1 class="white center">Blog</h1>
 	</div>
 </section><!-- #page-title end -->
 
-<!-- Page Sub Menu
-============================================= -->
-<div id="page-menu">
-	<div id="page-menu-wrap">
-		<div class="container clearfix">
-			<?php
-				// Display dynamic HEIT 2016 submenu
-				wp_nav_menu( array(
-					'theme_location' => 'heit_2016_submenu',
-					'container' => 'nav'
-				));
-			?>
-			<div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
-		</div>
-	</div>
-</div><!-- #page-menu end -->
-
-<!-- Page Content
+<!-- Page Content: Blog Index
 ============================================= -->
 <section id="content">
 
-	<!-- Image and description section -->
-	<div class="row clearfix common-height">
+	<div class="content-wrap">
 
-		<!-- First column featuring background image -->
-		<div class="col-md-6 center col-padding" style="background: url(<?php echo $conference_image; ?>) center center no-repeat; background-size: cover;">
-		</div>
+		<div class="container clearfix">
 
-		<!-- Second column featuring leading text and chairs -->
-		<div class="col-md-6 center col-padding" style="background-color: #F5F5F5;">
-			<div class="heading-block-intro">
-				<br><br>
-				<span class="before-heading"><?php echo $leading_text; ?></span>
+			<!-- Post Content
+			============================================= -->
+			<div class="postcontent nobottommargin clearfix">
+
+				<!-- Posts
+				============================================= -->
+				<div class="single-post nobottommargin">
+					
+						<?php
+							if ( have_posts() ) :
+
+								if ( is_home() && ! is_front_page() ) : ?>
+									
+								<?php
+								endif;
+
+								/* Start the Loop */
+								while ( have_posts() ) : the_post();
+
+									/*
+									 * Include the Post-Format-specific template for the content.
+									 * If you want to override this in a child theme, then include a file
+									 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+									 */
+
+									?> 
+
+									<div class="entry clearfix"> 
+										<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+									</div> 
+
+								<?php
+								endwhile;
+
+								the_posts_navigation();
+
+							else :
+
+								get_template_part( 'template-parts/content', 'none' );
+
+						endif; ?>
+					
+				</div>
+			</div>
+
+			<!-- Sidebar
+			============================================= -->
+			<div class="sidebar nobottommargin col_last clearfix">
+				<div class="sidebar-widgets-wrap">
+					<?php get_sidebar(); ?>
+				</div>
 			</div>
 		</div>
-	</div><!-- image and description section end -->
+	</div>
+</section>
 
-	
-			
-</section><!-- #page content end -->
+<?php
 
-<?php get_footer(); ?>
+get_footer(); ?>
