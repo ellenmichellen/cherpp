@@ -32,13 +32,6 @@ add_action( 'switch_theme', 'html2wp_reset_posts_per_page' );
 // Perform theme setup after Gravity forms is installed
 add_action( 'activated_plugin', 'html2wp_detect_plugin_activation' );
 
-// Prevent the default WP widgets init routine
-add_action( 'after_setup_theme', 'html2wp_remove_default_widgets_remove_action' );
-
-// Since we prevented the default WP Widgets Init, need to perform regular Widgets Init
-// see https://developer.wordpress.org/reference/functions/wp_widgets_init/
-add_action( 'init', 'html2wp_remove_default_widgets_do_widgets_init', 1 );
-
 // Start creating the custom post types and taxonomies
 add_action( 'init', 'html2wp_setup_custom_post_types_taxonomies' );
 
@@ -413,20 +406,6 @@ function html2wp_detect_plugin_activation( $plugin ) {
 			delete_option( GRAVITY_PENDING_INSTALLATION );
 		}
 	}
-}
-
-/**
- * Peforms the widgets_init action
- */
-function html2wp_remove_default_widgets_do_widgets_init() {
-	do_action( 'widgets_init' );
-}
-
-/**
- * Removes the wp_widgets_init action
- */
-function html2wp_remove_default_widgets_remove_action() {
-	remove_action( 'init', 'wp_widgets_init', 1 );
 }
 
 /**
