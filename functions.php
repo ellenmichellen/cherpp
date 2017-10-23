@@ -105,10 +105,22 @@ function cherpp_widgets_init() {
 }
 add_action( 'widgets_init', 'cherpp_widgets_init' );
 
+// Implements comments
 if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 
+// Style comment reply as an icon
 function wpb_comment_reply_text( $link ) {
 $link = str_replace( 'Reply', '<i class="icon-reply"></i>', $link );
 return $link;
 }
 add_filter( 'comment_reply_link', 'wpb_comment_reply_text' );
+
+
+// Removes screen reader text for pagination
+function sanitize_pagination($content) {
+    // Remove h2 tag
+    $content = preg_replace('#<h2.*?>(.*?)<\/h2>#si', '', $content);
+    return $content;
+}
+add_action('navigation_markup_template', 'sanitize_pagination');
+

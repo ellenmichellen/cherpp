@@ -24,7 +24,6 @@
 			<i class="fa fa-user"></i> <?php the_author(); ?>
 			<i class="fa fa-clock-o"></i> <time><?php the_date(); ?></time>
 			<i class="fa fa-folder"></i> <?php the_category(', '); ?>
-			<i class="fa fa-tags"></i> <?php the_tags(); ?>
 			<div class="post-comments-badge">
 				<a href="<?php comments_link(); ?>"><i class="fa fa-comments"></i> <?php comments_number( 0, 1, '%'); ?></a>
 			</div>

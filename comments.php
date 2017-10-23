@@ -27,23 +27,10 @@ if ( post_password_required() ) {
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) : ?>
-		<h3 class="comments-title">
+		<h3 id="comments-title">
 			<?php
-				$comment_count = get_comments_number();
-				if ( 1 === $comment_count ) {
-					printf(
-						/* translators: 1: title. */
-						esc_html_e( 'One comment on &ldquo;%1$s&rdquo;', 'bootstrap2wordpress' ),
-						'<span>' . get_the_title() . '</span>'
-					);
-				} else {
-					printf( // WPCS: XSS OK.
-						/* translators: 1: comment count number, 2: title. */
-						esc_html( _nx( '%1$s comment on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $comment_count, 'comments title', 'bootstrap2wordpress' ) ),
-						number_format_i18n( $comment_count ),
-						'<span>' . get_the_title() . '</span>'
-					);
-				}
+				printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'bootstrap2wordpress' ),
+					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h3><!-- .comments-title -->
 
@@ -93,6 +80,8 @@ if ( post_password_required() ) {
 	endif;
 
 	comment_form();
+
+
 	?>
 	</div>
 </div><!-- #comments -->

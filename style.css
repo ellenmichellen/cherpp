@@ -5599,7 +5599,7 @@ body:not(.device-touch) .entry-link {
 
 #comments {
 	position: relative;
-	margin-top: 50px;
+	margin-top: 65px;
 	padding-top: 50px;
 	border-top: 1px solid #EEE;
 }
@@ -5766,7 +5766,8 @@ body:not(.device-touch) .entry-link {
 }
 
 #respond input[type="text"],
-#respond textarea { margin-bottom: 0; }
+#respond textarea { 
+	margin-bottom: 0; }
 
 #respond .col_one_third,
 #respond .col_full { margin-bottom: 20px; }
@@ -13827,4 +13828,106 @@ a.downloads:hover {
 
 .comment-body p {
 margin: 30px 200 0 0;
+}
+
+.nav-next a {
+	float: right;
+}
+
+.nav-previous a {
+	float: left;
+}
+
+.nav-next a {
+	float: right;
+}
+
+.nav-previous a,
+.nav-next a {
+	display: inline-block;
+  	padding: 5px 14px;
+  	background-color: #ffffff;
+  	border: 1px solid #dddddd;
+  	border-radius: 15px;
+  	margin-bottom: 300px;
+}
+
+.nav-previous a:hover,
+.nav-previous a:focus,
+.nav-next a:hover,
+.nav-next a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.post-previous a {
+	float: left;
+	color: #4aaaa5;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.post-next a {
+	float: right;
+	color: #4aaaa5;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+#comments-title {
+	font-weight: 600;
+}
+
+label[for="comment"] {
+	display: none;
+}
+
+.comment-form-comment button, input[type="button"], input[type="reset"], input[type="submit"], .button, .entry-content .button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 5px;
+    padding: 0 22px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #4aaaa5;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+
+.submit:hover {
+	background-color: #7accc8;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.comments-area {
+      width: 100%;
+}
+
+#comment {
+	width: 100%;
+}
+
+#author, #email, #url {
+	width: 100%;
+}
+
+#cancel-comment-reply-link {
+	font-family: 'Raleway', sans-serif;
+	color: #7accc8;
+	font-weight: 400;
 }
