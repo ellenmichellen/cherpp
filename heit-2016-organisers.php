@@ -13,7 +13,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/organisers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/heit-2016-organisers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center"><?php echo $page_title; ?></h1>
 	</div>

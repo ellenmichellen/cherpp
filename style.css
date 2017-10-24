@@ -13882,7 +13882,7 @@ label[for="comment"] {
 	display: none;
 }
 
-.comment-form-comment button, input[type="button"], input[type="reset"], input[type="submit"], .button, .entry-content .button {
+.comment-form-comment button, input[type="button"], input[type="reset"], input[type="submit"], .entry-content .button {
     display: inline-block;
     position: relative;
     cursor: pointer;
