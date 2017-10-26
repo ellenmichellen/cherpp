@@ -45,6 +45,33 @@
 	<?php if ( is_single() ) : ?>
 		<div class="entry-content notopmargin">
 		    <?php the_content(); ?>
+		    <div class="blog-post-tags">
+					<?php
+					    // Get the assigned tag_id
+					    $tag_ids = wp_get_post_tags( $post->ID, array( 'fields' => 'ids' ) );
+
+					    // Check if there is any tag_ids, if print wp_tag_cloud
+					    if ( $tag_ids ) {
+
+					        wp_tag_cloud( array(
+					            'unit'     => 'px',       // font sizing choice (pt, em, px, etc)
+					            'include'  => $tag_ids,   // ID's of tags to include, displays none except these
+					        ) );
+					    }
+					?>
+				</div>
+
+				<div class="blog-post-navigation">						
+					<?php
+						the_post_navigation();
+
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
+					?> 
+				</div>
+
 		</div><!-- post-content -->
 	<?php else : ?>
 		<div class="post-excerpt">

@@ -83,7 +83,7 @@ add_filter( 'wp_nav_menu_items', 'wpse_remove_empty_links' );
 */
 function new_excerpt_more($more) {
 	global $post;
-	return '... <br><br><a class="more-link" href="'. get_permalink($post->ID) . '"> Read More</a>';
+	return '... <br><br><a class="more-link" href="'. get_permalink($post->ID) . '"> Read More...</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
@@ -115,7 +115,6 @@ return $link;
 }
 add_filter( 'comment_reply_link', 'wpb_comment_reply_text' );
 
-
 // Removes screen reader text for pagination
 function sanitize_pagination($content) {
     // Remove h2 tag
@@ -123,4 +122,52 @@ function sanitize_pagination($content) {
     return $content;
 }
 add_action('navigation_markup_template', 'sanitize_pagination');
+
+// Displays author box underneath blog posts
+function wpb_author_info_box( $content ) {
+ 
+	global $post;
+	 
+	// Detect if it is a single post with a post author
+	if ( is_single() && isset( $post->post_author ) ) {
+	 
+		// Get author's display name 
+		$display_name = get_the_author_meta( 'display_name', $post->post_author );
+	 
+	// If display name is not available then use nickname as display name
+	if ( empty( $display_name ) )
+	$display_name = get_the_author_meta( 'nickname', $post->post_author );
+	 
+		// Get author's biographical information or description
+		$user_description = get_the_author_meta( 'user_description', $post->post_author );
+		 
+		// Get author's website URL 
+		$user_website = get_the_author_meta('url', $post->post_author);
+		 
+		// Get link to the author archive page
+		$user_posts = get_author_posts_url( get_the_author_meta( 'ID' , $post->post_author));
+	  
+	if ( ! empty( $display_name ) )
+
+		$author_details = '<div class="panel-title"><p class="author_name">Posted by <a class="blue-color" href="'. $user_posts .'"> ' . $display_name . '</a></p></div>';
+	 
+	if ( ! empty( $user_description ) )
+	
+		// Author avatar and bio
+		$author_details .= '<p class="author_details">' . get_avatar( get_the_author_meta('user_email') , 90 ) . nl2br( $user_description ). '</p>';
+
+		// Pass all this info to post content  
+		$content = $content . '<footer class="author_bio_section" >' . $author_details . '</footer>';
+	}
+
+	return $content;
+
+	}
+ 
+	// Add our function to the post content filter 
+	add_action( 'the_content', 'wpb_author_info_box' );
+	 
+	// Allow HTML in author bio section 
+	remove_filter('pre_user_description', 'wp_filter_kses');
+
 

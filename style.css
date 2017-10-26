@@ -3365,7 +3365,6 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
     font-family: 'Raleway', sans-serif;	
     text-align: center;	
     letter-spacing: 1px;
-    padding-left: 20px;
 }
 
 #page-title span {
@@ -4967,8 +4966,9 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 .entry {
 	position: relative;
 	margin: 0 0 50px;
-	padding: 0 0 50px; 
-	border-bottom: 2px solid #F5F5F5;
+	/* padding: 0 0 50px; */
+	padding: 0 0 12px;
+	border-bottom: 2px solid #a5ddda;
 }
 
 .entry-image { margin-bottom: 30px; }
@@ -4990,9 +4990,10 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 .entry-title h2 {
 	margin: 0;
 	font-size: 24px;
-	font-weight: 600;
-	text-transform: uppercase;
+	font-weight: 700;
+	/* text-transform: uppercase; */
 	letter-spacing: 1px;
+	font-weight: 700;
 }
 
 .entry-title h2 a { color: #333; }
@@ -5011,7 +5012,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	font-size: 13px;
 	line-height: 14px;
 	margin: 0 10px 15px 0;
-	color: #999;
+	color: #666;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -5029,7 +5030,9 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	margin-right: 3px;
 }
 
-.entry-meta li a { color: #999; }
+.entry-meta li a { 
+	color: #666; 
+}
 
 .entry-meta li a:hover { color: #4aaaa5; }
 
@@ -5435,17 +5438,12 @@ body:not(.device-touch) .entry-link {
 
 .more-link {
 	display: inline-block;
-	border-bottom: 1px solid #4aaaa5;
-	color: #4aaaa5;
 	padding: 0 2px;
-	font-family: 'Crete Round', serif;
-	font-weight: 400;
-	font-style: italic;
+	font-weight: 600;
 }
 
 .more-link:hover { 
-	color: #555;
-	border-bottom-color: #555; 
+	color: #4aaaa5;
 }
 
 
@@ -5599,7 +5597,7 @@ body:not(.device-touch) .entry-link {
 
 #comments {
 	position: relative;
-	margin-top: 65px;
+	margin-top: 70px;
 	padding-top: 50px;
 	border-top: 1px solid #EEE;
 }
@@ -12118,7 +12116,7 @@ button.toast-close-button {
 
 .sidebar-widgets-wrap .widget {
 	padding-top: 50px;
-	border-top: 1px solid #EEE;
+	border-top: 2px solid #a5ddda;
 }
 
 .widget:first-child { margin-top: 0; }
@@ -13715,14 +13713,17 @@ a.morelink {
 	color: #333;
 }
 
+/* Styling for white text */
 .white {
 	color: #fff !important;
 }
 
+/* Styling for dark text */
 .dark {
 	color: #333 !important;
 }
 
+/* Styling for centered text */
 .center {
 	text-align: center !important;
 }
@@ -13735,13 +13736,9 @@ a.downloads {
 	font-family: 'Montserrat', sans-serif;
 }
 
+/* Styling for Download links on hover */
 a.downloads:hover {
 	color: #7accc8;
-}
-
-/* Vertical line for tites */
-.verticalLine {
-  border-left: 2.5px solid #4aaaa5;
 }
 
 .transbox {
@@ -13752,26 +13749,10 @@ a.downloads:hover {
   filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
+/* Black and white filter for images */
 .filtered {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-}
-
-.first-subtitle-wrap {
-	position: relative;
-	padding: 30px 0;
-	padding-top: 50px;
-}
-
-.subtitle-wrap {
-	position: relative;
-	padding: 30px 0;
-}
-
-.sub-subtitle-wrap {
-	position: relative;
-	padding: 30px 0;
-	margin-top: -75px;
 }
 
 .title {
@@ -13788,10 +13769,16 @@ a.downloads:hover {
     font-style: normal;
 }
 
+/* ----------------------------------------------------------------
+	Blog Posts and Comments
+-----------------------------------------------------------------*/
+
+/* Removes "says" from blog comments */
 .says {
 	display: none !important;
 }
 
+/* Stying for user avatars in comments */
 .commentlist li .avatar {
 	position: absolute;
     left: -35px;
@@ -13803,21 +13790,25 @@ a.downloads:hover {
     width: 70px;
 }
 
+/* Styling for comment text */
 .commentlist li p {
 	padding: 0 0 0 15px;
 	margin-top: 35px;
 
 }
 
+/* Styling for comment metadata */
 .commentlist .commentmetadata {
 	padding: 0 0 0 15px;
 }
 
+/* Styling for comment authors */
 .commentlist .comment-author {
 	padding: 0 0 0 15px;
 	text-transform: none !important;
 }
 
+/* Styling for comment metadata links */
 .commentlist .commentmetadata a {
     font-size: 12px;
     font-weight: normal;
@@ -13826,22 +13817,22 @@ a.downloads:hover {
     color: #AAA;
 }
 
+/* Styling for comment body text */
 .comment-body p {
-margin: 30px 200 0 0;
+	margin: 30px 200 0 0;
 }
 
+/* Styling for "next" pagination link */
 .nav-next a {
 	float: right;
 }
 
+/* Styling for "previous" pagination link */
 .nav-previous a {
 	float: left;
 }
 
-.nav-next a {
-	float: right;
-}
-
+/* Styling for "next" and "previous" pagination links */
 .nav-previous a,
 .nav-next a {
 	display: inline-block;
@@ -13852,6 +13843,7 @@ margin: 30px 200 0 0;
   	margin-bottom: 300px;
 }
 
+/* Styling for pagination links on hover and focus */
 .nav-previous a:hover,
 .nav-previous a:focus,
 .nav-next a:hover,
@@ -13860,28 +13852,33 @@ margin: 30px 200 0 0;
   background-color: #eeeeee;
 }
 
+/* Styling for "previous" links for post links */
 .post-previous a {
 	float: left;
 	color: #4aaaa5;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 }
 
+/* Styling for "next" links for post links */
 .post-next a {
 	float: right;
 	color: #4aaaa5;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 }
 
+/* Styling for comment titles */
 #comments-title {
 	font-weight: 600;
 }
 
+/* Removes labels from comment form */
 label[for="comment"] {
 	display: none;
 }
 
+/* Styling for comment form button */
 .comment-form-comment button, input[type="button"], input[type="reset"], input[type="submit"], .entry-content .button {
     display: inline-block;
     position: relative;
@@ -13907,7 +13904,7 @@ label[for="comment"] {
     transition: none;
 }
 
-
+/* Styling for comment form button on hover */
 .submit:hover {
 	background-color: #7accc8;
 	color: #FFF;
@@ -13915,7 +13912,7 @@ label[for="comment"] {
 }
 
 .comments-area {
-      width: 100%;
+     width: 100%;
 }
 
 #comment {
@@ -13926,8 +13923,113 @@ label[for="comment"] {
 	width: 100%;
 }
 
+/* Styling for "cancel comment" link */
 #cancel-comment-reply-link {
 	font-family: 'Raleway', sans-serif;
 	color: #7accc8;
 	font-weight: 400;
+}
+
+/* Styling for tag cloud */
+.tag-cloud-link {
+	    display: block;
+    float: left;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 3px 6px;
+    border: 1px solid #E5E5E5;
+    font-size: 13px !important;
+    color: #666;
+    border-radius: 2px;
+}
+
+.blog-post-navigation {
+	padding-top: 60px;
+}
+
+/* Creates a border above nav links */
+.nav-links {
+	border-top: 1px solid #EEE;
+	padding-top: 50px;
+}
+
+/* Author box styling */
+.author_bio_section{
+	margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: #dddddd;
+
+}
+ 
+/* Styling for author name */ 
+.author_name{
+	font-size:16px;
+	font-weight: 600;
+}
+ 
+/* Styling for author image */
+.author_details img {
+	border: 1px solid #D8D8D8;
+	border-radius: 50%;
+	float: left;
+	margin: 0 15px 10px 0;
+	
+}
+
+.author_details {
+	 display: inline-block;
+	margin-left: 15px;
+	margin-top: -10px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+/* Styling for header panel for author box */
+.panel-title {
+	color: #333333;
+    background-color: #f5f5f5;
+    border-color: #dddddd;
+
+}
+
+/* Styling for title in header panel */
+.panel-title p {
+	padding: 10px 10px 10px 20px;
+}
+
+/* Top striped banner for blog header 
+.blog:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right:0px;
+  bottom: 0px;
+  height: 7px;
+  background-image: linear-gradient(to right, 
+    #4aaaa5       0%,     #4aaaa5       10%,
+    #7accc8 	  10%,    #7accc8       20%,
+    #a5ddda       20%,    #a5ddda       30%, 
+    #7accc8       30%,    #7accc8       40%,
+    #4aaaa5       40%,    #4aaaa5       50%, 
+    #7accc8       50%,    #7accc8       60%, 
+    #a5ddda       60%,    #a5ddda       70%,
+    #7accc8       70%,    #7accc8       80%,
+    #4aaaa5       80%,    #4aaaa5       90%,
+    #7accc8       90%,    #7accc8       100%);
+} */
+
+.blog {
+	border-bottom: 5px solid #4aaaa5;
+}
+
+.widget ul li a:hover {
+	color: #4aaaa5;
+}
+
+.blue-color {
+	color: #4aaaa5;
 }

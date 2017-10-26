@@ -9,9 +9,7 @@
 
 get_header(); ?>
 
-<!-- Page Title
-============================================= -->
-<section id="page-title" style="background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('<?php  bloginfo('template_url');  ?>/images/cliffs.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title" class="blog" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<?php  bloginfo('template_url');  ?>/images/cliffs.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center">Blog</h1>
 	</div>
@@ -32,21 +30,7 @@ get_header(); ?>
 						get_template_part( 'template-parts/content', get_post_format() );
 					endwhile; // End of the loop.
 					?>
-					<br>
-					<div class="categories">
-						<i class="icon-tags"></i> <?php the_tags('', ', ', ''); ?>
-					</div>
-
-					<hr>
-
-					<?php
-						the_post_navigation();
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-					?>
+			
 				</div>
 			</div>
 
