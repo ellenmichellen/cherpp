@@ -14022,14 +14022,22 @@ label[for="comment"] {
     #7accc8       90%,    #7accc8       100%);
 } */
 
+/* Solid blue underline for blog header */
 .blog {
 	border-bottom: 5px solid #4aaaa5;
 }
 
+/* Styling for widget links hover */
 .widget ul li a:hover {
 	color: #4aaaa5;
 }
 
+/* Blue styling for author name */
 .blue-color {
 	color: #4aaaa5;
+}
+
+/* Styling for "Leave a Reply" text */
+#reply-title {
+	font-weight: 600;
 }
