@@ -4968,7 +4968,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	margin: 0 0 50px;
 	/* padding: 0 0 50px; */
 	padding: 0 0 12px;
-	border-bottom: 2px solid #a5ddda;
+	background: url(images/lines.png) bottom repeat-x;
 }
 
 .entry-image { margin-bottom: 30px; }
@@ -5599,14 +5599,14 @@ body:not(.device-touch) .entry-link {
 	position: relative;
 	margin-top: 70px;
 	padding-top: 50px;
-	border-top: 1px solid #EEE;
+	background: url(images/lines.png) top repeat-x;
 }
 
 .commentlist {
 	list-style: none;
-	padding-bottom: 50px;
+	padding-bottom: 60px;
 	margin: 0 0 50px;
-	border-bottom: 1px solid #EEE;
+	background: url(images/lines.png) bottom repeat-x;
 }
 
 #reviews .commentlist {
@@ -5633,7 +5633,7 @@ body:not(.device-touch) .entry-link {
 	position: relative;
 	border: 1px solid #E5E5E5;
 	border-radius: 5px;
-	padding: 20px 20px 20px 35px;
+	padding: 20px 20px 0px 35px; /* Note: bottom padding used to be 20 */
 }
 
 .commentlist ul .comment-body {
@@ -12116,10 +12116,14 @@ button.toast-close-button {
 
 .sidebar-widgets-wrap .widget {
 	padding-top: 50px;
-	border-top: 2px solid #a5ddda;
+	background: url(images/lines.png) top repeat-x;
+
 }
 
-.widget:first-child { margin-top: 0; }
+.widget:first-child { 
+	margin-top: 0; 
+	background: none;
+}
 
 .sidebar-widgets-wrap .widget:first-child {
 	padding-top: 0;
@@ -12131,6 +12135,7 @@ button.toast-close-button {
 	font-size: 15px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	color: #;
 }
 
 .sidebar-widgets-wrap .widget > h4 { letter-spacing: 1px; }
@@ -12150,9 +12155,9 @@ button.toast-close-button {
 	margin-right: 4px;
 	margin-bottom: 4px;
 	padding: 3px 6px;
-	border: 1px solid #E5E5E5;
+	border: 1px solid #4aaaa5;
 	font-size: 13px !important;
-	color: #666;
+	color: #4aaaa5;
 	border-radius: 2px;
 }
 
@@ -12163,8 +12168,8 @@ body:not(.device-touch) .tagcloud a {
 }
 
 .tagcloud a:hover {
-	border-color: #4aaaa5 !important;
-	color: #4aaaa5 !important;
+	border-color: #666 !important;
+	color: #666 !important;
 }
 
 
@@ -13932,15 +13937,20 @@ label[for="comment"] {
 
 /* Styling for tag cloud */
 .tag-cloud-link {
-	    display: block;
-    float: left;
-    margin-right: 4px;
-    margin-bottom: 4px;
-    padding: 3px 6px;
-    border: 1px solid #E5E5E5;
-    font-size: 13px !important;
-    color: #666;
-    border-radius: 2px;
+	display: block;
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 3px 6px;
+	border: 1px solid #4aaaa5;
+	font-size: 13px !important;
+	color: #4aaaa5;
+	border-radius: 2px;
+}
+
+.tag-cloud-link:hover {
+	border-color: #666 !important;
+	color: #666 !important;
 }
 
 .blog-post-navigation {
@@ -13949,8 +13959,8 @@ label[for="comment"] {
 
 /* Creates a border above nav links */
 .nav-links {
-	border-top: 1px solid #EEE;
 	padding-top: 50px;
+	background: url(images/lines.png) top repeat-x;
 }
 
 /* Author box styling */
@@ -14023,9 +14033,9 @@ label[for="comment"] {
 } */
 
 /* Solid blue underline for blog header */
-.blog {
+/*.blog {
 	border-bottom: 5px solid #4aaaa5;
-}
+}*/
 
 /* Styling for widget links hover */
 .widget ul li a:hover {
@@ -14041,3 +14051,4 @@ label[for="comment"] {
 #reply-title {
 	font-weight: 600;
 }
+

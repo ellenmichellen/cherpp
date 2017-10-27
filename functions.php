@@ -149,16 +149,25 @@ function wpb_author_info_box( $content ) {
 	  
 	if ( ! empty( $display_name ) )
 
-		$author_details = '<div class="panel-title"><p class="author_name">Posted by <a class="blue-color" href="'. $user_posts .'"> ' . $display_name . '</a></p></div>';
-	 
+		// If author has a biography, display the bio box...
+		if (get_the_author_meta('description')) {
+				$author_details = '<div class="panel-title"><p class="author_name">Posted by <a class="blue-color" href="'. $user_posts .'"> ' . $display_name . '</a></p></div>';
+	 		}
+
 	if ( ! empty( $user_description ) )
 	
-		// Author avatar and bio
-		$author_details .= '<p class="author_details">' . get_avatar( get_the_author_meta('user_email') , 90 ) . nl2br( $user_description ). '</p>';
+		// If author bio is not blank...
+		if (get_the_author_meta('description')) {
+			// Author avatar and bio
+			$author_details .= '<p class="author_details">' . get_avatar( get_the_author_meta('user_email') , 90 ) . nl2br( $user_description ). '</p>';
+		}
 
-		// Pass all this info to post content  
-		$content = $content . '<footer class="author_bio_section" >' . $author_details . '</footer>';
-	}
+		// If author bio is not blank...  
+			if (get_the_author_meta('description')) {
+				// Pass all this info to post content  
+				$content = $content . '<footer class="author_bio_section" >' . $author_details . '</footer>';
+			}
+		}
 
 	return $content;
 
@@ -170,4 +179,34 @@ function wpb_author_info_box( $content ) {
 	// Allow HTML in author bio section 
 	remove_filter('pre_user_description', 'wp_filter_kses');
 
+/**
+ * Plugin Name: T5 Comment author URI to blog author page
+ * Description: Changes the comment author URI to the blog’s author archive
+ * Version:     2012.07.18
+ * Author:      Thomas Scholz
+ * Author URI:  http://toscho.de
+ * License:     MIT
+ * License URI: http://www.opensource.org/licenses/mit-license.php
+ */
 
+if ( ! function_exists( 't5_comment_uri_to_author_archive' ) )
+{
+    add_filter( 'get_comment_author_url', 't5_comment_uri_to_author_archive' );
+
+    function t5_comment_uri_to_author_archive( $uri )
+    {
+        global $comment;
+
+        // We do not get the real comment with this filter.
+        if ( empty ( $comment )
+            or ! is_object( $comment )
+            or empty ( $comment->comment_author_email )
+            or ! $user = get_user_by( 'email', $comment->comment_author_email )
+        )
+        {
+            return $uri;
+        }
+
+        return get_author_posts_url( $user->ID );
+    }
+}

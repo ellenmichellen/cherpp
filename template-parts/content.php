@@ -22,7 +22,7 @@
 
 		<ul class="entry-meta clearfix">
 			<li><i class="icon-calendar3"></i> <time><?php the_date(); ?></time>
-			<li><i class="icon-user"></i> <?php the_author(); ?>
+			<li><i class="icon-user"></i> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a>
 			<li><i class="icon-folder-open"></i> <?php the_category(', '); ?>
 			<li><a href="<?php comments_link(); ?>"><i class="icon-comments"></i> <?php printf( _nx( '1 Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ), number_format_i18n( get_comments_number() ) ); ?></a></li>
 			<?php edit_post_link( 'Edit', '<li><i class="icon-pencil"></i>', '</li>' ); ?>
