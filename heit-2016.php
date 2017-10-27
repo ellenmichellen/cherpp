@@ -120,24 +120,30 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 			<h3>Downloads</h3>
 		</div>
 
-		<div class="heading-block center nobottomborder">
-		<h3></h3>
-			<span>
+		<div class="container clearfix">
+			<div class="row clear-bottommargin">
+
+				<!-- Empty row so that downloads are centered -->
+				<div class="col-md-2 bottommargin">
+				</div>
 				<?php 
 
-				// Loop through array of 2016 documents, ordered by name
-				$loop = new WP_Query( array( 'post_type' => 'documents', 'meta_key' => '2016_document', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
+					// Loop through array of 2015 documents, ordered by name
+					$loop = new WP_Query( array( 'post_type' => 'documents', 'meta_key' => '2016_document', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
 
-				// For each document in the array...
-				while( $loop->have_posts() ) : $loop->the_post(); ?>
+					// For each document in the array...
+					while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					<!-- Display and style information for each document in the array -->
-					<a href="<?php the_field('document'); ?>" class="downloads" target="_blank"><?php the_title(); ?></a> <br>
-
-				<?php endwhile; ?>
-			</span>
+						<div class="col-md-4 bottommargin">
+							<div class="promo promo-dark promo-flat promo-mini promo-uppercase promo-right">
+								<br>
+								<a href="<?php the_field('document'); ?>" class="downloads" target="_blank"><h3 class="center"><?php the_field('display_title'); ?> </h3></a>
+								<br>
+							</div>
+						</div>
+					<?php endwhile; ?>
+			</div>
 		</div>
-
 	</div><!-- downloads section end -->
 
 	<div class="line topmargin-sm nobottommargin"></div><br><br>

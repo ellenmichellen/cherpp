@@ -93,7 +93,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 		while( $loop->have_posts() ) : $loop->the_post(); ?>
 
 			<!-- Display and style information for each theme in the array (3 column layout) -->
-			<div class="col-md-4 col-sm-6 dark center col-padding" style="background-color: <?php the_field('div_color'); ?>;">
+			<div class="col-md-4 col-sm-4 dark center col-padding" style="background-color: <?php the_field('div_color'); ?>;">
 				<div>
 					<a href="<?php the_field('arrow_collection_link'); ?>" target="_blank">
 						<i class="i-plain i-xlarge divcenter <?php the_field('theme_icon'); ?>"></i>
@@ -120,10 +120,10 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 			<h3>Downloads</h3>
 		</div>
 
-		<div class="heading-block center nobottomborder">
-		<h3></h3>
-			<span>
-				<?php 
+		<div class="container clearfix">
+		<div class="row clear-bottommargin">
+
+			<?php 
 
 				// Loop through array of 2015 documents, ordered by name
 				$loop = new WP_Query( array( 'post_type' => 'documents', 'meta_key' => '2015_document', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
@@ -131,13 +131,19 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 				// For each document in the array...
 				while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					<!-- Display and style information for each document in the array -->
-					<a href="<?php the_field('document'); ?>" class="downloads" target="_blank"><?php the_title(); ?></a> <br>
-
+					<div class="col-md-4 bottommargin">
+						<div class="promo promo-dark promo-flat promo-mini promo-uppercase promo-right">
+							<br>
+							<a href="<?php the_field('document'); ?>" class="downloads" target="_blank"><h3 class="center"><?php the_field('display_title'); ?> </h3></a>
+							<br>
+						</div>
+					</div>
 				<?php endwhile; ?>
-			</span>
 		</div>
+	</div>
 	</div><!-- downloads section end -->
+
+	
 	
 	<div class="line topmargin-sm nobottommargin"></div><br><br>
 

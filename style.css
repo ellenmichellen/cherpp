@@ -5440,10 +5440,11 @@ body:not(.device-touch) .entry-link {
 	display: inline-block;
 	padding: 0 2px;
 	font-weight: 600;
+	color: #4aaaa5;
 }
 
 .more-link:hover { 
-	color: #4aaaa5;
+	color: #666;
 }
 
 
@@ -7296,6 +7297,8 @@ body:not(.device-touch) .button.button-full strong {
 	margin-bottom: 0;
 	color: #fff;
 	font-size: 22px !important;
+	font-family: 'Raleway', sans-serif;
+    text-transform: none;
 }
 
 .promo > span,
@@ -7411,6 +7414,10 @@ body:not(.device-touch) .button.button-full strong {
 	border-color: #FFF;
 	color: #444;
 	text-shadow: none;
+}
+
+.promo.promo-flat:hover {
+	background-color: #7accc8;
 }
 
 
@@ -13958,10 +13965,10 @@ label[for="comment"] {
 }
 
 /* Creates a border above nav links */
-.nav-links {
+.post-navigation {
 	padding-top: 50px;
 	background: url(images/lines.png) top repeat-x;
-}
+} 
 
 /* Author box styling */
 .author_bio_section{
