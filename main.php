@@ -13,7 +13,7 @@ get_header();
 			<div class="slider-caption dark slider-caption-center">
 				<h2>Centre for Higher Education Research, Policy &amp; Practice</h2>
 			</div>
-			<img src='<?php  bloginfo('template_url');  ?>/images/test.jpg?>' alt="Slider">
+			<a href="#"><img src='<?php  bloginfo('template_url');  ?>/images/test.jpg?>' alt="Slider"></a>
 		</div>
 	</div>
 </section>

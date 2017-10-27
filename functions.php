@@ -38,6 +38,8 @@ function wptuts_scripts_with_jquery()
 }
 add_action( 'wp_enqueue_scripts', 'wptuts_scripts_with_jquery' );
 
+
+
 // Orders posts by last name (where appropriate)
 function posts_orderby_lastname ($orderby_statement) 
 {

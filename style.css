@@ -3056,7 +3056,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	color: #EEE;
 	font-size: 22px;
 	font-weight: 300;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+	/* text-shadow: 1px 1px 1px rgba(0,0,0,0.15); */
 	-webkit-transition: top .3s ease;
 	-o-transition: top .3s ease;
 	transition: top .3s ease;
@@ -3071,7 +3071,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 .slider-caption h2 {
 	font-size: 64px;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	text-transform: none; 
 	font-weight: 700;
 	line-height: 1;
 	margin-bottom: 30px;
@@ -3088,7 +3088,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 }
 
 .slider-caption.slider-caption-center {
-	position: relative;
+	/* position: relative; */
 	max-width: 800px;
 	text-align: center;
 	margin: 0 auto;
@@ -3153,7 +3153,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	top: 50%;
 	left: 0;
 	margin-top: -26px;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.3); 
 	width: 52px;
 	height: 52px;
 	border: 0;

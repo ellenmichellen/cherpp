@@ -1149,6 +1149,7 @@
 		padding: 20px 15px;
 	}
 
+	/*
 	#top-social,
 	#slider:not(.swiper_wrapper) .slider-caption,
 	.nivo-caption,
@@ -1158,7 +1159,7 @@
 	.camera_caption,
 	.ei-title,
 	.slider-arrow-top-sm,
-	.slider-arrow-bottom-sm { display: none !important; }
+	.slider-arrow-bottom-sm { display: none !important; } */
 
 	.slider-caption h2 { margin-bottom: 0 !important; }
 
