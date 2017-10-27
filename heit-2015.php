@@ -121,29 +121,27 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 		</div>
 
 		<div class="container clearfix">
-		<div class="row clear-bottommargin">
+			<div class="row clear-bottommargin">
 
-			<?php 
+				<?php 
 
-				// Loop through array of 2015 documents, ordered by name
-				$loop = new WP_Query( array( 'post_type' => 'documents', 'meta_key' => '2015_document', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
+					// Loop through array of 2015 documents, ordered by name
+					$loop = new WP_Query( array( 'post_type' => 'documents', 'meta_key' => '2015_document', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
 
-				// For each document in the array...
-				while( $loop->have_posts() ) : $loop->the_post(); ?>
+					// For each document in the array...
+					while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					<div class="col-md-4 bottommargin">
-						<div class="promo promo-dark promo-flat promo-mini promo-uppercase promo-right">
-							<br>
-							<a href="<?php the_field('document'); ?>" class="downloads" target="_blank"><h3 class="center"><?php the_field('display_title'); ?> </h3></a>
-							<br>
+						<div class="col-md-4 bottommargin">
+							<div class="promo promo-dark promo-flat promo-mini promo-uppercase promo-right">
+								<br>
+								<a href="<?php the_field('document'); ?>" class="downloads" target="_blank"><h3 class="center"><?php the_field('display_title'); ?> </h3></a>
+								<br>
+							</div>
 						</div>
-					</div>
-				<?php endwhile; ?>
+					<?php endwhile; ?>
+			</div>
 		</div>
-	</div>
 	</div><!-- downloads section end -->
-
-	
 	
 	<div class="line topmargin-sm nobottommargin"></div><br><br>
 
