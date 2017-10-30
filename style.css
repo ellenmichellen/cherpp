@@ -14060,3 +14060,9 @@ label[for="comment"] {
 	font-weight: 600;
 }
 
+.comment-awaiting-moderation {
+  font-size: 12px;
+    margin-left: 15px;
+    color: #4aaaa5;
+    font-family: 'Crete Round', serif;
+}
