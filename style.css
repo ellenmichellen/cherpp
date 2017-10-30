@@ -3552,7 +3552,8 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	background-color: #ffffff;
 }
 
-#content p { line-height: 1.8; }
+/*
+#content p { line-height: 1.8; } */
 
 .content-wrap {
 	position: relative;
@@ -14060,9 +14061,15 @@ label[for="comment"] {
 	font-weight: 600;
 }
 
+/* Overrides default "Comment awaiting moderation" message */
 .comment-awaiting-moderation {
   font-size: 12px;
     margin-left: 15px;
     color: #4aaaa5;
     font-family: 'Crete Round', serif;
+}
+
+/* Styling for span for main comment */
+.main-content {
+	font-size: 16px;
 }
