@@ -19,6 +19,26 @@ get_header();
 </section>
 
 <section id="content">
+
+<!-- Possible description section
+<div class="section">
+
+	<div class="container clearfix">
+
+		<div class="heading-block center">
+			<h3>Centre for Higher Education Research, Policy &amp; Practice</h3>
+			<span></span>
+		</div>
+
+		<div class="row">
+
+		</div>
+
+	</div>
+
+</div>
+-->
+
 	<!-- Organisers section -->
 	<div class="container clearfix topmargin-lg">
 
