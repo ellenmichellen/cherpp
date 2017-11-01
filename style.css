@@ -2226,6 +2226,14 @@ body.top-search-open #top-account { opacity: 0; }
 	font-family: 'Montserrat', serif !important;
 }
 
+#page-menu .menu-title a {
+	float: left;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 300;
+	font-family: 'Montserrat', serif !important;
+}
+
 #page-menu .menu-title span { 
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif !important; }
