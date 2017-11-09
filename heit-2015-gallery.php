@@ -80,7 +80,7 @@ $conference_videos_link = get_field('conference_videos_link');		// Variable to s
 	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #303e48">
 		<div class="container clearfix">
 			<h3><?php echo $conference_videos_text; ?></h3>
-			<a href="<?php echo $conference_videos_link; ?>" target="_blank" class="button button-rounded button-large button-white button-light tright"><span>Click here</span></a>
+			<a href="<?php echo $conference_videos_link; ?>" target="_blank" class="button button-circle button-large button-white button-light tright"><span>Click here</span></a>
 		</div>
 	</div><!-- conference papers collection section end -->
 

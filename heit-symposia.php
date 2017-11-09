@@ -15,7 +15,7 @@ $heit_2016_text = get_field('heit_2016_text');				// Variable to store HEIT 2016
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image: radial-gradient(rgba(100, 100, 100, 0.6), rgba(122, 204, 200, 0.6)), url('<?php  bloginfo('template_url');  ?>/images/heit-symposia.jpg?>'); padding: 125px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title" style="background-image: radial-gradient(rgba(100, 100, 100, 0.6), rgba(122, 204, 200, 0.6)), url('<?php  bloginfo('template_url');  ?>/images/heit-symposia.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center"><?php echo $page_header; ?></h1>
 	</div>
@@ -58,7 +58,7 @@ $heit_2016_text = get_field('heit_2016_text');				// Variable to store HEIT 2016
 					<h2 class="white">Higher Education in Transformation 2015</h2>
 				</div><br>
 				<span class="before-heading white"><?php echo $heit_2015_text; ?></span><br>
-				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2015 | CHERPP' )->ID ); ?>" target="_blank" class="button button-rounded button-large button-white button-light tright"><span>Learn more</span></a>
+				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2015 | CHERPP' )->ID ); ?>" target="_blank" class="button button-circle button-large button-white button-light tright"><span>Learn more</span></a>
 			</div>
 		</div>
 	</div><!-- first past event section end -->
@@ -73,7 +73,7 @@ $heit_2016_text = get_field('heit_2016_text');				// Variable to store HEIT 2016
 					<h2 class="white">Higher Education in Transformation 2016</h2>
 				</div><br>
 				<span class="before-heading white"><?php echo $heit_2016_text; ?></span><br>
-				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2016 | CHERPP' )->ID ); ?>" target="_blank" class="button button-rounded button-large button-white button-light tright"><span>Learn more</span></a>
+				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2016 | CHERPP' )->ID ); ?>" target="_blank" class="button button-circle button-large button-white button-light tright"><span>Learn more</span></a>
 			</div>
 		</div>
 

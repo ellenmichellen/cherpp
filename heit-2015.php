@@ -110,7 +110,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #303e48">
 		<div class="container clearfix">
 			<h3><?php echo $papers_description_text; ?></h3>
-			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-rounded button-large button-white button-light tright"><span>Browse</span></a>
+			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-circle button-large button-white button-light tright"><span>Browse</span></a>
 		</div>
 	</div><!-- conference papers collection section end -->
 
@@ -222,7 +222,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 		<div class="promo promo-light promo-small header-stick notopborder" style="background: #303e48">
 			<div class="container clearfix">
 				<h3><?php echo $highlights_video_text; ?></h3>
-				<a class="button button-rounded button-large button-white button-light tright" data-toggle="modal" data-target="#myModal"><span>Click here</span></a>
+				<a class="button button-circle button-large button-white button-light tright" data-toggle="modal" data-target="#myModal"><span>Click here</span></a>
 			</div>
 		</div>
 	</div><!-- highlights video section end -->

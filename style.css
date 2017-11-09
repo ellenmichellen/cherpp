@@ -1154,11 +1154,15 @@ body.stretched #header.full-header .container {
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 	-webkit-transition: margin .4s ease, padding .4s ease;
 	-o-transition: margin .4s ease, padding .4s ease;
 	transition: margin .4s ease, padding .4s ease;
+
+
 }
+
+
 
 #primary-menu ul li > a span { display: none; }
 
@@ -2266,7 +2270,12 @@ body.top-search-open #top-account { opacity: 0; }
 	letter-spacing: 0.05em;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    -webkit-transition: margin .4s ease, padding .4s ease;
+	-o-transition: margin .4s ease, padding .4s ease;
+	transition: margin .4s ease, padding .4s ease;
+	text-rendering: optimizeLegibility;
+
 
 
 }
@@ -12149,10 +12158,10 @@ button.toast-close-button {
 
 .widget > h4 {
 	margin-bottom: 25px;
-	font-size: 15px;
+	font-size: 16px;
 	letter-spacing: 2px;
-	text-transform: uppercase;
-	color: #;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
 }
 
 .sidebar-widgets-wrap .widget > h4 { letter-spacing: 1px; }
@@ -13878,7 +13887,7 @@ a.downloads:hover {
 .post-previous a {
 	float: left;
 	color: #4aaaa5;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 16px;
 }
 
@@ -13886,7 +13895,7 @@ a.downloads:hover {
 .post-next a {
 	float: right;
 	color: #4aaaa5;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 16px;
 }
 
@@ -13907,7 +13916,7 @@ label[for="comment"] {
     cursor: pointer;
     outline: none;
     white-space: nowrap;
-    margin: 5px;
+    /* margin: 5px; */
     padding: 0 22px;
     font-size: 14px;
     height: 40px;

@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<section id="page-title" class="blog" style="background-image: radial-gradient(rgba(100, 100, 100, 0.6), rgba(122, 204, 200, 0.6)), url('<?php  bloginfo('template_url');  ?>/images/cliffs.jpg?>'); padding: 125px 0;" data-stellar-background-ratio="0.3">
+<section id="page-title" class="blog" style="background-image: radial-gradient(rgba(100, 100, 100, 0.6), rgba(122, 204, 200, 0.6)), url('<?php  bloginfo('template_url');  ?>/images/cliffs.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
 	<div class="container clearfix">
 		<h1 class="white center">Blog</h1>
 	</div>
