@@ -7,7 +7,6 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Bootstrap_to_WordPress
  */
 
 /*
@@ -80,7 +79,6 @@ if ( post_password_required() ) {
 	endif;
 
 	comment_form();
-
 
 	?>
 	</div>

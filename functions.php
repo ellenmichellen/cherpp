@@ -2,7 +2,6 @@
 /**
  * Load resources to initialize the html2wp theme functionalities
  *
- * @package html2wp/simple-wp-starter-theme
  */
 
 // The Composer autoload includes
@@ -37,7 +36,6 @@ function wptuts_scripts_with_jquery()
  
 }
 add_action( 'wp_enqueue_scripts', 'wptuts_scripts_with_jquery' );
-
 
 
 // Orders posts by last name (where appropriate)

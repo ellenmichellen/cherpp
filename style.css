@@ -6679,7 +6679,6 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	background-color: #4aaaa5;
 	color: #FFF;
 	font-weight: 600;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	border: none;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
@@ -13737,7 +13736,7 @@ a.morelink {
 
 }
 
-/* Styling for Themes section of HEIt pages */
+/* Styling for Themes section of HEIT pages */
 .themes {
 	font-size: 16px !important;
 	font-family: 'Raleway', sans-serif !important;
@@ -13772,13 +13771,14 @@ a.downloads:hover {
 	color: #7accc8;
 }
 
+/* 
 .transbox {
   margin: 30px;
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
+  filter: alpha(opacity=60); /* For IE8 and earlier } */
+
 
 /* Black and white filter for images */
 .filtered {
@@ -13786,19 +13786,21 @@ a.downloads:hover {
   filter: grayscale(100%);
 }
 
+/* 
 .title {
 	text-transform: uppercase !important;
 	font-size: 28px !important;
 	font-family: 'Montserrat', sans-serif !important;
-}
+} */
 
+/*
 .fn {
 	margin-bottom: -10px;
     font-size: 16px;
     font-weight: bold;
     color: #555;
     font-style: normal;
-}
+} */
 
 /* ----------------------------------------------------------------
 	Blog Posts and Comments
@@ -13974,6 +13976,7 @@ label[for="comment"] {
 	border-radius: 2px;
 }
 
+/* Styling for tag cloud on hover */
 .tag-cloud-link:hover {
 	border-color: #666 !important;
 	color: #666 !important;
@@ -14016,8 +14019,9 @@ label[for="comment"] {
 	
 }
 
+/* Styling for author details */
 .author_details {
-	 display: inline-block;
+	display: inline-block;
 	margin-left: 15px;
 	margin-top: -10px;
 	margin-bottom: 15px;
@@ -14037,7 +14041,7 @@ label[for="comment"] {
 	padding: 10px 10px 10px 20px;
 }
 
-/* Top striped banner for blog header 
+/* Top striped banner for blog header
 .blog:after {
   content: "";
   position: absolute;

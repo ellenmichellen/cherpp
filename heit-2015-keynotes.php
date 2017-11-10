@@ -9,7 +9,6 @@ $page_title = get_field('page_title');
 
 ?>
 
-
 <!-- Page Title
 ============================================= -->
 <section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/speakers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">

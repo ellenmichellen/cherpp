@@ -4,7 +4,6 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Bootstrap_to_WordPress
  */
 
 ?>

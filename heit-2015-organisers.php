@@ -56,7 +56,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 				<?php add_filter( 'posts_orderby' , 'posts_orderby_lastname' );
 
 				// Loop through array of 2015 organisers (program committee)
-	  			$loop = new WP_Query( array( 'post_type' => 'organisers', 'meta_key' => '2015_organiser', 'meta_value' => 'Yes', 'meta_key' => 'program_committee', 'meta_value' => 'Yes' ) ); 
+	  			$loop = new WP_Query( array( 'post_type' => 'organisers', 'meta_key' => '2015_organiser', 'meta_value' => 'Yes', 'meta_key' => 'program_committee', 'meta_value' => 'Yes', 'posts_per_page' => -1 ) ); 
 
 	  			// For each organiser in the array...
 				while( $loop->have_posts() ) : $loop->the_post(); ?>

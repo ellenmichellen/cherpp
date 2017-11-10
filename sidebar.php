@@ -2,7 +2,6 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package Bootstrap to WordPress
  */
 ?>
 
