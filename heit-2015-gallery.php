@@ -24,7 +24,6 @@ $conference_videos_link = get_field('conference_videos_link');		// Variable to s
 <div id="page-menu">
 	<div id="page-menu-wrap">
 		<div class="container clearfix">
-			<div class="menu-title"><a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2015 | CHERPP' )->ID ); ?>">HEIT <span>2015</span></a></div>
 			<?php
 				// Display dynamic HEIT 2016 submenu
 				wp_nav_menu( array(
