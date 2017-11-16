@@ -5000,6 +5000,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	position: relative;
 	width: 100%;
 	height: auto;
+	border-radius: 50%;
 }
 
 .entry-image iframe { display: block; }
@@ -6375,15 +6376,17 @@ td.actions {
 	position: absolute;
 	top: 10px;
 	left: 10px;
-	background-color: rgba(0,0,0,0.7);
+	background-color: #555;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-	width: 60px;
+	width: 64px;
 	height: 64px;
 	text-align: center;
 	padding-top: 7px;
 	font-size: 26px;
 	line-height: 1;
+	font-weight: 500;
+	border-radius: 50%;
 }
 
 .events .entry-image .entry-date span,
@@ -11060,7 +11063,7 @@ fieldset[disabled] .sm-form-control {
 
 label {
 	display: inline-block;
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 700;
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
@@ -14127,3 +14130,19 @@ label[for="comment"] {
 	background-color: #4aaaa5 !important;
 }
 
+.entry-c {
+	padding-left: 100px !important;
+}
+
+.event-box {
+	font-size: 16px;
+}
+
+.event-box a {
+	font-weight: 500;
+}
+
+.label-workshop {
+	background-color: #43cc9e;
+	font-size: 12px;
+}
