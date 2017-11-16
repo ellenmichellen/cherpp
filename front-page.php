@@ -7,37 +7,63 @@ get_header();
 
 ?>
 
-<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
-	<div id="oc-slider" class="owl-carousel carousel-widget" data-margin="0" data-items="1" data-pagi="false" data-loop="true" data-speed="450" data-autoplay="5000">
-		<div>
-			<div class="slider-caption dark slider-caption-center">
-				<h2>Centre for Higher Education Research, Policy &amp; Practice</h2>
-			</div>
-			<img src='<?php  bloginfo('template_url');  ?>/images/test.jpg?>' alt="Slider">
-		</div>
-	</div>
-</section>
 
+
+
+<section id="page-title" style="background-image: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/test.jpg?>'); padding: 150px 0;" data-stellar-background-ratio="0.3">
+	<div class="container clearfix">
+		<h1 class="white center">Centre for Higher Education <br>Research, Policy &amp; Practice</h1>
+		<span class="white center subheading"></span>
+	</div>
+</section><!-- #page-title end -->
+
+<!-- Page Content: Program Committee Section
+============================================= -->
 <section id="content">
 
-<!-- Possible description section
-<div class="section">
+	<div class="content-wrap" style="background-color: #e9e8e5;">
 
-	<div class="container clearfix">
+		<div class="container clearfix" >
 
-		<div class="heading-block center">
-			<h3>Centre for Higher Education Research, Policy &amp; Practice</h3>
-			<span></span>
+			<div class="heading-block">
+				<h3>What's New</h3>
+			</div>
+		
+			<div class="col-md-12 bottommargin">
+				<div class="row clear-bottommargin whats-new-row" >
+					<div class="col-md-4 bottommargin" >
+						<div class="promo promo-flat promo-mini promo-uppercase promo-left whats-new" >
+							<h3>Workshop - Exemplary Teaching and Learning</h3>
+							<span>The Centre for Higher Education Research, Policy and Practice (CHERPP) invites you to a workshop on exemplary teaching and learning with Dr Thomas Carey. The focus of the workshop will be distinctive excellence for our students as a primary driver of teaching and learning. </span>
+							<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-circle button-small button-white button-dark whats-new-button" style="float: left;">Learn more</a>
+							 <div style="clear:both"></div>
+						</div>
+					</div>
+					<div class="col-md-4 bottommargin" >
+						<div class="promo promo-flat promo-mini promo-uppercase promo-left whats-new" >
+							<h3>Workshop - Exemplary Teaching and Learning</h3>
+							<span>The Centre for Higher Education Research, Policy and Practice (CHERPP) invites you to a workshop on exemplary teaching and learning with Dr Thomas Carey. The focus of the workshop will be distinctive excellence for our students as a primary driver of teaching and learning. </span>
+							<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-circle button-small button-white button-dark whats-new-button" style="float: left;">Learn more</a>
+							 <div style="clear:both"></div>
+						</div>
+					</div>
+
+					<div class="col-md-4 bottommargin" >
+						<div class="promo promo-flat promo-mini promo-uppercase promo-left whats-new" >
+							<h3>Workshop - Exemplary Teaching and Learning</h3>
+							<span>The Centre for Higher Education Research, Policy and Practice (CHERPP) invites you to a workshop on exemplary teaching and learning with Dr Thomas Carey. The focus of the workshop will be distinctive excellence for our students as a primary driver of teaching and learning. </span>
+							<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-circle button-small button-white button-dark whats-new-button" style="float: left;">Learn more</a>
+							 <div style="clear:both"></div>
+						</div>
+					</div>
+				</div>
+			</div><!-- program committee section end -->
+			
 		</div>
-
-		<div class="row">
-
-		</div>
-
 	</div>
 
-</div>
--->
+</section><!-- #page content end -->
+
 
 	<!-- Organisers section -->
 	<div class="container clearfix topmargin-lg">
