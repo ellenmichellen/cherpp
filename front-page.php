@@ -45,9 +45,9 @@ get_header();
 							<h3>Call for Papers - UDHEIT Congress 2018</h3>
 							<span>
 								<p>The Call for Papers and Workshops for UDHEIT Congress 2018 is now open!</p> 
-								<p>Abstract Submission Deadline: January 2018</p></span>
+								<p><b>Abstract Submission Deadline:</b> <br>January 30, 2018</p></span>
 							
-							<a href="<?php echo get_page_link( get_page_by_title( 'Events | CHERPP' )->ID ); ?>" target="_blank" class="button button-small button-white button-dark blue-button">Learn more</a>
+							<a href="https://www.udheit2018.com/call-for-papers" target="_blank" class="button button-small button-white button-dark blue-button">Learn more</a>
 						</div>
 					</div>
 				</div>
