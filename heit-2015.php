@@ -28,6 +28,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 		</div>
 	</div>
 </section><!-- #page-title end -->
+
 <!-- Page Sub Menu
 ============================================= -->
 <div id="page-menu">
