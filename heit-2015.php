@@ -20,13 +20,14 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/heit-2015-main-image.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/heit-2015-main-image.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
 	<div class="container clearfix">
-		<h1 class="white center"><?php echo $conference_name; ?></h1>
-		<span class="white center subheading"><?php echo $conference_date; ?> &nbsp; | &nbsp; <?php echo $conference_location; ?></span>
+		<div class="vertical-middle dark center">
+			<h1 class="white center"><?php echo $conference_name; ?></h1>
+			<span class="white center subheading"><?php echo $conference_date; ?> &nbsp; | &nbsp; <?php echo $conference_location; ?></span>
+		</div>
 	</div>
 </section><!-- #page-title end -->
-
 <!-- Page Sub Menu
 ============================================= -->
 <div id="page-menu">
@@ -55,11 +56,11 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 		</div>
 
 		<!-- Second column featuring leading text and chairs -->
-		<div class="col-md-6 center col-padding" style="background-color: #303e48;">
+		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
 			<div id="chairs">
 				<div class="heading-block-intro">
 					<br><br>
-					<span class="before-heading white"><?php echo $leading_text; ?></span>
+					<span class="before-heading"><?php echo $leading_text; ?></span>
 				</div><br><br>
 			</div>
 		</div>
@@ -107,10 +108,10 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 	<br><br>
 
 	<!-- Conference papers collection section -->
-	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #303e48">
+	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #e9e8e5">
 		<div class="container clearfix">
 			<h3><?php echo $papers_description_text; ?></h3>
-			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-circle button-large button-white button-light tright"><span>Browse</span></a>
+			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-circle button-large   tright"><span>Browse</span></a>
 		</div>
 	</div><!-- conference papers collection section end -->
 
@@ -219,10 +220,10 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 
 	<!-- Highlights video section -->
 	<div class="row clearfix common-height">
-		<div class="promo promo-light promo-small header-stick notopborder" style="background: #303e48">
+		<div class="promo promo-light promo-small header-stick notopborder" style="background: #e9e8e5">
 			<div class="container clearfix">
 				<h3><?php echo $highlights_video_text; ?></h3>
-				<a class="button button-circle button-large button-white button-light tright" data-toggle="modal" data-target="#myModal"><span>Click here</span></a>
+				<a class="button button-circle button-large tright" data-toggle="modal" data-target="#myModal"><span>Click here</span></a>
 			</div>
 		</div>
 	</div><!-- highlights video section end -->

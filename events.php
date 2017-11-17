@@ -9,11 +9,14 @@ get_header();
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/events.jpg?>'); padding: 125px 0;" data-stellar-background-ratio="0.3">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/events.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="200" data-height-xs="200" data-height-xxs="200">
 	<div class="container clearfix">
-		<h1 class="white center">Events</h1>
+		<div class="vertical-middle dark center">
+			<h1 class="white center">Events</h1>
+		</div>
 	</div>
 </section><!-- #page-title end -->
+
 
 <!-- Page Content
 ============================================= -->
@@ -21,9 +24,11 @@ get_header();
 
 	<div class="content-wrap">
 
+	
+
 		<div class="container clearfix">
 
-			<div id="posts" class="events small-thumbs">
+			<div id="posts" class="events small-thumbs ">
 
 				<?php
 

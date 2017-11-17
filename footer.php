@@ -20,7 +20,7 @@
 				
 				<div class="clear"></div>
 
-				<i class="icon-envelope2"></i> email@cherpp.ca
+				<!-- <i class="icon-envelope2"></i> email@cherpp.ca -->
 			</div>
 
 		</div>

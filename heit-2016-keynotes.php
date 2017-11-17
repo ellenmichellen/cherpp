@@ -11,12 +11,13 @@ $page_title = get_field('page_title');	// Variable to store page title
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" style="background-image: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/speakers.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/speakers.jpg?>') no-repeat; background-size: cover" data-height-lg="250" data-height-md="250" data-height-sm="200" data-height-xs="200" data-height-xxs="200">
 	<div class="container clearfix">
-		<h1 class="white center"><?php echo $page_title; ?></h1>
+		<div class="vertical-middle dark center">
+			<h1 class="white center"><?php echo $page_title; ?></h1>
+		</div>
 	</div>
 </section><!-- #page-title end -->
-
 <!-- Page Sub Menu
 ============================================= -->
 <div id="page-menu">

@@ -1216,13 +1216,13 @@
 		text-align: center;
 	}
 
-	#page-title h1 {
+	#page-title h1, #slider h1 {
 		line-height: 1.5;
-		font-size: 28px;
+		font-size: 26px;
 	}
 
-	#page-title span {
-		font-size: 18px;
+	#page-title span, #slider span {
+		font-size: 16px;
 	}
 
 	#page-title .breadcrumb {

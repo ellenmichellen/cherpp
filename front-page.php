@@ -7,13 +7,14 @@ get_header();
 
 ?>
 
-
-
-
-<section id="page-title" style="background-image: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/test.jpg?>'); padding: 150px 0;" data-stellar-background-ratio="0.3">
+<!-- Page Title
+============================================= -->
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/test.jpg?>') no-repeat; background-size: cover" data-height-lg="400" data-height-md="400" data-height-sm="300" data-height-xs="300" data-height-xxs="300">
 	<div class="container clearfix">
-		<h1 class="white center">Centre for Higher Education <br>Research, Policy &amp; Practice</h1>
+		<div class="vertical-middle dark center">
+			<h1 class="white center">Centre for Higher Education <br>Research, Policy &amp; Practice</h1>
 		<span class="white center subheading"></span>
+		</div>
 	</div>
 </section><!-- #page-title end -->
 

@@ -15,9 +15,11 @@ get_header(); ?>
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" class="blog" style="background-image: radial-gradient(rgba(100, 100, 100, 0.6), rgba(122, 204, 200, 0.6)), url('<?php  bloginfo('template_url');  ?>/images/cliffs.jpg?>'); padding: 100px 0;" data-stellar-background-ratio="0.3">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.70), rgba(67, 204, 158, 0.70)), url('<?php  bloginfo('template_url');  ?>/images/cliffs.jpg?>') no-repeat; background-size: cover" data-height-lg="250" data-height-md="250" data-height-sm="200" data-height-xs="200" data-height-xxs="200">
 	<div class="container clearfix">
-		<h1 class="white center">Blog</h1>
+		<div class="vertical-middle dark center">
+			<h1 class="white center">Blog</h1>
+		</div>
 	</div>
 </section><!-- #page-title end -->
 
