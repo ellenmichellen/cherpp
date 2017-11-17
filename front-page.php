@@ -32,12 +32,11 @@ get_header();
 			<div class="col-md-12 bottommargin">
 				<div class="row clear-bottommargin whats-new-row" >
 					<div class="col-md-4 bottommargin" >
-						<div class="promo promo-flat promo-mini promo-uppercase promo-left whats-new" >
+						<div class="promo promo-flat promo-mini promo-uppercase promo-left whats-new entry-content" >
 							<h3>Workshop - Exemplary Teaching and Learning</h3>
 							<span>The Centre for Higher Education Research, Policy and Practice (CHERPP) invites you to a workshop on exemplary teaching and learning with Dr Thomas Carey. The focus of the workshop will be distinctive excellence for our students as a primary driver of teaching and learning. </span>
 							
-							<a href="<?php echo get_page_link( get_page_by_title( 'Events | CHERPP' )->ID ); ?>" target="_blank" class="button button-circle button-small button-white button-dark whats-new-button" style="float: left;">Learn more</a></div>
-							 <div style="clear:both">
+							<a href="<?php echo get_page_link( get_page_by_title( 'Events | CHERPP' )->ID ); ?>" target="_blank" class="button button-small button-white button-dark blue-button">Learn more</a>
 						</div>
 					</div>
 				</div>

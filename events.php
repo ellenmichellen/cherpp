@@ -64,7 +64,7 @@ get_header();
 								</ul>
 								<div class="entry-content event-box">
 									<p><?php the_field('description'); ?></p>
-									<a href="<?php the_field('link'); ?>" target="_blank" class="button button-small button-white button-dark whats-new-button"><?php the_field('button_text'); ?></a>
+									<a href="<?php the_field('link'); ?>" target="_blank" class="button button-small button-white button-dark blue-button"><?php the_field('button_text'); ?></a>
 								</div>
 							</div>
 						</div>

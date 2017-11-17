@@ -7430,6 +7430,7 @@ body:not(.device-touch) .button.button-full strong {
 	color: #FFF;
 }
 
+/* 
 .promo.promo-flat a.button:hover {
 	background-color: #FFF;
 	border-color: #FFF;
@@ -7439,7 +7440,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .promo.promo-flat:hover {
 	background-color: #7accc8;
-}
+} */
 
 
 /* Promo - 100% Full Width
@@ -13926,7 +13927,7 @@ label[for="comment"] {
     font-size: 14px;
     height: 40px;
     line-height: 40px;
-    background-color: #4aaaa5;
+    background-color: #7accc8;
     color: #FFF;
     font-weight: 600;
     text-transform: uppercase;
@@ -13938,11 +13939,12 @@ label[for="comment"] {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
+    text-transform: none;
 }
 
 /* Styling for comment form button on hover */
 .submit:hover {
-	background-color: #7accc8;
+	background-color: #4aaaa5;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -14103,7 +14105,7 @@ label[for="comment"] {
 	border: 2px solid #7accc8;
 	border-top: 25px solid #7accc8;
 	min-height: 380px;
-	max-height: 480px;
+	max-height: 550px;
 }
 
 .whats-new h3, .whats-new span { 
@@ -14120,15 +14122,17 @@ label[for="comment"] {
 	margin-left: -29px !important;
 }
 
-.whats-new-button {
+.blue-button {
 	background-color: #7accc8 !important;
 	color: #fff !important;
 	text-transform: none !important;
 }
 
-.whats-new-button:hover {
+
+.blue-button:hover {
 	background-color: #4aaaa5 !important;
-}
+	 border-bottom: 3px solid rgba(0,0,0,0.15);
+} 
 
 .entry-c {
 	padding-left: 100px !important;
