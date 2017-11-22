@@ -53,16 +53,16 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 	<!-- Image and description section -->
 	<div class="row clearfix common-height">
 		<!-- First column featuring background image -->
-		<div class="col-md-6 center col-padding" style="background: url(<?php echo $conference_image; ?>) center center no-repeat; background-size: cover;">
+		<div class="col-md-6 center col-padding" style="background: url(<?php echo $conference_image; ?>) center center no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
 		</div>
 
 		<!-- Second column featuring leading text and chairs -->
 		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
 			<div id="chairs">
 				<div class="heading-block-intro">
-					<br><br>
+					<br>
 					<span class="before-heading"><?php echo $leading_text; ?></span>
-				</div><br><br>
+				</div><br>
 			</div>
 		</div>
 	</div><!-- image and description section end -->

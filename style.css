@@ -7288,7 +7288,8 @@ body:not(.device-touch) .button.button-full strong {
 	border-color: #111;
 }
 
-.button-white { background-color: #F9F9F9; }
+.button-white { 
+	background-color: #F9F9F9; }
 .button-3d.button-white:hover,
 .button-reveal.button-white:hover { background-color: #F9F9F9 !important; }
 
@@ -7308,11 +7309,10 @@ body:not(.device-touch) .button.button-full strong {
 	Promo Boxes
 -----------------------------------------------------------------*/
 
-
 .promo {
 	position: relative;
 	padding: 30px 200px 30px 0;
-}
+} 
 
 .promo h3 {
 	margin-bottom: 0;
@@ -7320,7 +7320,7 @@ body:not(.device-touch) .button.button-full strong {
 	font-size: 22px !important;
 	font-family: 'Raleway', sans-serif;
     text-transform: none;
-}
+} 
 
 .promo > span,
 .promo > .container > span {
@@ -7330,6 +7330,7 @@ body:not(.device-touch) .button.button-full strong {
 	font-size: 16px;
 	margin-top: 6px;
 }
+ 
 
 .promo a.button {
 	position: absolute;
@@ -7348,7 +7349,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .promo a.button.button-xlarge { margin-top: -25px; }
 
-.promo a.button.button-desc { margin-top: -40px; }
+.promo a.button.button-desc { margin-top: -40px; } 
 
 
 /* Promo Uppercase
@@ -7420,7 +7421,7 @@ body:not(.device-touch) .button.button-full strong {
 /* Promo - Flat
 -----------------------------------------------------------------*/
 
-.promo.promo-flat { background-color: #4aaaa5; }
+.promo.promo-flat { /* background-color: #4aaaa5; */}
 
 .promo.promo-flat > span,
 .promo.promo-flat > .container > span { color: rgba(255,255,255,0.9); }
@@ -14122,14 +14123,6 @@ label[for="comment"] {
 	font-size: 16px;
 }
 
-.whats-new {
-	background-color: #fff !important;
-	border: 2px solid #7accc8;
-	border-top: 25px solid #7accc8;
-
-	
-}
-
 .whats-new h3, .whats-new span { 
 	color: #444343 !important;
 	text-transform: none !important; 
@@ -14168,7 +14161,12 @@ label[for="comment"] {
 	font-weight: 500;
 }
 
-.label-workshop {
+.label-Workshop {
+	background-color: #4aaaa5;
+	font-size: 12px;
+}
+
+.label-Briefing {
 	background-color: #43cc9e;
 	font-size: 12px;
 }
@@ -14176,3 +14174,99 @@ label[for="comment"] {
 .widget a:hover {
 	color: #7accc8 !important;
 }
+
+/*
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  flex-grow: 1;
+}
+
+.box {
+    height: 100%;
+
+
+    	background-color: #fff !important;
+	border: 2px solid #7accc8;
+	border-top: 25px solid #7accc8;
+} /*
+
+*/
+.green-button {
+	    background-color: #43cc9e !important;
+    color: #fff !important;
+    text-transform: none !important;
+}
+
+.odd {
+
+	border: 2px solid #43cc9e !important;
+	border-top: 25px solid #43cc9e !important;
+}
+
+/* 
+.btn-holder {
+	justify-content: flex-end;
+  display: flex;
+
+  }	*/
+
+  .button-white {
+  	color: #333 !important;
+  	text-shadow: none !important;
+  }
+
+  .button-white:hover {
+  	background-color: #7accc8 !important;
+}
+
+.row-eq{
+    display: flex;
+}
+.col-eq{
+  flex: 1;
+  	background-color: #fff !important;
+	border: 2px solid #7accc8;
+	border-top: 25px solid #7accc8;
+  margin: 10px;
+  padding: 30px 30px 30px 30px;
+}
+.col-eq p{
+    padding-bottom: 50px;
+}
+.info-button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+    padding: 30px 30px 30px 30px;
+    font-size: 14px !important;
+    text-align: right !important;
+}
+@media (max-width: 768px) {
+    .row-eq{
+        display: block;
+    }
+    .col-eq{
+      flex: unset;
+    }
+}
+
+.whats-new h3 {
+	margin-bottom: 0;
+	color: #333;
+	font-size: 22px !important;
+	font-family: 'Raleway', sans-serif;
+    text-transform: none;
+}
+
+.whats-new > span,
+.whats-new > .container > span {
+	display: block;
+	color: #444;
+	font-weight: 300;
+	font-size: 16px;
+	margin-top: 6px;

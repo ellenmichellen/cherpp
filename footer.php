@@ -17,6 +17,12 @@
 			</div>
 
 			<div class="col_half col_last tright">
+				<div class="fright clearfix">
+					<a href="https://twitter.com/@CHERPPIreCan" class="social-icon si-small si-borderless si-twitter" target="_blank">
+						<i class="icon-twitter"></i>
+						<i class="icon-twitter"></i>
+					</a>		
+				</div>
 				
 				<div class="clear"></div>
 

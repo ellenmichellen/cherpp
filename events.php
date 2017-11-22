@@ -33,7 +33,7 @@ get_header();
 				<?php
 
 					// Loop through array of events
-		  			$loop = new WP_Query( array( 'post_type' => 'calendar_events', 'orderby' => 'date', 'order' => 'ASC') ); 
+		  			$loop = new WP_Query( array( 'post_type' => 'calendar_events', 'orderby' => 'date', 'order' => 'DESC') ); 
 
 
 		  			// For each event in the array...
@@ -42,9 +42,11 @@ get_header();
 					
 					// Retrieve event date
 					$date = get_field('date', false, false);
-     				$date = new DateTime($date); ?>
-	  			
+     				$date = new DateTime($date); 
 
+     				// Retrieve event type
+     				$type = get_field('type'); ?>
+	
 	  					<!-- Display and style information for each event entry -->
 						<div class="entry clearfix">
 							<div class="entry-image">
@@ -61,7 +63,8 @@ get_header();
 								</div>
 								<ul class="entry-meta clearfix">
 									<!-- Event type -->
-									<li><span class="label label-workshop"><?php the_field('type'); ?></span></li>
+									<?php echo '<li><span class="label label-' . $type . '">' . $type . '</span></li>'; ?>
+
 									<!-- Event time -->
 									<li><i class="icon-time"></i> <?php the_field('time'); ?></li>
 									<!-- Event location -->
@@ -69,7 +72,7 @@ get_header();
 								</ul>
 								<div class="entry-content event-box">
 									<p><?php the_field('description'); ?></p>
-									<a href="<?php the_field('link'); ?>" target="_blank" class="button button-small button-white button-dark blue-button"><?php the_field('button_text'); ?></a>
+									<a href="<?php the_field('link'); ?>" target="_blank" class="button button-small button-dark blue-button"><?php the_field('button_text'); ?></a>
 								</div>
 							</div>
 						</div>
