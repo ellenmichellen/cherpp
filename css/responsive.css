@@ -1857,3 +1857,10 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 	#logo a.standard-logo { display: none; }
 	#logo a.retina-logo { display: inline-block; }
 }
+
+/* Hides top bar on smaller screen */
+@media only screen and (max-width: 1026px) {
+    #top-bar {
+        display: none;
+    }
+}

@@ -751,6 +751,7 @@ html[xmlns] .slider-wrap {display: block;}
 	height: 45px;
 	line-height: 44px;
 	font-size: 13px;
+	background-color: #f9f9f9;
 }
 
 
@@ -789,6 +790,8 @@ html[xmlns] .slider-wrap {display: block;}
 	text-transform: uppercase;
 	height: 44px;
 	color: #666;
+	letter-spacing: 0.05em;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .top-links li i { vertical-align: top; }
@@ -882,6 +885,7 @@ html[xmlns] .slider-wrap {display: block;}
 #top-social,
 #top-social ul { margin: 0; }
 
+
 #top-social li,
 #top-social li a,
 #top-social li .ts-icon,
@@ -893,7 +897,7 @@ html[xmlns] .slider-wrap {display: block;}
 	overflow: hidden;
 	height: 44px;
 	line-height: 44px;
-}
+} 
 
 #top-social li { border-left: 1px solid #EEE; }
 
@@ -904,9 +908,9 @@ html[xmlns] .slider-wrap {display: block;}
 	width: 40px;
 	font-weight: bold;
 	color: #666;
-	-webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out;
+	/* -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out;
 	-o-transition: color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out;
-	transition: color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out;
+	transition: color .3s ease-in-out, background-color .3s ease-in-out, width .3s ease-in-out; */
 }
 
 #top-social li a:hover {
@@ -8828,7 +8832,8 @@ body:not(.device-touch) .social-icon i {
 .si-skype:hover,
 .si-colored.si-skype { background-color: #00AFF0 !important; }
 .si-twitter:hover,
-.si-colored.si-twitter { background-color: #00ACEE !important; }
+.si-colored.si-twitter { background-color: #00ACEE !important;
+color: #fff; }
 .si-youtube:hover,
 .si-colored.si-youtube { background-color: #C4302B !important; }
 .si-vimeo:hover,
@@ -11315,7 +11320,17 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	display: block;
 	margin-top: 30px;
 	width: 40px;
-	border-top: 2px solid #555;
+	border-top: 2px solid #333;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.heading-block-white:after {
+	content: '';
+	display: block;
+	margin-top: 30px;
+	width: 40px;
+	border-top: 2px solid #fff;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -14248,4 +14263,20 @@ label[for="comment"] {
     .col-eq{
       	flex: unset;
     }
+}
+
+.login h1 a {
+  background-image: url('<?php  bloginfo('template_url');  ?>/images/logo@2x.png?>') !important;
+}
+
+body.stretched #top-bar .container {
+width: 100%;
+	/* padding: 0 30px; */
+	padding: 0 50px;
+}
+
+body.stretched #top-bar .container {
+width: 100%;
+	/* padding: 0 30px; */
+	padding: 0 80px;
 }

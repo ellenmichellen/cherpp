@@ -220,3 +220,36 @@ function add_custom_class($classes=array(), $menu_item=false) {
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_custom_class', 100, 2);
+
+// Customise logo on WP login page
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/loginlogo.png);
+		height:100px;
+		width:150px;
+		background-size: 150px 100px;
+		background-repeat: no-repeat;
+        	padding-bottom: 30px;
+
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+// Link logo on login page to site homepage
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Your Site Name and Info';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
+function custom_login() {
+echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/css/login-styles.css" />';
+}
+add_action('login_head', 'custom_login');
