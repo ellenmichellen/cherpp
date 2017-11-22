@@ -14123,6 +14123,7 @@ label[for="comment"] {
 	font-size: 16px;
 }
 
+/* Styling for What's New Text */
 .whats-new h3, .whats-new span { 
 	color: #444343 !important;
 	text-transform: none !important; 
@@ -14133,22 +14134,33 @@ label[for="comment"] {
 	font-size: 16px !important;
 }
 
-.whats-new-row {
-	margin-left: -29px !important;
-}
-
+/* Styling for blue button */
 .blue-button {
 	background-color: #7accc8 !important;
 	color: #fff !important;
 	text-transform: none !important;
+	border-bottom: 3px solid rgba(0,0,0,0.15);
 }
-
 
 .blue-button:hover {
 	background-color: #4aaaa5 !important;
 	 border-bottom: 3px solid rgba(0,0,0,0.15);
 } 
 
+/* Styling for green button */
+.green-button {
+	    background-color: #43cc9e !important;
+    color: #fff !important;
+    text-transform: none !important;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+}
+
+.green-button:hover {
+	background-color: #2fad83 !important;
+	border-bottom: 3px solid rgba(0,0,0,0.15);
+}
+
+/* Styling for event entries */
 .entry-c {
 	padding-left: 100px !important;
 }
@@ -14161,11 +14173,13 @@ label[for="comment"] {
 	font-weight: 500;
 }
 
+/* Styling for Workshop label */
 .label-Workshop {
 	background-color: #4aaaa5;
 	font-size: 12px;
 }
 
+/* Styling for Briefing label */
 .label-Briefing {
 	background-color: #43cc9e;
 	font-size: 12px;
@@ -14175,67 +14189,42 @@ label[for="comment"] {
 	color: #7accc8 !important;
 }
 
-/*
-.row.display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row.display-flex > [class*='col-'] {
-  flex-grow: 1;
-}
-
-.box {
-    height: 100%;
-
-
-    	background-color: #fff !important;
-	border: 2px solid #7accc8;
-	border-top: 25px solid #7accc8;
-} /*
-
-*/
-.green-button {
-	    background-color: #43cc9e !important;
-    color: #fff !important;
-    text-transform: none !important;
-}
-
+/* Styling for green What's New box */
 .odd {
-
 	border: 2px solid #43cc9e !important;
 	border-top: 25px solid #43cc9e !important;
 }
 
-/* 
-.btn-holder {
-	justify-content: flex-end;
-  display: flex;
-
-  }	*/
-
-  .button-white {
+/* Styling for white button */
+.button-white {
   	color: #333 !important;
   	text-shadow: none !important;
-  }
+}
 
-  .button-white:hover {
+.button-white:hover {
   	background-color: #7accc8 !important;
 }
 
-.row-eq{
+/* Sets What's New divs to equal height */
+.row-eq {
     display: flex;
+    margin-left: -10px !important;
 }
-.col-eq{
-  flex: 1;
+
+.col-eq {
+  	flex: 1;
   	background-color: #fff !important;
 	border: 2px solid #7accc8;
 	border-top: 25px solid #7accc8;
-  margin: 10px;
-  padding: 30px 30px 30px 30px;
+  	margin: 10px;
+  	padding: 30px 30px 30px 30px;
 }
-.col-eq p{
+
+.col-eq p {
     padding-bottom: 50px;
 }
+
+/* Styling for main buttons in What's New section */
 .info-button {
     position: absolute;
     left: 0;
@@ -14245,7 +14234,10 @@ label[for="comment"] {
     padding: 30px 30px 30px 30px;
     font-size: 14px !important;
     text-align: right !important;
+
 }
+
+/* Media queries for What's New box responsiveness */
 @media (max-width: 768px) {
     .row-eq{
         display: block;
@@ -14254,19 +14246,3 @@ label[for="comment"] {
       flex: unset;
     }
 }
-
-.whats-new h3 {
-	margin-bottom: 0;
-	color: #333;
-	font-size: 22px !important;
-	font-family: 'Raleway', sans-serif;
-    text-transform: none;
-}
-
-.whats-new > span,
-.whats-new > .container > span {
-	display: block;
-	color: #444;
-	font-weight: 300;
-	font-size: 16px;
-	margin-top: 6px;
