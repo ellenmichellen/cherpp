@@ -7421,7 +7421,7 @@ body:not(.device-touch) .button.button-full strong {
 /* Promo - Flat
 -----------------------------------------------------------------*/
 
-.promo.promo-flat { /* background-color: #4aaaa5; */}
+.promo.promo-flat { background-color: #4aaaa5; }
 
 .promo.promo-flat > span,
 .promo.promo-flat > .container > span { color: rgba(255,255,255,0.9); }
@@ -14199,6 +14199,7 @@ label[for="comment"] {
 .button-white {
   	color: #333 !important;
   	text-shadow: none !important;
+  	border-bottom: 3px solid rgba(0,0,0,0.15);
 }
 
 .button-white:hover {
