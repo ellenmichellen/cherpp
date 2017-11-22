@@ -14140,6 +14140,7 @@ label[for="comment"] {
 	color: #fff !important;
 	text-transform: none !important;
 	border-bottom: 3px solid rgba(0,0,0,0.15);
+	border-radius: 3px;
 }
 
 .blue-button:hover {
@@ -14149,10 +14150,11 @@ label[for="comment"] {
 
 /* Styling for green button */
 .green-button {
-	    background-color: #43cc9e !important;
+	background-color: #43cc9e !important;
     color: #fff !important;
     text-transform: none !important;
     border-bottom: 3px solid rgba(0,0,0,0.15);
+    border-radius: 3px;
 }
 
 .green-button:hover {
@@ -14200,6 +14202,7 @@ label[for="comment"] {
   	color: #333 !important;
   	text-shadow: none !important;
   	border-bottom: 3px solid rgba(0,0,0,0.15);
+  	border-radius: 3px;
 }
 
 .button-white:hover {
@@ -14235,15 +14238,14 @@ label[for="comment"] {
     padding: 30px 30px 30px 30px;
     font-size: 14px !important;
     text-align: right !important;
-
 }
 
 /* Media queries for What's New box responsiveness */
 @media (max-width: 768px) {
     .row-eq{
-        display: block;
+    	display: block;
     }
     .col-eq{
-      flex: unset;
+      	flex: unset;
     }
 }
