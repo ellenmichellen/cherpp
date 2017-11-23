@@ -253,3 +253,30 @@ function custom_login() {
 echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/css/login-styles.css" />';
 }
 add_action('login_head', 'custom_login');
+
+/**
+ * Generate breadcrumbs
+ * @author CodexWorld
+ * @authorURL www.codexworld.com
+ */
+function the_breadcrumb() {
+global $post;
+if (!is_home()) {
+   
+        if ( is_category() || is_single() ) {
+            the_category(', ');
+            if ( is_single() ) {
+                echo " / ";
+                the_title();
+            }
+        } elseif ( is_page() && $post->post_parent ) {
+            echo '<a href="'. get_permalink($post->post_parent).'">'. apply_filters('the_title', get_the_title($post->post_parent)) .'</a>';
+            echo "&nbsp;  / &nbsp;";
+            echo the_title();
+        } elseif (is_page()) {
+            echo '';
+            echo the_title();
+            echo "";
+        }
+    }
+}

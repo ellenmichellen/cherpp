@@ -19,6 +19,16 @@ $page_title = get_field('page_title');
 	</div>
 </section><!-- #page-title end -->
 
+<!-- Page Sub Menu
+============================================= -->
+<div id="page-menu">
+	<div id="page-menu-wrap" class="breadcrumbs">
+		<div class="container clearfix">
+			<div class="menu-title"><?php the_breadcrumb(); ?></div>
+		</div>
+	</div>
+</div><!-- #page-menu end -->
+
 <!-- Page Content
 ============================================= -->
 <section id="content">

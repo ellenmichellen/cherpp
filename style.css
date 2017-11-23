@@ -2228,18 +2228,35 @@ body.top-search-open #top-account { opacity: 0; }
 
 #page-menu .menu-title {
 	float: left;
-	color: #fff;
-	font-size: 20px;
-	font-weight: 300;
-	font-family: 'Montserrat', serif !important;
+	text-transform: uppercase;
+	display: block;
+    height: 28px;
+    line-height: 28px;
+    margin: 8px 4px;
+    padding: 0 14px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 14px;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    -webkit-transition: margin .4s ease, padding .4s ease;
+    -o-transition: margin .4s ease, padding .4s ease;
+    transition: margin .4s ease, padding .4s ease;
+    text-rendering: optimizeLegibility;
 }
 
 #page-menu .menu-title a {
 	float: left;
 	color: #fff;
-	font-size: 20px;
-	font-weight: 300;
+	/* font-size: 20px; */
+	font-size: 14px;
+	/* font-weight: 300; */
+	font-weight: 600;
 	font-family: 'Montserrat', serif !important;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
 }
 
 #page-menu .menu-title span { 
@@ -14265,18 +14282,33 @@ label[for="comment"] {
     }
 }
 
+/* Custom logo on login page */
 .login h1 a {
   background-image: url('<?php  bloginfo('template_url');  ?>/images/logo@2x.png?>') !important;
 }
 
+/* Styling for top bar container */
 body.stretched #top-bar .container {
 width: 100%;
 	/* padding: 0 30px; */
-	padding: 0 50px;
+	padding: 0 80px;
 }
 
-body.stretched #top-bar .container {
-width: 100%;
+/* Home button */
+.home-button {
+	background-color: transparent !important;
+	border: 1px solid #fff;
+	font-size: 14px;
+  	border-radius: 3px;
+}
+
+.home-button:hover {
+	background-color: #7accc8 !important;
+}
+
+/* Styling for breadcrumbs bar container */
+body.stretched #page-menu .container {
+	width: 100%;
 	/* padding: 0 30px; */
 	padding: 0 80px;
 }
