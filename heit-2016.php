@@ -113,7 +113,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #e9e8e5">
 		<div class="container clearfix">
 			<h3><?php echo $papers_description_text; ?></h3>
-			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-circle button-large tright"><span>Browse</span></a>
+			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-dark blue-button"><span>Browse</span></a>
 		</div>
 	</div><!-- conference papers collection section end -->
 

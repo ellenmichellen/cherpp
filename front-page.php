@@ -13,7 +13,7 @@ get_header();
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<h1 class="white center">Centre for Higher Education <br>Research, Policy &amp; Practice</h1><br>
-			<span class="white center subheading"><a href="<?php echo get_page_link( get_page_by_title( 'About' )->ID ); ?>" class="button home-button">Learn more</a></span>
+			<span class="white center subheading"><a href="<?php echo get_page_link( get_page_by_title( 'About' )->ID ); ?>" class="button button-white">Learn more</a></span>
 		</div>
 	</div>
 </section><!-- #page-title end -->
