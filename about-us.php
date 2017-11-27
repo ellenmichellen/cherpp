@@ -23,10 +23,10 @@ $page_title = get_field('page_title');
 ============================================= -->
 <section id="content">
 
-	<!-- Themes section -->
+	<!-- About sub-items section -->
 	<div class="row clearfix common-height">
 
-			<!-- Display and style information for each theme in the array (3 column layout) -->
+			<!-- Display and style information for each About sub-item -->
 			<div class="col-md-4 col-sm-4 dark center col-padding" style="background-color: #7accc8;">
 				<div>
 					<a href="<?php echo get_page_link( get_page_by_title( 'Domain Networks' )->ID ); ?>">

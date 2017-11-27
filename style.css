@@ -14312,3 +14312,7 @@ body.stretched #page-menu .container {
 	/* padding: 0 30px; */
 	padding: 0 80px;
 }
+
+.big-title h5 {
+	font-size: 22px;
+}

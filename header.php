@@ -26,7 +26,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title><?php  wp_title( '|', true, 'right' );  ?></title>
+	<title><?php wp_title(' | ',TRUE,'right'); bloginfo('name'); ?></title>
 
 <?php  wp_head();  ?>
 </head>
@@ -49,7 +49,6 @@
 					============================================= -->
 					<div class="top-links">
 						<ul>
-							<li><a href="<?php echo home_url(); ?>">Home</a></li>
 							<!-- <li><a href="">Contact</a></li> -->
 							<li><a href="<?php echo wp_login_url(); ?>">Login</a></li>
 							<li><a href="https://twitter.com/@CHERPPIreCan" class="si-twitter" target="_blank"><span class="ts-icon"><i class="icon-twitter"></i></span></a></li>
@@ -77,8 +76,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="<?php  html2wp_the_page_link( 'index.php' );  ?>" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="<?php  bloginfo('template_url');  ?>/images/logo.png" alt="Canvas Logo"></a>
-						<a href="<?php  html2wp_the_page_link( 'index.php' );  ?>" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="<?php  bloginfo('template_url');  ?>/images/logo@2x.png" alt="Canvas Logo"></a>
+						<a href="<?php echo get_home_url(); ?>" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="<?php  bloginfo('template_url');  ?>/images/logo.png" alt="Canvas Logo"></a>
+						<a href="<?php echo get_home_url(); ?>" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="<?php  bloginfo('template_url');  ?>/images/logo@2x.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation Menu

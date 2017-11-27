@@ -1858,9 +1858,12 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 	#logo a.retina-logo { display: inline-block; }
 }
 
-/* Hides top bar on smaller screen */
+/* Hides top bar and breadcrumbs on smaller screen */
 @media only screen and (max-width: 1026px) {
     #top-bar {
         display: none;
+    }
+    .breadcrumbs {
+    	display: none;
     }
 }
