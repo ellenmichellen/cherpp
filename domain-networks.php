@@ -5,8 +5,6 @@
 
 get_header();
 
-$page_title = get_field('page_title');
-
 ?>
 
 <!-- Page Title

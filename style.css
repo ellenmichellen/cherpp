@@ -14332,6 +14332,7 @@ body.stretched #page-menu .container {
 	text-align: left !important;
 }
 
+/* Reduce the margin size for headline in text box *
 .heading-block-intro h2 {
 	margin-top: -15px !important;
 }

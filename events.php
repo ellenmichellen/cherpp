@@ -24,8 +24,6 @@ get_header();
 
 	<div class="content-wrap">
 
-	
-
 		<div class="container clearfix">
 
 			<div id="posts" class="events small-thumbs ">
@@ -67,11 +65,15 @@ get_header();
 
 									<!-- Event time -->
 									<li><i class="icon-time"></i> <?php the_field('time'); ?></li>
+
 									<!-- Event location -->
 									<li><i class="icon-map-marker2"></i> <?php the_field('location'); ?></li>
 								</ul>
 								<div class="entry-content event-box">
+									<!-- Event description -->
 									<p><?php the_field('description'); ?></p>
+
+									<!-- Event button -->
 									<a href="<?php the_field('link'); ?>" target="_blank" class="button button-small button-dark blue-button"><?php the_field('button_text'); ?></a>
 								</div>
 							</div>
