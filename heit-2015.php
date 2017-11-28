@@ -186,9 +186,24 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 			<ul class="clients-grid grid-4 bottommargin clearfix">
 
 				<?php 
+
+				$args = array(
+				    'post_type'  => 'institutions',
+				    'meta_query' => array(
+				       'relation' => 'AND',
+				        array(
+				            'key'     => '2015_organiser',
+				            'value'   => 'Yes'
+				        ),
+				        array(
+				            'key'     => 'location',
+				            'value'   => 'Canada'
+				        )
+				    )
+				);
 				
-				// Loop through array of 2015 (Canadian) institution organisers, ordered by name
-				$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => 'heit_participation', 'meta_value' => '2015', 'meta_key' => 'location', 'meta_value' => 'Canada', 'orderby' => 'title', 'order' => 'ASC' ) ); 
+				// Loop through array of 2015 (Canadian) institution organisers
+				$loop = new WP_Query( $args );
 
 				// For each institution organiser in the array...
 				while( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -203,9 +218,24 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 			<ul class="clients-grid grid-3 bottommargin clearfix">
 
 				<?php 
+
+				$args = array(
+				    'post_type'  => 'institutions',
+				    'meta_query' => array(
+				       'relation' => 'AND',
+				        array(
+				            'key'     => '2015_organiser',
+				            'value'   => 'Yes'
+				        ),
+				        array(
+				            'key'     => 'location',
+				            'value'   => 'Ireland'
+				        )
+				    )
+				);
 				
-				// Loop through array of 2015 (Irish) institution organisers, ordered by name
-				$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => 'location', 'meta_value' => 'Ireland', 'orderby' => 'title', 'order' => 'ASC' ) ); 
+				// Loop through array of 2015 (Irish) institution organisers
+				$loop = new WP_Query( $args );
 
 				// For each institution organiser in the array...
 				while( $loop->have_posts() ) : $loop->the_post(); ?>

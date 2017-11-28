@@ -10,9 +10,7 @@ $conference_date = get_field('conference_date');					// Variable to store confer
 $conference_location = get_field('conference_location');			// Variable to store conference location
 $conference_image = get_field('conference_image');					// Variable to store conference image
 $leading_text = get_field('leading_text');							// Variable to store leading body text
-$themes_summary_text = get_field('themes_summary_text');			// Variable to store summary text for themes section
-$papers_description_text = get_field('papers_description_text');	// Variable to store text for paper description section
-$papers_button_link = get_field('papers_button_link');				// Variable to store link for HEIT papers collection
+$important_dates = get_field('important_dates');					// Variable to store text for important dates section
 
 ?>
 
@@ -31,8 +29,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 ============================================= -->
 <section id="content">
 
-
-<!-- Theme overview section -->
+	<!-- Leading text section -->
 	<div class="row topmargin-lg bottommargin-sm">
 		<div class="col-md-12 center">
 			<div class="heading-block center nobottomborder themes">
@@ -41,7 +38,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 				</span>
 			</div>
 		</div>
-	</div><!-- theme overview section end -->
+	</div><!-- leading text section end -->
 
 	<!-- Image and description section -->
 	<div class="row clearfix common-height">
@@ -49,16 +46,24 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 		<div class="col-md-6 center col-padding" style="background: url(<?php echo $conference_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
 		</div>
 
-		<!-- Second column featuring leading text and chairs -->
-		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
+		<!-- Second column featuring leading text -->
+		<div class="col-md-6 center col-padding bottommargin-sm" style="background-color: #e9e8e5;">
 			<div id="chairs">
 				<div class="heading-block-intro">
 					<h2>Important Dates</h2>
-				</div><br>
-				<span class="before-heading"><?php echo $heit_2016_text; ?></span>
+				</div>
+				<span class="before-heading left"><?php echo $important_dates; ?></span>
 			</div>
 		</div>
 	</div><!-- image and description section end -->
+
+	<!-- UDHEIT 2018 section -->
+	<div class="promo promo-light promo-small header-stick">
+		<div class="container clearfix">
+			<img src='<?php  bloginfo('template_url');  ?>/images/udheit-dark.png?>'/>
+			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-dark blue-button"><span>Learn more and register now</span></a>
+		</div>
+	</div><!-- UDHEIT 2018 section end -->
 	
 	<!-- Organisers section -->
 	<div class="container clearfix topmargin-lg bottommargin-sm">
@@ -72,7 +77,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 				<?php 
 				
 				// Loop through array of 2016 institution organisers, ordered by name
-				$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => '2016_organiser', 'meta_value' => 'Yes', 'orderby' => 'location', 'order' => 'DSC') ); 
+				$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => 'udheit2018_organiser', 'meta_value' => 'Yes', 'orderby' => 'location', 'order' => 'DSC') ); 
 
 				// For each institution organiser in the array...
 				while( $loop->have_posts() ) : $loop->the_post(); ?>

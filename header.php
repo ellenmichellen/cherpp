@@ -33,35 +33,27 @@
 
 <body class="stretched">
 
-	<!-- Document Wrapper
-	============================================= -->
+	
 	<div id="wrapper" class="clearfix">
-
-		<!-- Top Bar
-		============================================= -->
+	<!--
 		<div id="top-bar">
 
 			<div class="container clearfix">
 
 				<div class="col_half fright col_last nobottommargin">
 
-					<!-- Top Links
-					============================================= -->
 					<div class="top-links">
 						<ul>
-							<!-- <li><a href="">Contact</a></li> -->
 							<li><a href="<?php echo wp_login_url(); ?>">Login</a></li>
 							<li><a href="https://twitter.com/@CHERPPIreCan" class="si-twitter" target="_blank"><span class="ts-icon"><i class="icon-twitter"></i></span></a></li>
 						</ul>
-					</div><!-- .top-links end -->
+					</div>
 
 				</div>
 
 			</div>
 
-		</div><!-- #top-bar end -->
-
-
+		</div> -->
 
 		<!-- Header
 		============================================= -->
@@ -87,7 +79,7 @@
 						wp_nav_menu( array(
 							'theme_location' => 'primary_menu',
 							'container' => 'nav',
-							'container_id' => 'primary-menu',
+							'container_id' => 'primary-menu'
 
 							));
 

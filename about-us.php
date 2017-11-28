@@ -27,8 +27,8 @@ $page_title = get_field('page_title');
 	<div class="row clearfix common-height">
 
 			<!-- Display and style information for each About sub-item -->
-			<div class="col-md-4 col-sm-4 dark center col-padding" style="background-color: #7accc8;">
-				<div>
+			<div class="col-md-4 dark center col-padding" style="background-color: #7accc8;">
+				<div><br>
 					<a href="<?php echo get_page_link( get_page_by_title( 'Domain Networks' )->ID ); ?>">
 						<i class="i-plain i-xlarge divcenter icon-line2-share"></i>
 						<h3>Domain Networks</h3><br>
