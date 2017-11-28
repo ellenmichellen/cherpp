@@ -14,6 +14,7 @@
 
 			<div class="col_half">
 				© 2017 Centre for Higher Education Research, Policy &amp; Practice<br>
+				<div class="copyright-links"><a href="<?php echo wp_login_url(); ?>">Login</a></div>
 			</div>
 
 			<div class="col_half col_last tright">
