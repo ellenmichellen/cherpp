@@ -61,7 +61,7 @@ $important_dates = get_field('important_dates');					// Variable to store text f
 	<div class="promo promo-light promo-small header-stick">
 		<div class="container clearfix">
 			<img src='<?php  bloginfo('template_url');  ?>/images/udheit-dark.png?>'/>
-			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-dark blue-button"><span>Learn more and register now</span></a>
+			<a href="https://www.udheit2018.com/call-for-papers" target="_blank" class="button button-dark blue-button"><span>Learn more and register now</span></a>
 		</div>
 	</div><!-- UDHEIT 2018 section end -->
 	
