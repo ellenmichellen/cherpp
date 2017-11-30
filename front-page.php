@@ -33,9 +33,9 @@ get_header();
 			<div class="row row-eq bottommargin">
 				<div class="col-sm-4 col-eq">
 					<div class="whats-new promo-flat">
-						<h3>CHERPP Briefing</h3>
+						<h3>Workshop: Exemplary Teaching and Learning</h3>
 						<span>
-							<p>The Centre for Higher Education Research, Policy and Practice (CHERPP) will hold a briefing for DIT staff that are interested in pairing up with a Canadian peer to carry out research and projects related to Higher Education.</p>
+							<p>The Centre for Higher Education Research, Policy and Practice (CHERPP) invites you to a workshop on exemplary teaching and learning with Dr Thomas Carey. The focus of the workshop will be distinctive excellence for our students as a primary driver of teaching and learning.</p>
 						</span>
 	           			<div class="info-button">
 	                		<a class="button button-dark blue-button" href="<?php echo get_page_link( get_page_by_title( 'Events' )->ID ); ?>">Learn more</a>
@@ -43,17 +43,6 @@ get_header();
 					</div>
 				</div>
 				<div class="col-sm-4 col-eq odd">
-					<div class="whats-new promo-flat">
-						<h3>Workshop: Exemplary Teaching and Learning</h3>
-						<span>
-							<p>The Centre for Higher Education Research, Policy and Practice (CHERPP) invites you to a workshop on exemplary teaching and learning with Dr Thomas Carey. The focus of the workshop will be distinctive excellence for our students as a primary driver of teaching and learning. </p>
-						</span>
-	           			<div class="info-button">
-	                		<a class="button button-dark green-button" href="<?php echo get_page_link( get_page_by_title( 'Events' )->ID ); ?>">Learn more</a>
-	            		</div>
-					</div>
-				</div>
-				<div class="col-sm-4 col-eq">
 					<div class="whats-new promo-flat">
 						<h3>Call for Papers: <br>UDHEIT Congress 2018</h3>
 						<span>
@@ -64,6 +53,19 @@ get_header();
 	                		<a class="button button-dark blue-button" href="https://www.udheit2018.com/call-for-papers" target="_blank">Learn more</a>
 	            		</div>
 					</div>
+				</div>
+				<div class="col-sm-4">
+					<!---
+					<div class="whats-new promo-flat">
+						<h3>Call for Papers: <br>UDHEIT Congress 2018</h3>
+						<span>
+							<p>The Call for Papers and Workshops for UDHEIT Congress 2018 is now open! UDHEIT2018 invites new and challenging paper submissions from any area or discipline of Design or Education.</p> 
+							<p><b>Abstract Submission Deadline:</b> <br>January 30, 2018</p>
+							</span>
+	           			<div class="info-button">
+	                		<a class="button button-dark blue-button" href="https://www.udheit2018.com/call-for-papers" target="_blank">Learn more</a>
+	            		</div>
+					</div>-->
 				</div>
 			</div>
 

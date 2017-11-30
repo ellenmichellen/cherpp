@@ -30,61 +30,82 @@ get_header();
 
 				<?php
 
-					// Loop through array of events
-		  			$loop = new WP_Query( array( 'post_type' => 'calendar_events', 'orderby' => 'date', 'order' => 'DESC') ); 
+					// Retrieve current date for comparison
+					$current_date = date('M d, Y');
+     				$current_date = strtotime( $current_date );
 
+     				// Get the current date
+    				$currentDate = date('Ymd', time());
+
+    				// Select only events with a date in the future
+    				$args = array( 
+                            'post_type' => 'calendar_events',
+                            'orderby' => 'date', 
+                            'order' => 'DESC',
+                            'meta_key' => 'date', 
+                            'meta_query' => array(
+                                                array(
+                                                        'key' => 'date',
+                                                        'value' => $currentDate,
+                                                        'compare' => '>',
+                                                        'type' => 'CHAR'
+                                                    )
+                                        )
+                            );
+
+    				// Loop through array of events
+    				$loop = new WP_Query($args);
 
 		  			// For each event in the array...
 					while( $loop->have_posts() ) : $loop->the_post(); 
 
-					
-					// Retrieve event date
-					$date = get_field('date', false, false);
-     				$date = new DateTime($date); 
+						// Retrieve event date
+						$date = get_field('date', false, false);
+	     				$date = new DateTime($date); 
 
-     				// Retrieve event type
-     				$type = get_field('type'); ?>
-	
-	  					<!-- Display and style information for each event entry -->
-						<div class="entry clearfix">
-							<div class="entry-image">
-								<a href="#">
-									<!-- Event date -->
-									<div class="entry-date"><?php echo $date->format('j'); ?><span><?php echo $date->format('M'); ?></span></div>
-								</a>
-							</div>
+	     				// Retrieve event type
+	     				$type = get_field('type'); ?>
 
-							<div class="entry-c">
-								<div class="entry-title">
-								<!-- Event title -->
-									<h2><a href="<?php the_field('link'); ?>" target="_blank"><?php the_title(); ?></a></h2>
+		
+		  					<!-- Display and style information for each event entry -->
+							<div class="entry clearfix">
+								<div class="entry-image">
+									<a href="#">
+										<!-- Event date -->
+										<div class="entry-date"><?php echo $date->format('j'); ?><span><?php echo $date->format('M'); ?></span></div>
+									</a>
 								</div>
-								<ul class="entry-meta clearfix">
-									<!-- Event type -->
-									<?php echo '<li><span class="label label-' . $type . '">' . $type . '</span></li>'; ?>
 
-									<!-- Event time -->
-									<li><i class="icon-time"></i> <?php the_field('time'); ?></li>
+								<div class="entry-c">
+									<div class="entry-title">
+									<!-- Event title -->
+										<h2><a href="<?php the_field('link'); ?>" target="_blank"><?php the_title(); ?></a></h2>
+									</div>
+									<ul class="entry-meta clearfix">
+										<!-- Event type -->
+										<?php echo '<li><span class="label label-' . $type . '">' . $type . '</span></li>'; ?>
 
-									<!-- Event location -->
-									<li><i class="icon-map-marker2"></i> <?php the_field('location'); ?></li>
-								</ul>
-								<div class="entry-content event-box">
-									<!-- Event description -->
-									<p><?php the_field('description'); ?></p>
+										<!-- Event time -->
+										<li><i class="icon-time"></i> <?php the_field('time'); ?></li>
 
-									<!-- Event button -->
-									<a href="<?php the_field('link'); ?>" target="_blank" class="button button-small button-dark blue-button"><?php the_field('button_text'); ?></a>
+										<!-- Event location -->
+										<li><i class="icon-map-marker2"></i> <?php the_field('location'); ?></li>
+									</ul>
+									<div class="entry-content event-box">
+										<!-- Event description -->
+										<p><?php the_field('description'); ?></p>
+
+										<!-- Event button -->
+										<a href="<?php the_field('link'); ?>" target="_blank" class="button button-small button-dark blue-button"><?php the_field('button_text'); ?></a>
+									</div>
 								</div>
 							</div>
-						</div>
 
 					<?php endwhile; ?>
 
 			</div>
 
 		</div>
-
 	</div>
 
 </section><!-- #page content end -->

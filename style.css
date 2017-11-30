@@ -2229,7 +2229,6 @@ body.top-search-open #top-account { opacity: 0; }
 
 #page-menu .menu-title {
 	float: left;
-	text-transform: uppercase;
 	display: block;
     height: 28px;
     line-height: 28px;
@@ -2255,7 +2254,6 @@ body.top-search-open #top-account { opacity: 0; }
 	/* font-weight: 300; */
 	font-weight: 600;
 	font-family: 'Montserrat', serif !important;
-	text-transform: uppercase;
 	letter-spacing: 0.05em;
 
 }
