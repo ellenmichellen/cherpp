@@ -5,10 +5,12 @@
 
 get_header();
 
-$heit_2015_text = get_field('heit_2015_text');				// Variable to store HEIT 2015 text
-$heit_2015_image = get_field('heit_2015_image');			// Variable to store HEIT 2015 image
-$heit_2016_text = get_field('heit_2016_text');				// Variable to store HEIT 2016 text
-$heit_2016_image = get_field('heit_2016_image');			// Variable to store HEIT 2016 image
+$heit_2015_text = get_field('heit_2015_text');				 // Variable to store HEIT 2015 text
+$heit_2015_image = get_field('heit_2015_image');			 // Variable to store HEIT 2015 image
+$heit_2015_button_text = get_field('heit_2015_button_text'); // Variable to store HEIT 2015 button text
+$heit_2016_text = get_field('heit_2016_text');				 // Variable to store HEIT 2016 text
+$heit_2016_image = get_field('heit_2016_image');			 // Variable to store HEIT 2016 image
+$heit_2016_button_text = get_field('heit_2016_button_text'); // Variable to store HEIT 2015 button text
 
 ?>
 
@@ -27,8 +29,8 @@ $heit_2016_image = get_field('heit_2016_image');			// Variable to store HEIT 201
 <section id="content">
 
 	<div class="heading-block center topmargin-lg">
-				<h3>Past Symposia</h3>
-			</div>
+		<h3>Past Symposia</h3>
+	</div>
 
 	<!-- First past event -->
 	<div class="row clearfix common-height headerstick">
@@ -44,7 +46,7 @@ $heit_2016_image = get_field('heit_2016_image');			// Variable to store HEIT 201
 					<h2 class>Higher Education in Transformation 2015</h2>
 				</div><br>
 				<span class="before-heading"><?php echo $heit_2015_text; ?></span><br>
-				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2015' )->ID ); ?>" class="button button-dark blue-button"><span>Learn more</span></a>
+				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2015' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2015_button_text; ?></span></a>
 			</div>
 		</div>
 	</div><!-- first past event section end -->
@@ -59,7 +61,7 @@ $heit_2016_image = get_field('heit_2016_image');			// Variable to store HEIT 201
 					<h2>Higher Education in Transformation 2016</h2>
 				</div><br>
 				<span class="before-heading"><?php echo $heit_2016_text; ?></span><br>
-				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2016' )->ID ); ?>" class="button button-dark blue-button"><span>Learn more</span></a>
+				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2016' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2016_button_text; ?></span></a>
 			</div>
 		</div>
 

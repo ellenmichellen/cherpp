@@ -65,7 +65,6 @@ get_header();
 
 	     				// Retrieve event type
 	     				$type = get_field('type'); ?>
-
 		
 		  					<!-- Display and style information for each event entry -->
 							<div class="entry clearfix">
