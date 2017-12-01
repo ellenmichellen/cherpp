@@ -51,7 +51,7 @@ $important_dates = get_field('important_dates');					// Variable to store text f
 			<div id="chairs">
 				<div class="heading-block-intro">
 					<h2>Important Dates</h2>
-				</div><br>
+				</div><br><br>
 				<span class="before-heading left"><?php echo $important_dates; ?></span>
 			</div>
 		</div>

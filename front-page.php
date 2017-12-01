@@ -50,7 +50,7 @@ get_header();
 							<p><b>Abstract Submission Deadline:</b> <br>January 30, 2018</p>
 							</span>
 	           			<div class="info-button">
-	                		<a class="button button-dark blue-button" href="https://www.udheit2018.com/call-for-papers" target="_blank">Learn more</a>
+	                		<a class="button button-dark green-button" href="https://www.udheit2018.com/call-for-papers" target="_blank">Learn more</a>
 	            		</div>
 					</div>
 				</div>
