@@ -21,12 +21,13 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 <section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/homebanner.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
+			<!-- Page heading on parallax background -->
 			<h1 class="white center"><?php echo $conference_name; ?></h1>
+			<!-- Page sub-heading featuring conference date and location -->
 			<span class="white center subheading"><?php echo $conference_date; ?> &nbsp; | &nbsp; <?php echo $conference_location; ?></span>
 		</div>
 	</div>
 </section><!-- #page-title end -->
-
 
 <!-- Page Sub Menu
 ============================================= -->
@@ -45,22 +46,21 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 	</div>
 </div><!-- #page-menu end -->
 
-
 <!-- Page Content
 ============================================= -->
 <section id="content">
 
 	<!-- Image and description section -->
 	<div class="row clearfix common-height">
-		<!-- First column featuring background image -->
+		<!-- First column featuring image -->
 		<div class="col-md-6 center col-padding" style="background: url(<?php echo $conference_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
 		</div>
 
 		<!-- Second column featuring leading text -->
 		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
 			<div id="chairs">
-				<div class="heading-block-intro">
-					<br>
+				<div class="heading-block-intro"><br>
+					<!-- Leading text -->
 					<span class="before-heading"><?php echo $leading_text; ?></span>
 				</div><br>
 			</div>
@@ -68,13 +68,14 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 	</div><!-- image and description section end -->
 
 	<!-- Theme overview section -->
-	<div class="row topmargin-lg bottommargin-sm">
-		<div class="col-md-12 center">
+	<div class="row topmargin-sm nobottommargin">
+		<div class="col-md-12 center col-padding">
 			<div class="heading-block center">
 				<h3>Themes</h3>
 			</div>
 
 			<div class="heading-block center nobottomborder themes">
+				<!-- Themes description text -->
 				<span>
 					<?php echo $themes_summary_text; ?>
 				</span>
@@ -82,29 +83,33 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 		</div>
 	</div><!-- theme overview section end -->
 
-
 	<!-- Themes section -->
 	<div class="row clearfix common-height">
 
 		<?php 
 
-		// Loop through array of 2016 themes
-		$loop = new WP_Query( array( 'post_type' => 'themes', 'meta_key' => '2016_theme', 'meta_value' => 'Yes', 'orderby' => 'theme_number', 'order' => 'ASC' ) ); 
+			// Loop through array of 2016 themes, ordered by theme number ascending
+			$loop = new WP_Query( array( 'post_type' => 'themes', 'meta_key' => '2016_theme', 'meta_value' => 'Yes', 'orderby' => 'theme_number', 'order' => 'ASC' ) ); 
 
-		// For each theme in the array...
-		while( $loop->have_posts() ) : $loop->the_post(); ?>
+			// For each theme in the array...
+			while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-			<!-- Display and style information for each theme in the array (3 column layout) -->
-			<div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: <?php the_field('div_color'); ?>;">
-				<div>
-					<a href="<?php the_field('arrow_collection_link'); ?>" target="_blank">
-						<i class="i-plain i-xlarge divcenter <?php the_field('theme_icon'); ?>"></i>
-						<h3><?php the_title(); ?></h3>
-					</a>
+				<!-- Display and style information for each theme (3 column layout) -->
+				<div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: <?php the_field('div_color'); ?>;">
+					<div>
+						<!-- Link to associated theme section on Arrow collection site for 2016 -->
+						<a href="<?php the_field('arrow_collection_link'); ?>" target="_blank">
+							<!-- Theme icon -->
+							<i class="i-plain i-xlarge divcenter <?php the_field('theme_icon'); ?>"></i>
+							<!-- Theme name -->
+							<h3><?php the_title(); ?></h3>
+						</a>
+					</div>
 				</div>
-			</div>
 
-		<?php endwhile; ?>
+			<?php endwhile; 
+
+		?>
 
 	</div><!-- themes section end -->
 	<br><br>
@@ -112,43 +117,58 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 	<!-- Conference papers collection section -->
 	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #e9e8e5">
 		<div class="container clearfix">
+			<!-- Conference papers description -->
 			<h3><?php echo $papers_description_text; ?></h3>
+			<!-- Conference papers call to action button with link to Arrow site -->
 			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-dark blue-button"><span>Browse</span></a>
 		</div>
 	</div><!-- conference papers collection section end -->
 
 	<!-- Downloads section -->
 	<div class="row topmargin-lg bottommargin-sm">
+
 		<div class="heading-block center">
 			<h3>Downloads</h3>
 		</div>
 
 		<div class="container clearfix">
+
 			<div class="row clear-bottommargin">
 
-				<!-- Empty row so that downloads are centered -->
+				<!-- Empty row so that downloads are centered on page -->
 				<div class="col-md-2 bottommargin">
 				</div>
+
 				<?php 
 
-					// Loop through array of 2015 documents, ordered by name
+					// Loop through array of 2016 documents, ordered by name
 					$loop = new WP_Query( array( 'post_type' => 'documents', 'meta_key' => '2016_document', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
 
 					// For each document in the array...
 					while( $loop->have_posts() ) : $loop->the_post(); ?>
 
+						<!-- Display information for each document in a new column -->
 						<div class="col-md-4 bottommargin">
-							<div class="promo promo-dark promo-flat promo-mini promo-uppercase promo-right">
-								<br>
-								<a href="<?php the_field('document'); ?>" class="downloads" target="_blank"><h3 class="center"><?php the_field('display_title'); ?> </h3></a>
-								<br>
+							<div class="promo promo-dark promo-flat promo-mini promo-uppercase promo-right"><br>
+								<!-- Link to document -->
+								<a href="<?php the_field('document'); ?>" class="downloads" target="_blank">
+									<!-- Document name -->
+									<h3 class="center"><?php the_field('display_title'); ?> </h3>
+								</a><br>
 							</div>
 						</div>
-					<?php endwhile; ?>
+
+					<?php endwhile; 
+
+				?>
+
 			</div>
+
 		</div>
+
 	</div><!-- downloads section end -->
 
+	<!-- Divider line -->
 	<div class="line topmargin-sm nobottommargin"></div><br><br>
 
 	<!-- Sponsors section -->
@@ -163,18 +183,27 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 
 				<?php 
 				
-				// Loop through array of 2016 sponsors, ordered by name
-				$loop = new WP_Query( array( 'post_type' => 'sponsors', 'meta_key' => '2016_sponsor', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
+					// Loop through array of 2016 sponsors, ordered by name
+					$loop = new WP_Query( array( 'post_type' => 'sponsors', 'meta_key' => '2016_sponsor', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
 
-				// For each sponsor in the array...
-				while( $loop->have_posts() ) : $loop->the_post(); ?>
+					// For each sponsor in the array...
+					while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					<!-- Display and style information for each sponsor in the array (4 column layout) -->
-					<li><a href="<?php the_field('sponsor_link'); ?>" target="_blank"><img src="<?php the_field('sponsor_image'); ?>" alt="<?php the_title(); ?>"></a></li>
+						<!-- Display and style information for each sponsor in the array (4 column layout) -->
+						<li>
+							<!-- Link to sponsor's website -->
+							<a href="<?php the_field('sponsor_link'); ?>" target="_blank">
+								<!-- Sponsor logo -->
+								<img src="<?php the_field('sponsor_image'); ?>" alt="<?php the_title(); ?>">
+							</a>
+						</li>
 
-				<?php endwhile; ?>
+					<?php endwhile; 
+
+				?>
 				
 			</ul>
+
 		</div>
 
 	</div><!-- sponsors section end -->
@@ -186,23 +215,34 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 		</div><br>
 
 		<div class="bottommargin-lg">
+
 			<ul class="clients-grid grid-6 bottommargin clearfix">
 
 				<?php 
 				
-				// Loop through array of 2016 institution organisers, ordered by name
-				$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => '2016_organiser', 'meta_value' => 'Yes', 'orderby' => 'location', 'order' => 'DSC') ); 
+					// Loop through array of 2016 institution organisers, ordered by location descending
+					$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => '2016_organiser', 'meta_value' => 'Yes', 'orderby' => 'location', 'order' => 'DSC') ); 
 
-				// For each institution organiser in the array...
-				while( $loop->have_posts() ) : $loop->the_post(); ?>
+					// For each institution organiser in the array...
+					while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					<!-- Display and style information for each institution organiser in the array -->
-					<li><a href="<?php the_field('institution_link'); ?>" target="_blank"><img src="<?php the_field('institution_image'); ?>" alt="<?php the_title(); ?>"></a></li>
+						<!-- Display and style information for each institution organiser in the array -->
+						<li>
+							<!-- Link to organiser's website -->
+							<a href="<?php the_field('institution_link'); ?>" target="_blank">
+								<!-- Organiser logo -->
+								<img src="<?php the_field('institution_image'); ?>" alt="<?php the_title(); ?>">
+							</a>
+						</li>
 
-				<?php endwhile; ?>
+					<?php endwhile; 
+
+				?>
 				
 			</ul>
+
 		</div>
+
 	</div><!-- sponsors section end -->
 			
 </section><!-- #page content end -->

@@ -5,7 +5,7 @@
 
 get_header();
 
-$page_title = get_field('page_title');
+$page_title = get_field('page_title');		// Variable to store page title 
 
 ?>
 
@@ -14,6 +14,7 @@ $page_title = get_field('page_title');
 <section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/speakers.jpg?>') no-repeat; background-size: cover" data-height-lg="250" data-height-md="250" data-height-sm="200" data-height-xs="200" data-height-xxs="200">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
+			<!-- Page heading on parallax background -->
 			<h1 class="white center"><?php echo $page_title; ?></h1>
 		</div>
 	</div>
@@ -49,33 +50,43 @@ $page_title = get_field('page_title');
 				<!-- Sort by last name -->
 				<?php add_filter( 'posts_orderby' , 'posts_orderby_lastname' );
 
-				// Loop through array of 2015 speakers
-	  			$loop = new WP_Query( array( 'post_type' => 'speakers', 'meta_key' => '2015_speaker', 'meta_value' => 'Yes' ) ); 
+					// Loop through array of 2015 speakers
+		  			$loop = new WP_Query( array( 'post_type' => 'speakers', 'meta_key' => '2015_speaker', 'meta_value' => 'Yes' ) ); 
 
-	  			// For each speaker in the array...
-				while( $loop->have_posts() ) : $loop->the_post(); ?>
-						
-					<!-- Display information for each speaker in the array -->
-					<div class="team team-list clearfix">
-						<div class="team-image filtered" style="width: 150px;">
-							<img class="img-circle" src="<?php the_field('speaker_image'); ?>" alt="<?php the_title(); ?>">
-						</div>
-						<div class="team-desc">
-							<div class="team-title">
-								<h5><?php the_title(); ?></h5>
-								<span><?php the_field('speaker_title'); ?>, <em><?php the_field('affiliated_institution'); ?></em></span>
+		  			// For each speaker in the array...
+					while( $loop->have_posts() ) : $loop->the_post(); ?>
+							
+						<!-- Display information for each speaker in the array -->
+						<div class="team team-list clearfix">
+							<!-- Speaker image with black and white filter -->
+							<div class="team-image filtered" style="width: 150px;">
+								<img class="img-circle" src="<?php the_field('speaker_image'); ?>" alt="<?php the_title(); ?>">
+							</div>
+							<div class="team-desc">
+								<div class="team-title">
+									<!-- Speaker name -->
+									<h5><?php the_title(); ?></h5>
+									<!-- Speaker title and affiliated institution -->
+									<span><?php the_field('speaker_title'); ?>, <em><?php the_field('affiliated_institution'); ?></em></span>
 								</div>
-							<div class="team-content more"><?php the_field('speaker_description'); ?></div>
+								<!-- Speaker description with read more functionality -->
+								<div class="team-content more"><?php the_field('speaker_description'); ?></div>
+							</div>
 						</div>
-					</div>
-					<div class="line topmargin-sm nobottommargin"></div><br>
+						<!-- Divider line to separate speakers -->
+						<div class="line topmargin-sm nobottommargin"></div><br>
 
-				<?php endwhile; 
+					<?php endwhile; 
 					
-				// Remove sorting filter
-				remove_filter( 'posts_orderby' , 'posts_orderby_lastname' );?>		
+					// Remove sorting filter
+					remove_filter( 'posts_orderby' , 'posts_orderby_lastname' );
+
+				?>	
+
 			</div>
+
 		</div>
+		
 	</div>
 
 </section><!-- #page content end -->

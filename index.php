@@ -17,6 +17,7 @@ get_header(); ?>
 ============================================= -->
 <section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.70), rgba(67, 204, 158, 0.70)), url('<?php  bloginfo('template_url');  ?>/images/cliffs.jpg?>') no-repeat; background-size: cover" data-height-lg="250" data-height-md="250" data-height-sm="200" data-height-xs="200" data-height-xxs="200">
 	<div class="container clearfix">
+		<!-- Page heading on parallax background -->
 		<div class="vertical-middle dark center">
 			<h1 class="white center">Blog</h1>
 		</div>

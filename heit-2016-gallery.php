@@ -5,7 +5,7 @@
 
 get_header();
 
-$page_title = get_field('page_title');
+$page_title = get_field('page_title');		// Variable to store page title
 
 ?>
 
@@ -14,6 +14,7 @@ $page_title = get_field('page_title');
 <section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/heit-2016-gallery.jpg?>') no-repeat; background-size: cover" data-height-lg="250" data-height-md="250" data-height-sm="200" data-height-xs="200" data-height-xxs="200">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
+			<!-- Page heading on parallax background -->
 			<h1 class="white center"><?php echo $page_title; ?></h1>
 		</div>
 	</div>
@@ -45,11 +46,11 @@ $page_title = get_field('page_title');
 		<div class="container clearfix">
 
 			<!-- Lightbox gallery section -->
-			<div class="masonry-thumbs col-6 clearfix" data-lightbox="gallery">
+			<div class="masonry-thumbs col-6  clearfix" data-lightbox="gallery">
 
 				<?php
 
-					// Retrieve page gallery and associated ids
+					// Retrieve page gallery and associated ids for each image
 					$gallery = get_post_gallery( $post, false );
 					$ids = explode( ",", $gallery['ids'] );		
 				         
@@ -59,11 +60,11 @@ $page_title = get_field('page_title');
 				    
 				?>
 
-					<!-- Display each image in a masonry grid -->
-					<a href="<?php echo $link ?>" data-lightbox="gallery-item">
-						<img src="<?php echo $link  ?>" alt="Gallery Image">
-						<div class="overlay"><div class="overlay-wrap"><i class="icon-line-plus"></i></div></div>
-					</a>
+						<!-- Display each image in a masonry grid -->
+						<a href="<?php echo $link ?>" data-lightbox="gallery-item">
+							<img src="<?php echo $link  ?>" alt="Gallery Image">
+							<div class="overlay"><div class="overlay-wrap"><i class="icon-line-plus"></i></div></div>
+						</a>
 
 				<?php
 
