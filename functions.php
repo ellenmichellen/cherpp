@@ -52,7 +52,8 @@ add_theme_support( 'menus' );
 register_nav_menus( array(
 	'primary_menu' => 'Primary Menu',
 	'heit_2016_submenu' => 'HEIT 2016 Submenu',
-	'heit_2015_submenu' => 'HEIT 2015 Submenu'
+	'heit_2015_submenu' => 'HEIT 2015 Submenu',
+	'heit_2018_submenu' => 'HEIT 2018 Submenu'
 ) );
 
 // Remove all status messages when posts are created or edited

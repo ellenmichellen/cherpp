@@ -46,7 +46,7 @@ $page_title = get_field('page_title');		// Variable to store page title
 		<div class="container clearfix">
 
 			<!-- Lightbox gallery section -->
-			<div class="masonry-thumbs col-6  clearfix" data-lightbox="gallery">
+			<div class="masonry-thumbs col-6 clearfix" data-lightbox="gallery">
 
 				<?php
 

@@ -9,6 +9,8 @@ $conference_name = get_field('conference_name');					// Variable to store confer
 $conference_date = get_field('conference_date');					// Variable to store conference date
 $conference_location = get_field('conference_location');			// Variable to store conference location
 $leading_text = get_field('leading_text');							// Variable to store leading body text
+$conference_information = get_field('conference_information');		// Variable to store conference information text
+$registration_information = get_field('registration_information');	// Variable to store registration information text
 $conference_image = get_field('conference_image');					// Variable to store conference image
 $important_dates = get_field('important_dates');					// Variable to store important dates text
 
@@ -27,6 +29,23 @@ $important_dates = get_field('important_dates');					// Variable to store import
 	</div>
 </section><!-- #page-title end -->
 
+<!-- Page Sub Menu
+============================================= -->
+<div id="page-menu">
+	<div id="page-menu-wrap">
+		<div class="container clearfix">
+			<?php
+				// Display dynamic HEIT 2016 submenu
+				wp_nav_menu( array(
+					'theme_location' => 'heit_2018_submenu',
+					'container' => 'nav'
+				));
+			?>
+			<div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
+		</div>
+	</div>
+</div><!-- #page-menu end -->
+
 <!-- Page Content
 ============================================= -->
 <section id="content">
@@ -42,6 +61,7 @@ $important_dates = get_field('important_dates');					// Variable to store import
 			</div>
 		</div>
 	</div><!-- leading text section end -->
+
 
 	<!-- Image and description section -->
 	<div class="row clearfix common-height">
@@ -62,16 +82,32 @@ $important_dates = get_field('important_dates');					// Variable to store import
 		</div>
 	</div><!-- image and description section end -->
 
+	<!-- Leading text section -->
+	<div class="row topmargin-sm bottommargin-lg	">
+		<div class="col-md-12 center">
+				<div class="heading-block center">
+				<!-- First organiser category title -->
+				<h3>Registration Fees</h3>
+			</div>
+			<div class="heading-block center nobottomborder themes">
+				<!-- Leading text -->
+				<span>
+					<?php echo $registration_information; ?>
+				</span>
+			</div>
+		</div>
+	</div><!-- leading text section end -->
+
 	<!-- UDHEIT 2018 section -->
 	<div class="promo promo-light promo-small header-stick" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/dublincastleview.jpg?>');">
 		<div class="container clearfix">
 			<!-- UDHEIT 2018 logo -->
 			<img src='<?php  bloginfo('template_url');  ?>/images/udheit.png?>'/>
-			<!-- UDHEIT 2018 call to action button with link to site -->
-			<a href="https://www.udheit2018.com/call-for-papers" target="_blank" class="button button-white"><span>Learn more and register now!</span></a>
+			<!-- Call to action button -->
+			<a href="https://abbey.eventsair.com/ud-heit-2018/registration/Site/Landing" target="_blank" class="button button-white">Register</a>
 		</div>
 	</div><!-- UDHEIT 2018 section end -->
-	
+
 	<!-- Organisers section -->
 	<div class="container clearfix topmargin-lg bottommargin-sm">
 		<div class="heading-block center">
@@ -109,7 +145,7 @@ $important_dates = get_field('important_dates');					// Variable to store import
 		</div>
 
 	</div><!-- sponsors section end -->
-			
+	
 </section><!-- #page content end -->
 
 <?php get_footer(); ?>

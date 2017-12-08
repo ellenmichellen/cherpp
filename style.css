@@ -3403,11 +3403,11 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 }
 
 #page-title span, #slider span {
-    padding-left: 20px;
-    text-align: 	left;	
+    /* padding-left: 20px; */
+    text-align: left;	
     display: block;
     margin-top: 10px;
-    font-weight: 400;
+    font-weight: 500;
     color: #333;
     font-size: 23px;
     font-family: 'Montserrat', sans-serif !important;	
@@ -14205,13 +14205,13 @@ label[for="comment"] {
 
 /* Styling for Workshop label */
 .label-Workshop {
-	background-color: #4aaaa5;
+	background-color: #43cc9e;
 	font-size: 12px;
 }
 
 /* Styling for Briefing label */
 .label-Briefing {
-	background-color: #43cc9e;
+	background-color: #4aaaa5;
 	font-size: 12px;
 }
 
@@ -14234,7 +14234,7 @@ label[for="comment"] {
 }
 
 .button-white:hover {
-  	background-color: #7accc8 !important;
+  	background-color: #ddd !important;
 }
 
 /* Sets What's New divs to equal height */
@@ -14330,4 +14330,8 @@ body.stretched #page-menu .container {
 /* Reduce the margin size for headline in text box */
 .heading-block-intro h2 {
 	margin-top: -15px !important;
+}
+
+.subheading span {
+	font-family: 'Raleway', sans-serif !important;
 }

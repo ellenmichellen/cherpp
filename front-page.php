@@ -9,13 +9,15 @@ get_header();
 
 <!-- Page Title
 ============================================= -->
-<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/homebanner.jpg?>') no-repeat; background-size: cover" data-height-lg="400" data-height-md="400" data-height-sm="300" data-height-xs="300" data-height-xxs="300">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/homebanner.jpg?>') no-repeat; background-size: cover" data-height-lg="450" data-height-md="450" data-height-sm="450" data-height-xs="450" data-height-xxs="450">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
 			<h1 class="white center">Centre for Higher Education <br>Research, Policy &amp; Practice</h1><br>
 			<!-- Call to action button -->
-			<span class="white center subheading"><a href="<?php echo get_page_link( get_page_by_title( 'About' )->ID ); ?>" class="button button-white">Learn more</a></span>
+			<span class="white center" style="font-family: 'Raleway', sans-serif !important; letter-spacing: .5px;">An international collaborative project hosted by the University <br>of Ontario Institute of Technology, Durham College, and the <br>Technological University for Dublin Alliance</span><br>
+			<span class="center">
+			<a href="<?php echo get_page_link( get_page_by_title( 'About' )->ID ); ?>" class="button button-white">Learn more</a></span>
 		</div>
 	</div>
 </section><!-- #page-title end -->
@@ -62,7 +64,7 @@ get_header();
 							</span>
 						<!-- Item call to action button -->
 	           			<div class="info-button">
-	                		<a class="button button-dark green-button" href="https://www.udheit2018.com/call-for-papers" target="_blank">Learn more</a>
+	                		<a class="button button-dark green-button" href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018 Call for Papers' )->ID ); ?>">Learn more</a>
 	            		</div>
 					</div>
 				</div>
@@ -94,7 +96,7 @@ get_header();
 				<!-- UDHEIT 2018 logo -->
 				<img src='<?php  bloginfo('template_url');  ?>/images/udheit.png?>'/>
 				<!-- Call to action button -->
-				<a href="https://www.udheit2018.com/" target="_blank" class="button button-white">Learn more</a>
+				<a href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018' )->ID ); ?>" class="button button-white">Learn more</a>
 			</div>
 	</div><!-- udheit 2018 section end -->
 

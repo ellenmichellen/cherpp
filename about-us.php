@@ -6,6 +6,7 @@
 get_header();
 
 $page_title = get_field('page_title');
+$leading_text = get_field('leading_text');							// Variable to store leading body text
 
 ?>
 
@@ -24,25 +25,35 @@ $page_title = get_field('page_title');
 ============================================= -->
 <section id="content">
 
-	<!-- About sub-items section -->
+	<!-- Leading text section -->
+	<div class="row topmargin-lg bottommargin-sm">
+		<div class="col-md-12 center">
+			<div class="heading-block center nobottomborder themes">
+				<!-- Leading text -->
+				<span>
+					<?php echo $leading_text; ?>
+				</span>
+			</div>
+		</div>
+	</div><!-- leading text section end -->
+<
+	<!-- About
 	<div class="row clearfix common-height">
 
-			<!-- Display and style information for each About sub-item -->
 			<div class="col-md-4 dark center col-padding" style="background-color: #7accc8;">
 				<div>
-					<!-- Link to Domain Networks sub-page -->
 					<a href="<?php echo get_page_link( get_page_by_title( 'Domain Networks' )->ID ); ?>">
-						<!-- Item icon -->
+						
 						<i class="i-plain i-xlarge divcenter icon-line2-share"></i>
-						<!-- Item title -->
+					
 						<h3>Domain Networks</h3>
-						<!-- Item call to action button -->
+					
 						<a class="button button-dark home-button" href="<?php echo get_page_link( get_page_by_title( 'Domain Networks' )->ID ); ?>">Learn more</a>
 					</a>
 				</div>
 			</div>
 
-	</div><!-- about section end -->
+	</div>-->
 
 </section><!-- #page content end -->
 

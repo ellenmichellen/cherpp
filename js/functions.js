@@ -1268,7 +1268,7 @@ var SEMICOLON = SEMICOLON || {};
 				return false;
 			});
 		},
-
+/*
 		onePageScroll: function(){
 			if( $onePageMenuEl.length > 0 ){
 				var onePageSpeed = $onePageMenuEl.attr('data-speed'),
@@ -1329,7 +1329,7 @@ var SEMICOLON = SEMICOLON || {};
 		onepageScroller: function(){
 			$onePageMenuEl.find('li').removeClass('current');
 			$onePageMenuEl.find('a[data-href="#' + SEMICOLON.header.onePageCurrentSection() + '"]').parent('li').addClass('current');
-		},
+		}, */
 
 		onePageCurrentSection: function(){
 			var currentOnePageSection = 'home',

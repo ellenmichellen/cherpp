@@ -33,33 +33,14 @@ $heit_2016_button_text = get_field('heit_2016_button_text'); // Variable to stor
 		<h3>Past Symposia</h3>
 	</div>
 
-	<!-- HEIT 2016 event section -->
-	<div class="row clearfix common-height">
-
-		<!-- First column featuring image with black and white filter -->
-		<div class="col-md-6 center col-padding filtered" style="background: url(<?php echo $heit_2016_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
-		</div>
-
-		<!-- Second column featuring description text  -->
-		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
-			<div id="chairs">
-				<div class="heading-block-intro">
-					<!-- Conference title -->
-					<h2>Higher Education in Transformation 2016</h2>
-				</div><br>
-				<!-- Conference description text -->
-				<span class="before-heading"><?php echo $heit_2016_text; ?></span><br>
-				<!-- Conference call to action button with link to main page for conference -->
-				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2016' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2016_button_text; ?></span></a>
-			</div>
-		</div>
-
-	</div><!-- HEIT 2016 event section end -->
-
 	<!-- HEIT 2015 event section -->
 	<div class="row clearfix common-height headerstick">
 
-		<!-- First column featuring description text -->
+		<!-- First column featuring image with black and white filter -->
+		<div class="col-md-6 center col-padding filtered" style="background: url(<?php echo $heit_2015_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
+		</div>
+
+		<!-- Second column featuring description text -->
 		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
 			<div id="chairs">
 				<div class="heading-block-intro">
@@ -73,10 +54,30 @@ $heit_2016_button_text = get_field('heit_2016_button_text'); // Variable to stor
 			</div>
 		</div>
 
-		<!-- Second column featuring image with black and white filter -->
-		<div class="col-md-6 center col-padding filtered" style="background: url(<?php echo $heit_2015_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
-		</div>
 	</div><!-- HEIT 2015 event section end -->
+
+	<!-- HEIT 2016 event section -->
+	<div class="row clearfix common-height">
+
+		<!-- First column featuring description text  -->
+		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
+			<div id="chairs">
+				<div class="heading-block-intro">
+					<!-- Conference title -->
+					<h2>Higher Education in Transformation 2016</h2>
+				</div><br>
+				<!-- Conference description text -->
+				<span class="before-heading"><?php echo $heit_2016_text; ?></span><br>
+				<!-- Conference call to action button with link to main page for conference -->
+				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2016' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2016_button_text; ?></span></a>
+			</div>
+		</div>
+
+		<!-- Second column featuring image with black and white filter -->
+		<div class="col-md-6 center col-padding filtered" style="background: url(<?php echo $heit_2016_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
+		</div>
+
+	</div><!-- HEIT 2016 event section end -->
 
 </section><!-- #page content end -->
 
