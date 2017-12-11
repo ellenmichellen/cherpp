@@ -7,6 +7,7 @@ get_header();
 
 $leading_text = get_field('leading_text');							// Variable to store leading body text
 $conference_information = get_field('conference_information');		// Variable to store conference information text
+$important_dates = get_field('important_dates');					// Variable to store important dates text
 
 ?>
 
@@ -81,7 +82,7 @@ $conference_information = get_field('conference_information');		// Variable to s
 
 	</div><!-- themes section end -->
 
-	<!-- Leading text section -->
+	<!-- Conference imformation section -->
 	<div class="row topmargin-lg bottommargin-sm">
 		<div class="col-md-12 center">
 			<div class="heading-block center nobottomborder themes">
@@ -91,7 +92,26 @@ $conference_information = get_field('conference_information');		// Variable to s
 				</span>
 			</div>
 		</div>
-	</div><!-- leading text section end -->
+	</div><!-- conference information section end -->
+
+	<!-- Divider line -->
+	<div class="line topmargin-sm nobottommargin"></div><br><br>
+
+	<!-- Important dates section -->
+	<div class="row topmargin-sm bottommargin-lg">
+		<div class="col-md-12 center">
+				<div class="heading-block center">
+				<!-- Important dates section title -->
+				<h3>Important Dates</h3>
+			</div>
+			<div class="heading-block center nobottomborder themes">
+				<!-- Important dates text -->
+				<span>
+					<?php echo $important_dates; ?>
+				</span>
+			</div>
+		</div>
+	</div><!-- important dates section end -->
 	
 </section><!-- #page content end -->
 

@@ -12,7 +12,6 @@ $leading_text = get_field('leading_text');							// Variable to store leading bo
 $conference_information = get_field('conference_information');		// Variable to store conference information text
 $registration_information = get_field('registration_information');	// Variable to store registration information text
 $conference_image = get_field('conference_image');					// Variable to store conference image
-$important_dates = get_field('important_dates');					// Variable to store important dates text
 
 ?>
 
@@ -74,29 +73,13 @@ $important_dates = get_field('important_dates');					// Variable to store import
 			<div id="chairs">
 				<!-- Important Dates heading -->
 				<div class="heading-block-intro">
-					<h2>Important Dates</h2>
+					<h2>Registration Fees</h2>
 				</div><br><br>
 				<!-- Important dates description text -->
-				<span class="before-heading left"><?php echo $important_dates; ?></span>
+				<span class="before-heading left"><?php echo $registration_information; ?></span>
 			</div>
 		</div>
 	</div><!-- image and description section end -->
-
-	<!-- Leading text section -->
-	<div class="row topmargin-sm bottommargin-lg	">
-		<div class="col-md-12 center">
-				<div class="heading-block center">
-				<!-- First organiser category title -->
-				<h3>Registration Fees</h3>
-			</div>
-			<div class="heading-block center nobottomborder themes">
-				<!-- Leading text -->
-				<span>
-					<?php echo $registration_information; ?>
-				</span>
-			</div>
-		</div>
-	</div><!-- leading text section end -->
 
 	<!-- UDHEIT 2018 section -->
 	<div class="promo promo-light promo-small header-stick" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/dublincastleview.jpg?>');">
@@ -104,7 +87,7 @@ $important_dates = get_field('important_dates');					// Variable to store import
 			<!-- UDHEIT 2018 logo -->
 			<img src='<?php  bloginfo('template_url');  ?>/images/udheit.png?>'/>
 			<!-- Call to action button -->
-			<a href="https://abbey.eventsair.com/ud-heit-2018/registration/Site/Landing" target="_blank" class="button button-white">Register</a>
+			<a href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank" class="button button-white">Register</a>
 		</div>
 	</div><!-- UDHEIT 2018 section end -->
 

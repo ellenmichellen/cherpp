@@ -2285,7 +2285,6 @@ body.top-search-open #top-account { opacity: 0; }
 	font-size: 14px;
 	border-radius: 14px;
 	letter-spacing: 0.05em;
-    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     -webkit-transition: margin .4s ease, padding .4s ease;

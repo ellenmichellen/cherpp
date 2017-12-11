@@ -168,7 +168,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 	<div class="line topmargin-sm nobottommargin"></div><br><br>
 
 	<!-- Sponsors section -->
-	<div class="container clearfix">
+	<div class="container clearfix topmargin-sm">
 		<div class="heading-block center">
 			<h3>Sponsors</h3>
 		</div><br>
@@ -205,7 +205,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 	</div><!-- sponsors section end -->
 
 	<!-- Organisers section -->
-	<div class="container clearfix">
+	<div class="container clearfix topmargin-sm bottommargin-sm">
 		<div class="heading-block center">
 			<h3>Organisers</h3>
 		</div><br>

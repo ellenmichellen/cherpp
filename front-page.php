@@ -70,18 +70,17 @@ get_header();
 				</div>
 
 				<!-- Third column -->
-				<div class="col-sm-4">
-					<!---
+				<div class="col-sm-4 col-eq">
 					<div class="whats-new promo-flat">
-						<h3>Call for Papers: <br>UDHEIT Congress 2018</h3>
+						<h3>Registration: <br>UDHEIT Congress 2018</h3>
 						<span>
-							<p>The Call for Papers and Workshops for UDHEIT Congress 2018 is now open! UDHEIT2018 invites new and challenging paper submissions from any area or discipline of Design or Education.</p> 
-							<p><b>Abstract Submission Deadline:</b> <br>January 30, 2018</p>
+							<p>Registration for the Universal Design &amp; Higher Education in Transformation Congress is now open! Register now for the exciting four-day event to be held in Dublin, Ireland.</p>
+							<p><b>Early Bird Registration Deadline:</b> <br>May 31, 2018</p>
 							</span>
 	           			<div class="info-button">
-	                		<a class="button button-dark blue-button" href="https://www.udheit2018.com/call-for-papers" target="_blank">Learn more</a>
+	                		<a class="button button-dark blue-button" href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank">Register</a>
 	            		</div>
-					</div>-->
+					</div>
 				</div>
 
 			</div>
