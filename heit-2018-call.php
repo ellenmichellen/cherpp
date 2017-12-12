@@ -44,7 +44,7 @@ $important_dates = get_field('important_dates');					// Variable to store import
 <section id="content">
 
 	<!-- Leading text section -->
-	<div class="row topmargin-lg bottommargin-lg">
+	<div class="row topmargin-lg bottommargin-sm">
 		<div class="col-md-12 center">
 			<div class="heading-block center nobottomborder themes">
 				<!-- Leading text -->
@@ -55,50 +55,11 @@ $important_dates = get_field('important_dates');					// Variable to store import
 		</div>
 	</div><!-- leading text section end -->
 
-	<!-- Themes section -->
-	<div class="row clearfix common-height header-stick">
-
-		<?php 
-
-			// Loop through array of 2016 themes, ordered by theme number ascending
-			$loop = new WP_Query( array( 'post_type' => 'domain_networks','orderby' => 'domain_number', 'order' => 'ASC' ) ); 
-
-			// For each theme in the array...
-			while( $loop->have_posts() ) : $loop->the_post(); ?>
-
-				<!-- Display and style information for each theme (3 column layout) -->
-				<div class="col-md-4 dark center col-padding" style="background-color: <?php the_field('div_color'); ?>;">
-					<div>
-						<!-- Theme icon -->
-						<i class="i-plain i-xlarge divcenter <?php the_field('icon'); ?>"></i>
-						<!-- Theme name -->
-						<h3><?php the_title(); ?></h3>
-					</div>
-				</div>
-
-			<?php endwhile; 
-
-		?>
-
-	</div><!-- themes section end -->
-
-	<!-- Conference imformation section -->
-	<div class="row topmargin-lg bottommargin-sm">
-		<div class="col-md-12 center">
-			<div class="heading-block center nobottomborder themes">
-				<!-- Leading text -->
-				<span>
-					<?php echo $conference_information; ?>
-				</span>
-			</div>
-		</div>
-	</div><!-- conference information section end -->
-
 	<!-- Divider line -->
-	<div class="line topmargin-sm nobottommargin"></div><br><br>
+	<div class="line topmargin-sm nobottommargin"></div>
 
 	<!-- Important dates section -->
-	<div class="row topmargin-sm bottommargin-lg">
+	<div class="row topmargin-lg bottommargin-lg">
 		<div class="col-md-12 center">
 				<div class="heading-block center">
 				<!-- Important dates section title -->
@@ -113,6 +74,28 @@ $important_dates = get_field('important_dates');					// Variable to store import
 		</div>
 	</div><!-- important dates section end -->
 	
+	<!-- UDHEIT 2018 section -->
+	<div class="section parallax header-stick bottommargin-lg" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/dublincastleview.jpg?>');">
+		<div class="heading-block center nobottomborder nobottommargin">
+			<!-- UDHEIT 2018 logo -->
+			<img src='<?php  bloginfo('template_url');  ?>/images/udheit.png?>'/>
+			<!-- Call to action button -->
+			<a href="https://abbey.eventsair.com/PresentationPortal/Account/Login?ReturnUrl=%2FPresentationPortal%2Fud-heit-2018%2Fabstract-submission-portal" target="_blank" class="button button-white">Submit an Abstract</a>
+		</div>
+	</div><!-- UDHEIT 2018 section end -->
+
+	<!-- Conference imformation section -->
+	<div class="row topmargin-lg bottommargin-sm">
+		<div class="col-md-12 center">
+			<div class="heading-block center nobottomborder themes">
+				<!-- Leading text -->
+				<span>
+					<?php echo $conference_information; ?>
+				</span>
+			</div>
+		</div>
+	</div><!-- conference information section end -->
+
 </section><!-- #page content end -->
 
 <?php get_footer(); ?>

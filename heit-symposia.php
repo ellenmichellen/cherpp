@@ -11,6 +11,9 @@ $heit_2015_button_text = get_field('heit_2015_button_text'); // Variable to stor
 $heit_2016_text = get_field('heit_2016_text');				 // Variable to store HEIT 2016 text
 $heit_2016_image = get_field('heit_2016_image');			 // Variable to store HEIT 2016 image
 $heit_2016_button_text = get_field('heit_2016_button_text'); // Variable to store HEIT 2015 button text
+$heit_2018_text = get_field('heit_2018_text');				 // Variable to store HEIT 2018 text
+$heit_2018_image = get_field('heit_2018_image');			 // Variable to store HEIT 2018 image
+$heit_2018_button_text = get_field('heit_2018_button_text'); // Variable to store HEIT 2018 button text
 
 ?>
 
@@ -30,31 +33,38 @@ $heit_2016_button_text = get_field('heit_2016_button_text'); // Variable to stor
 <section id="content">
 
 	<div class="heading-block center topmargin-lg">
-		<h3>Past Symposia</h3>
+		<h3>Upcoming Symposia</h3>
 	</div>
 
-	<!-- HEIT 2015 event section -->
-	<div class="row clearfix common-height headerstick">
+	<!-- HEIT 2018 event section -->
+	<div class="row clearfix common-height bottommargin-lg">
 
-		<!-- First column featuring image with black and white filter -->
-		<div class="col-md-6 center col-padding filtered" style="background: url(<?php echo $heit_2015_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
+		<!-- First column featuring image -->
+		<div class="col-md-6 center col-padding" style="background: linear-gradient(rgba(122, 204, 200, 0.1), rgba(74, 170, 165, 0.1)), url(<?php echo $heit_2018_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
 		</div>
 
-		<!-- Second column featuring description text -->
+		<!-- Second column featuring description text  -->
 		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
 			<div id="chairs">
 				<div class="heading-block-intro">
 					<!-- Conference title -->
-					<h2 class>Higher Education in Transformation 2015</h2>
+					<h2>Universal Design &amp; Higher Education in Transformation Congress 2018</h2>
 				</div><br>
 				<!-- Conference description text -->
-				<span class="before-heading"><?php echo $heit_2015_text; ?></span><br>
+				<span class="before-heading"><?php echo $heit_2018_text; ?></span><br>
 				<!-- Conference call to action button with link to main page for conference -->
-				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2015' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2015_button_text; ?></span></a>
+				<a href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2018_button_text; ?></span></a>
 			</div>
 		</div>
 
-	</div><!-- HEIT 2015 event section end -->
+	</div><!-- HEIT 2018 event section end -->
+
+	<!-- Divider line -->
+	<div class="line topmargin-lg bottommargin-sm"></div><br>
+
+	<div class="heading-block center">
+		<h3>Past Symposia</h3>
+	</div>
 
 	<!-- HEIT 2016 event section -->
 	<div class="row clearfix common-height">
@@ -78,6 +88,29 @@ $heit_2016_button_text = get_field('heit_2016_button_text'); // Variable to stor
 		</div>
 
 	</div><!-- HEIT 2016 event section end -->
+
+	<!-- HEIT 2015 event section -->
+	<div class="row clearfix common-height headerstick">
+
+		<!-- First column featuring image with black and white filter -->
+		<div class="col-md-6 center col-padding filtered" style="background: url(<?php echo $heit_2015_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
+		</div>
+
+		<!-- Second column featuring description text -->
+		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
+			<div id="chairs">
+				<div class="heading-block-intro">
+					<!-- Conference title -->
+					<h2 class>Higher Education in Transformation 2015</h2>
+				</div><br>
+				<!-- Conference description text -->
+				<span class="before-heading"><?php echo $heit_2015_text; ?></span><br>
+				<!-- Conference call to action button with link to main page for conference -->
+				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2015' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2015_button_text; ?></span></a>
+			</div>
+		</div>
+
+	</div><!-- HEIT 2015 event section end -->
 
 </section><!-- #page content end -->
 

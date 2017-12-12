@@ -61,7 +61,6 @@ $conference_image = get_field('conference_image');					// Variable to store conf
 		</div>
 	</div><!-- leading text section end -->
 
-
 	<!-- Image and description section -->
 	<div class="row clearfix common-height">
 		<!-- First column featuring image -->
@@ -69,27 +68,58 @@ $conference_image = get_field('conference_image');					// Variable to store conf
 		</div>
 
 		<!-- Second column featuring important dates text -->
-		<div class="col-md-6 center col-padding bottommargin-sm" style="background-color: #e9e8e5;">
+		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
 			<div id="chairs">
 				<!-- Important Dates heading -->
 				<div class="heading-block-intro">
 					<h2>Registration Fees</h2>
 				</div><br><br>
 				<!-- Important dates description text -->
-				<span class="before-heading left"><?php echo $registration_information; ?></span>
+				<span class="before-heading center"><?php echo $registration_information; ?></span>
 			</div>
 		</div>
 	</div><!-- image and description section end -->
 
-	<!-- UDHEIT 2018 section -->
-	<div class="promo promo-light promo-small header-stick" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/dublincastleview.jpg?>');">
-		<div class="container clearfix">
-			<!-- UDHEIT 2018 logo -->
-			<img src='<?php  bloginfo('template_url');  ?>/images/udheit.png?>'/>
-			<!-- Call to action button -->
-			<a href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank" class="button button-white">Register</a>
+	<!-- Important links section -->
+	<div class="col_full bottommargin-lg common-height">
+
+		<!-- Registration section -->
+		<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
+			<div>
+				<a href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank">
+					<h2 class="center" style="font-weight: 600;">Register</h2>
+					<span style="line-height: 1.8;" class="before-heading white center">Registration for UDHEIT 2018 is now open! Click here to register for the exciting four-day event to be held in Dublin, Ireland.</span>
+					<i class="icon-line2-calendar bgicon"></i>
+				</a>
+			</div>
 		</div>
-	</div><!-- UDHEIT 2018 section end -->
+
+		<!-- Papers section -->
+		<div class="col-md-4 dark col-padding ohidden" style="background-color: #4aaaa5;">
+			<div>
+				<a href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018 Call for Papers' )->ID ); ?>">
+					<h2 class="center" style="font-weight: 600;">Call for Papers</h2>
+					<span style="line-height: 1.8;" class="before-heading white center">The Call for Papers and Workshops for UDHEIT Congress 2018 is now open! UDHEIT2018 invites new and challenging paper submissions from any area or discipline of Design or Education.</span>
+					<i class="icon-line2-book-open bgicon"></i>
+				</a>
+			</div>
+		</div>
+
+		<!-- UDHEIT 2018 section -->
+		<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
+			<div>
+				<a href="https://www.udheit2018.com/" target="_blank">
+					<h2 class="center" style="font-weight: 600;">Learn More</h2>
+					<span style="line-height: 1.8;" class="before-heading white center">Click here to learn more about UDHEIT 2018 and the connections between higher education and universal design.</span>
+					<i class="icon-line-paper bgicon"></i></span>
+				</a>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
 
 	<!-- Organisers section -->
 	<div class="container clearfix topmargin-lg bottommargin-sm">
