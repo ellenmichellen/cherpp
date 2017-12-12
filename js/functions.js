@@ -1268,26 +1268,26 @@ var SEMICOLON = SEMICOLON || {};
 				return false;
 			});
 		},
-/*
+
 		onePageScroll: function(){
 			if( $onePageMenuEl.length > 0 ){
-				var onePageSpeed = $onePageMenuEl.attr('data-speed'),
+				/* var onePageSpeed = $onePageMenuEl.attr('data-speed'),
 					onePageOffset = $onePageMenuEl.attr('data-offset'),
 					onePageEasing = $onePageMenuEl.attr('data-easing');
 
-				if( !onePageSpeed ) { onePageSpeed = 1000; }
-				if( !onePageEasing ) { onePageEasing = 'easeOutQuad'; }
+				if( !onePageSpeed ) { onePageSpeed = 1000; } */
+				/* if( !onePageEasing ) { onePageEasing = 'easeOutQuad'; } */
 
 				$onePageMenuEl.find('a[data-href]').click(function(){
-					var element = $(this),
+					/* var element = $(this),
 						divScrollToAnchor = element.attr('data-href'),
 						divScrollSpeed = element.attr('data-speed'),
 						divScrollOffset = element.attr('data-offset'),
-						divScrollEasing = element.attr('data-easing');
+						divScrollEasing = element.attr('data-easing'); */
 
 					if( $( divScrollToAnchor ).length > 0 ) {
 
-						if( !onePageOffset ) {
+						/* if( !onePageOffset ) {
 							var onePageOffsetG = SEMICOLON.initialize.topScrollOffset();
 						} else {
 							var onePageOffsetG = onePageOffset;
@@ -1302,7 +1302,7 @@ var SEMICOLON = SEMICOLON || {};
 						onePageGlobalOffset = Number(divScrollOffset);
 
 						$onePageMenuEl.find('li').removeClass('current');
-						$onePageMenuEl.find('a[data-href="' + divScrollToAnchor + '"]').parent('li').addClass('current');
+						$onePageMenuEl.find('a[data-href="' + divScrollToAnchor + '"]').parent('li').addClass('current'); */
 
 						if( windowWidth < 768 || $body.hasClass('overlay-menu') ) {
 							if( $('#primary-menu').find('ul.mobile-primary-menu').length > 0 ) {
@@ -1314,22 +1314,23 @@ var SEMICOLON = SEMICOLON || {};
 							$body.toggleClass('primary-menu-open', false);
 						}
 
+						/*
 						$('html,body').stop(true).animate({
 							'scrollTop': $( divScrollToAnchor ).offset().top - Number(divScrollOffset)
 						}, Number(divScrollSpeed), divScrollEasing);
 
-						onePageGlobalOffset = Number(divScrollOffset);
+						onePageGlobalOffset = Number(divScrollOffset); */
 					}
 
-					return false;
+					/* return false; */
 				});
 			}
-		},
+		}, 
 
 		onepageScroller: function(){
 			$onePageMenuEl.find('li').removeClass('current');
 			$onePageMenuEl.find('a[data-href="#' + SEMICOLON.header.onePageCurrentSection() + '"]').parent('li').addClass('current');
-		}, */
+		},
 
 		onePageCurrentSection: function(){
 			var currentOnePageSection = 'home',
