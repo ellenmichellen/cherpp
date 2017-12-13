@@ -36,7 +36,7 @@ $leading_text = get_field('leading_text');							// Variable to store leading bo
 			</div>
 		</div>
 	</div><!-- leading text section end -->
-<
+
 	<!-- About
 	<div class="row clearfix common-height">
 
