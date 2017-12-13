@@ -14334,3 +14334,7 @@ body.stretched #page-menu .container {
 .subheading span {
 	font-family: 'Raleway', sans-serif !important;
 }
+
+.center-list li {
+	margin-left: 100px;
+}
