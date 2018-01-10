@@ -9,7 +9,7 @@ get_header();
 
 <!-- Page Title
 ============================================= -->
-<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/homebanner.jpg?>') no-repeat; background-size: cover" data-height-lg="400" data-height-md="400" data-height-sm="450" data-height-xs="450" data-height-xxs="450">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/homebannertest.jpg?>') no-repeat; background-size: cover" data-height-lg="400" data-height-md="400" data-height-sm="450" data-height-xs="450" data-height-xxs="450">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
@@ -40,14 +40,15 @@ get_header();
 				<div class="col-sm-4 col-eq">
 					<div class="whats-new promo-flat">
 						<!-- Item title -->
-						<h3>Workshop: Exemplary Teaching and Learning</h3>
+						<h3>Call for Papers: <br>UDHEIT Congress 2018</h3>
 						<!-- Item description -->
 						<span>
-							<p>The Centre for Higher Education Research, Policy and Practice (CHERPP) invites you to a workshop on exemplary teaching and learning with Dr Thomas Carey. The focus of the workshop will be distinctive excellence for our students as a primary driver of teaching and learning.</p>
+							<p>The Call for Papers and Workshops for UDHEIT Congress 2018 is now open! UDHEIT2018 invites new and challenging paper submissions from any area or discipline of Design or Education.</p> 
+							<p><b>Abstract Submission Deadline:</b> <br>January 30, 2018</p>
 						</span>
 						<!-- Item call to action button -->
 	           			<div class="info-button">
-	                		<a class="button button-dark blue-button" href="<?php echo get_page_link( get_page_by_title( 'Events' )->ID ); ?>">Learn more</a>
+	                		<a class="button button-dark green-button" href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018 Call for Papers' )->ID ); ?>">Learn more</a>
 	            		</div>
 					</div>
 				</div>
@@ -56,31 +57,22 @@ get_header();
 				<div class="col-sm-4 col-eq odd">
 					<div class="whats-new promo-flat">
 						<!-- Item title -->
-						<h3>Call for Papers: <br>UDHEIT Congress 2018</h3>
+						<h3>Registration: <br>UDHEIT Congress 2018</h3>
 						<!-- Item description -->
 						<span>
-							<p>The Call for Papers and Workshops for UDHEIT Congress 2018 is now open! UDHEIT2018 invites new and challenging paper submissions from any area or discipline of Design or Education.</p> 
-							<p><b>Abstract Submission Deadline:</b> <br>January 30, 2018</p>
+							<p>Registration for the Universal Design &amp; Higher Education in Transformation Congress is now open! Register now for the exciting four-day event to be held in Dublin, Ireland.</p>
+							<p><b>Early Bird Registration Deadline:</b> <br>May 31, 2018</p>
 							</span>
 						<!-- Item call to action button -->
 	           			<div class="info-button">
-	                		<a class="button button-dark green-button" href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018 Call for Papers' )->ID ); ?>">Learn more</a>
+	                		<a class="button button-dark blue-button" href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank">Register</a>
 	            		</div>
 					</div>
 				</div>
 
 				<!-- Third column -->
-				<div class="col-sm-4 col-eq">
-					<div class="whats-new promo-flat">
-						<h3>Registration: <br>UDHEIT Congress 2018</h3>
-						<span>
-							<p>Registration for the Universal Design &amp; Higher Education in Transformation Congress is now open! Register now for the exciting four-day event to be held in Dublin, Ireland.</p>
-							<p><b>Early Bird Registration Deadline:</b> <br>May 31, 2018</p>
-							</span>
-	           			<div class="info-button">
-	                		<a class="button button-dark blue-button" href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank">Register</a>
-	            		</div>
-					</div>
+				<div class="col-sm-4">
+					
 				</div>
 
 			</div>

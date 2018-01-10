@@ -5,7 +5,9 @@
 
 get_header();
 
-$page_title = get_field('page_title');		// Variable to store page title
+$page_title = get_field('page_title');								// Variable to store page title
+$conference_videos_text = get_field('conference_videos_text');		// Variable to store text for conference videos description
+$conference_videos_link = get_field('conference_videos_link');		// Variable to store link to conference videos
 
 ?>
 
@@ -76,6 +78,16 @@ $page_title = get_field('page_title');		// Variable to store page title
 		</div>
 
 	</div><!-- photo gallery section end -->
+
+	<!-- Conference papers collection section -->
+	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #e9e8e5">
+		<div class="container clearfix">
+			<!-- Conference videos description text -->
+			<h3><?php echo $conference_videos_text; ?></h3>
+			<!-- Conference videos call to action button with link to videos -->
+			<a href="<?php echo $conference_videos_link; ?>" target="_blank" class="button button-dark blue-button"><span>Click here</span></a>
+		</div>
+	</div><!-- conference papers collection section end -->
 
 </section>
 
