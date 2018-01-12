@@ -48,7 +48,7 @@ get_header();
 						</span>
 						<!-- Item call to action button -->
 	           			<div class="info-button">
-	                		<a class="button button-dark green-button" href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018 Call for Papers' )->ID ); ?>">Learn more</a>
+	                		<a class="button button-dark blue-button" href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018 Call for Papers' )->ID ); ?>">Learn more</a>
 	            		</div>
 					</div>
 				</div>
@@ -65,7 +65,7 @@ get_header();
 							</span>
 						<!-- Item call to action button -->
 	           			<div class="info-button">
-	                		<a class="button button-dark blue-button" href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank">Register</a>
+	                		<a class="button button-dark green-button" href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank">Register</a>
 	            		</div>
 					</div>
 				</div>

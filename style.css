@@ -14338,3 +14338,12 @@ body.stretched #page-menu .container {
 .center-list li {
 	margin-left: 100px;
 }
+
+.in-text-link {
+	color: #777 !important;
+	font-weight: 700 !important;
+}
+
+.in-text-link:hover {
+	color: #7accc8 !important;
+}
