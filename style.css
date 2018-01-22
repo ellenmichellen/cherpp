@@ -14344,6 +14344,10 @@ body.stretched #page-menu .container {
 	font-weight: 600 !important;
 }
 
-.in-text-link:hover {
+.in-text-link:hover, .unstyled:hover {
 	color: #7accc8 !important;
+}
+
+.unstyled {
+	color: #333 !important;
 }
