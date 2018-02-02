@@ -44,7 +44,7 @@ get_header();
 						<!-- Item description -->
 						<span>
 							<p>The Call for Papers and Workshops for UDHEIT Congress 2018 is now open! UDHEIT2018 invites new and challenging paper submissions from any area or discipline of Design or Education.</p> 
-							<p><b>Abstract Submission Deadline:</b> <br>January 30, 2018</p>
+							<p><b>Abstract Submission Deadline Extension:</b> <br>February 19, 2018</p>
 						</span>
 						<!-- Item call to action button -->
 	           			<div class="info-button">

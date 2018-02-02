@@ -46,42 +46,6 @@ $leading_text = get_field('leading_text');							// Variable to store leading bo
 							<div class="team-desc">
 								<div class="team-title"><h5><a class="unstyled" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5><span><?php the_field('title'); ?>, <em><?php the_field('affiliated_institution'); ?></em></span></div>
 								<div class="team-content"><?php the_field('brief_bio'); ?></div>
-								<div class="line topmargin-sm nobottommargin"></div>
-
-								<?php if ( get_field('email_address') ) { ?>
-									<a href="<?php the_field('email_address'); ?>" class="social-icon si-borderless si-small si-email3" target="_blank" title="E-mail">
-										<i class="icon-email3"></i>
-										<i class="icon-email3"></i>
-									</a>
-								<?php } ?>
-
-								<?php if ( get_field('facebook') ) { ?>
-									<a href="<?php the_field('facebook'); ?>" class="social-icon si-borderless si-small si-facebook" target="_blank" title="Facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-								<?php } ?>
-
-								<?php if ( get_field('twitter') ) { ?>
-									<a href="<?php the_field('twitter'); ?>" class="social-icon si-borderless si-small si-twitter" target="_blank" title="Twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-								<?php } ?>
-
-								<?php if ( get_field('linkedin') ) { ?>
-								<a href="<?php the_field('linkedin'); ?>" class="social-icon si-borderless si-small si-linkedin" target="_blank" title="LinkedIn">
-									<i class="icon-linkedin"></i>
-									<i class="icon-linkedin"></i>
-								</a>
-								<?php } ?>
-
-								<?php if ( get_field('instagram') ) { ?>
-									<a href="<?php the_field('instagram'); ?>" class="social-icon si-borderless si-small si-instagram" target="_blank" title="Instagram">
-										<i class="icon-instagram"></i>
-										<i class="icon-instagram"></i>
-									</a>
-								<?php } ?>
 							</div>
 						</div>
 					</div>
