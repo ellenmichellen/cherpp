@@ -207,7 +207,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 	<!-- Organisers section -->
 	<div class="container clearfix topmargin-sm bottommargin-sm">
 		<div class="heading-block center">
-			<h3>Organisers</h3>
+			<h3>Organizers</h3>
 		</div><br>
 
 		<div class="nobottomborder">

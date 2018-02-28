@@ -18,13 +18,11 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 
 <!-- Page Title
 ============================================= -->
-<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/homebanner.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(122, 204, 200, 0.8), rgba(74, 170, 165, 0.8)), url('<?php  bloginfo('template_url');  ?>/images/heit-2016-main-image.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
 			<h1 class="white center"><?php echo $conference_name; ?></h1>
-			<!-- Page sub-heading featuring conference date and location -->
-			<span class="white center subheading"><?php echo $conference_date; ?> &nbsp; | &nbsp; <?php echo $conference_location; ?></span>
 		</div>
 	</div>
 </section><!-- #page-title end -->
@@ -50,200 +48,206 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 ============================================= -->
 <section id="content">
 
-	<!-- Image and description section -->
-	<div class="row clearfix common-height">
-		<!-- First column featuring image -->
-		<div class="col-md-6 center col-padding" style="background: url(<?php echo $conference_image; ?>) center center no-repeat; background-size: cover" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
+	<div class="content-wrap">
+
+		<div class="container clearfix">
+
+			<div class="single-event">
+
+				<div class="col_three_fourth">
+					<!-- Description -->
+					<?php echo $leading_text; ?>
+				</div>
+
+				<div class="col_one_fourth col_last">
+					<div class="panel panel-default events-meta">
+						<!-- Event information panel -->
+						<div class="panel-heading">
+							<h3 class="panel-title">Event Info:</h3>
+						</div>
+						<div class="panel-body">
+							<ul class="iconlist nobottommargin">
+								<li><i class="icon-calendar3"></i> <?php echo $conference_date; ?></li>
+								<li><i class="icon-map-marker2"></i> <?php echo $conference_location; ?></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+			</div>
+
 		</div>
 
-		<!-- Second column featuring leading text -->
-		<div class="col-md-6 center col-padding" style="background-color: #e9e8e5;">
-			<div id="chairs">
-				<div class="heading-block-intro"><br>
-					<!-- Leading text -->
-					<span class="before-heading"><?php echo $leading_text; ?></span>
-				</div><br>
-			</div>
-		</div>
-	</div><!-- image and description section end -->
+		<!-- Downloads section -->
+		<div class="row">
 
-	<!-- Theme overview section -->
-	<div class="row topmargin-sm nobottommargin">
-		<div class="col-md-12 center col-padding">
-			<div class="heading-block center">
-				<h3>Themes</h3>
-			</div>
+			<!-- Important links section -->
+			<div class="col_full common-height">
 
-			<div class="heading-block center nobottomborder themes">
-				<!-- Themes description text -->
-				<span>
-					<?php echo $themes_summary_text; ?>
-				</span>
-			</div>
-		</div>
-	</div><!-- theme overview section end -->
-
-	<!-- Themes section -->
-	<div class="row clearfix common-height">
-
-		<?php 
-
-			// Loop through array of 2016 themes, ordered by theme number ascending
-			$loop = new WP_Query( array( 'post_type' => 'themes', 'meta_key' => '2016_theme', 'meta_value' => 'Yes', 'orderby' => 'theme_number', 'order' => 'ASC' ) ); 
-
-			// For each theme in the array...
-			while( $loop->have_posts() ) : $loop->the_post(); ?>
-
-				<!-- Display and style information for each theme (3 column layout) -->
-				<div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: <?php the_field('div_color'); ?>;">
+				<!-- Registration section -->
+				<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
 					<div>
-						<!-- Link to associated theme section on Arrow collection site for 2016 -->
-						<a href="<?php the_field('arrow_collection_link'); ?>" target="_blank">
-							<!-- Theme icon -->
-							<i class="i-plain i-xlarge divcenter <?php the_field('theme_icon'); ?>"></i>
-							<!-- Theme name -->
-							<h3><?php the_title(); ?></h3>
+						<a href="https://cherpp.ca/wp-content/uploads/2017/09/heit-2016-program.pdf" target="_blank">
+							<h2 class="center" style="font-weight: 600;">Conference Program</h2>
+							<span style="line-height: 1.8;" class="before-heading white center">View the Conference Program, including detailed information about sessions</span>
+							<i class="icon-line-paper bgicon"></i>
 						</a>
 					</div>
 				</div>
 
-			<?php endwhile; 
-
-		?>
-
-	</div><!-- themes section end -->
-	<br><br>
-
-	<!-- Conference papers collection section -->
-	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #e9e8e5">
-		<div class="container clearfix">
-			<!-- Conference papers description -->
-			<h3><?php echo $papers_description_text; ?></h3>
-			<!-- Conference papers call to action button with link to Arrow site -->
-			<a href="<?php echo $papers_button_link; ?>" target="_blank" class="button button-dark blue-button"><span>Browse</span></a>
-		</div>
-	</div><!-- conference papers collection section end -->
-
-	<!-- Downloads section -->
-	<div class="row topmargin-lg bottommargin-sm">
-
-		<div class="heading-block center">
-			<h3>Downloads</h3>
-		</div>
-
-		<div class="container clearfix">
-
-			<div class="row clear-bottommargin">
-
-				<!-- Empty row so that downloads are centered on page -->
-				<div class="col-md-2 bottommargin">
+				<!-- Papers section -->
+				<div class="col-md-4 dark col-padding ohidden" style="background-color: #4aaaa5;">
+					<div>
+						<a href="https://cherpp.ca/wp-content/uploads/2017/09/heit-2016-program-abstracts.pdf" target="_blank">
+							<h2 class="center" style="font-weight: 600;">Program with Abstracts</h2>
+							<span style="line-height: 1.8;" class="before-heading white center">View the Conference Program featuring keynote information and abstracts for all submissions</span>
+							<i class="icon-line2-book-open bgicon"></i>
+						</a>
+					</div>
 				</div>
 
-				<?php 
-
-					// Loop through array of 2016 documents, ordered by name
-					$loop = new WP_Query( array( 'post_type' => 'documents', 'meta_key' => '2016_document', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
-
-					// For each document in the array...
-					while( $loop->have_posts() ) : $loop->the_post(); ?>
-
-						<!-- Display information for each document in a new column -->
-						<div class="col-md-4 bottommargin">
-							<div class="promo promo-dark promo-flat promo-mini promo-uppercase promo-right"><br>
-								<!-- Link to document -->
-								<a href="<?php the_field('document'); ?>" class="downloads" target="_blank">
-									<!-- Document name -->
-									<h3 class="center"><?php the_field('display_title'); ?> </h3>
-								</a><br>
-							</div>
-						</div>
-
-					<?php endwhile; 
-
-				?>
+				<!-- UDHEIT 2018 section -->
+				<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
+					<div>
+						<a href="http://arrow.dit.ie/tuheit16/" target="_blank">
+							<h2 class="center" style="font-weight: 600;">Paper Collection</h2>
+							<span style="line-height: 1.8;" class="before-heading white center">Browse the Higher Education in Transformation 2016 Collection</span>
+							<i class="icon-line-paper bgicon"></i></span>
+						</a>
+					</div>
+				</div>
 
 			</div>
 
 		</div>
 
-	</div><!-- downloads section end -->
+		<!-- Theme overview section -->
+		<div class="row topmargin-sm nobottommargin">
+			<div class="col-md-12 center col-padding">
+				<div class="heading-block center">
+					<h3>Themes</h3>
+				</div>
 
-	<!-- Divider line -->
-	<div class="line topmargin-sm nobottommargin"></div><br><br>
+				<div class="heading-block center nobottomborder themes">
+					<!-- Themes description text -->
+					<span>
+						<?php echo $themes_summary_text; ?>
+					</span>
+				</div>
+			</div>
+		</div><!-- theme overview section end -->
 
-	<!-- Sponsors section -->
-	<div class="container clearfix topmargin-sm">
-		<div class="heading-block center">
-			<h3>Sponsors</h3>
-		</div><br>
+		<!-- Themes section -->
+		<div class="row clearfix common-height">
 
-		<div class="nobottomborder">
+			<?php 
 
-			<ul class="clients-grid grid-3 bottommargin clearfix">
+				// Loop through array of 2016 themes, ordered by theme number ascending
+				$loop = new WP_Query( array( 'post_type' => 'themes', 'meta_key' => '2016_theme', 'meta_value' => 'Yes', 'orderby' => 'theme_number', 'order' => 'ASC' ) ); 
 
-				<?php 
-				
-					// Loop through array of 2016 sponsors, ordered by name
-					$loop = new WP_Query( array( 'post_type' => 'sponsors', 'meta_key' => '2016_sponsor', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
+				// For each theme in the array...
+				while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					// For each sponsor in the array...
-					while( $loop->have_posts() ) : $loop->the_post(); ?>
-
-						<!-- Display and style information for each sponsor in the array (4 column layout) -->
-						<li>
-							<!-- Link to sponsor's website -->
-							<a href="<?php the_field('sponsor_link'); ?>" target="_blank">
-								<!-- Sponsor logo -->
-								<img src="<?php the_field('sponsor_image'); ?>" alt="<?php the_title(); ?>">
+					<!-- Display and style information for each theme (3 column layout) -->
+					<div class="col-md-3 col-sm-6 dark center col-padding" style="background-color: <?php the_field('div_color'); ?>;">
+						<div>
+							<!-- Link to associated theme section on Arrow collection site for 2016 -->
+							<a href="<?php the_field('arrow_collection_link'); ?>" target="_blank">
+								<!-- Theme icon -->
+								<i class="i-plain i-xlarge divcenter <?php the_field('theme_icon'); ?>"></i>
+								<!-- Theme name -->
+								<h3><?php the_title(); ?></h3>
 							</a>
-						</li>
+						</div>
+					</div>
 
-					<?php endwhile; 
+				<?php endwhile; 
 
-				?>
-				
-			</ul>
+			?>
 
-		</div>
+		</div><!-- themes section end -->
 
-	</div><!-- sponsors section end -->
+		</div><!-- downloads section end -->
 
-	<!-- Organisers section -->
-	<div class="container clearfix topmargin-sm bottommargin-sm">
-		<div class="heading-block center">
-			<h3>Organisers</h3>
-		</div><br>
+		<!-- Sponsors section -->
+		<div class="container clearfix">
+			<div class="row topmargin-sm nobottommargin">
+				<div class="heading-block center">
+					<h3>Sponsors</h3>
+				</div><br>
 
-		<div class="bottommargin-lg">
+				<div class="nobottomborder">
 
-			<ul class="clients-grid grid-6 bottommargin clearfix">
+					<ul class="clients-grid grid-3 bottommargin clearfix">
 
-				<?php 
-				
-					// Loop through array of 2016 institution organisers, ordered by location descending
-					$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => '2016_organiser', 'meta_value' => 'Yes', 'orderby' => 'location', 'order' => 'DSC') ); 
+						<?php 
+						
+							// Loop through array of 2016 sponsors, ordered by name
+							$loop = new WP_Query( array( 'post_type' => 'sponsors', 'meta_key' => '2016_sponsor', 'meta_value' => 'Yes', 'orderby' => 'title', 'order' => 'ASC' ) ); 
 
-					// For each institution organiser in the array...
-					while( $loop->have_posts() ) : $loop->the_post(); ?>
+							// For each sponsor in the array...
+							while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-						<!-- Display and style information for each institution organiser in the array -->
-						<li>
-							<!-- Link to organiser's website -->
-							<a href="<?php the_field('institution_link'); ?>" target="_blank">
-								<!-- Organiser logo -->
-								<img src="<?php the_field('institution_image'); ?>" alt="<?php the_title(); ?>">
-							</a>
-						</li>
+								<!-- Display and style information for each sponsor in the array (4 column layout) -->
+								<li>
+									<!-- Link to sponsor's website -->
+									<a href="<?php the_field('sponsor_link'); ?>" target="_blank">
+										<!-- Sponsor logo -->
+										<img src="<?php the_field('sponsor_image'); ?>" alt="<?php the_title(); ?>">
+									</a>
+								</li>
 
-					<?php endwhile; 
+							<?php endwhile; 
 
-				?>
-				
-			</ul>
+						?>
+						
+					</ul>
 
-		</div>
+				</div>
+			</div>
 
-	</div><!-- sponsors section end -->
+		</div><!-- sponsors section end -->
+
+		<!-- Organisers section -->
+		<div class="container clearfix topmargin-sm bottommargin-sm">
+			<div class="heading-block center">
+				<h3>Organizers</h3>
+			</div><br>
+
+			<div class="bottommargin-lg">
+
+				<ul class="clients-grid grid-6 bottommargin clearfix">
+
+					<?php 
+					
+						// Loop through array of 2016 institution organisers, ordered by location descending
+						$loop = new WP_Query( array( 'post_type' => 'institutions', 'meta_key' => '2016_organiser', 'meta_value' => 'Yes', 'orderby' => 'location', 'order' => 'DSC') ); 
+
+						// For each institution organiser in the array...
+						while( $loop->have_posts() ) : $loop->the_post(); ?>
+
+							<!-- Display and style information for each institution organiser in the array -->
+							<li>
+								<!-- Link to organiser's website -->
+								<a href="<?php the_field('institution_link'); ?>" target="_blank">
+									<!-- Organiser logo -->
+									<img src="<?php the_field('institution_image'); ?>" alt="<?php the_title(); ?>">
+								</a>
+							</li>
+
+						<?php endwhile; 
+
+					?>
+					
+				</ul>
+
+			</div>
+
+		</div><!-- sponsors section end -->
+
+	</div>
 			
 </section><!-- #page content end -->
 

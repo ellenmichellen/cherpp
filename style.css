@@ -3410,6 +3410,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
     color: #333;
     font-size: 23px;
     font-family: 'Montserrat', sans-serif !important;	
+   
 }
 
 .main-title h1 {
@@ -3430,6 +3431,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 	background-color: transparent !important;
 	padding: 0 !important;
 	font-size: 12px;
+	font-weight: 600 !important;
 }
 
 body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
@@ -14214,6 +14216,11 @@ label[for="comment"] {
 	font-size: 12px;
 }
 
+.label-Conference {
+	background-color: #e20372;
+	font-size: 12px;
+}
+
 .widget a:hover {
 	color: #7accc8 !important;
 }
@@ -14292,7 +14299,7 @@ width: 100%;
 /* Home button */
 .home-button {
 	background-color: transparent !important;
-	border: 1px solid #fff;
+	border: 1.5px solid #fff;
 	font-size: 14px;
   	border-radius: 3px;
 }
@@ -14350,4 +14357,34 @@ body.stretched #page-menu .container {
 
 .unstyled {
 	color: #333 !important;
+}
+
+.menu-title-blue {
+	font-weight: 600;
+	font-size: 16px;
+	text-decoration: none;
+	text-shadow: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.left-title {
+	margin-top: 40px !important;
+}
+
+.large-body {
+	font-size: 16px !important;
+}
+
+.button-block {
+	text-align: center;
+}
+
+.breadcrumb-inverse a {
+	color: #fff !important;
+	font-weight: 600 !important;
+}
+
+.breadcrumb-wrap {
+	background-color: #fff !important;
 }

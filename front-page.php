@@ -9,15 +9,15 @@ get_header();
 
 <!-- Page Title
 ============================================= -->
-<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/homebanner.jpg?>') no-repeat; background-size: cover" data-height-lg="400" data-height-md="400" data-height-sm="450" data-height-xs="450" data-height-xxs="450">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/hands.jpg?>') no-repeat; background-size: cover" data-height-lg="400" data-height-md="400" data-height-sm="450" data-height-xs="400" data-height-xxs="500">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
 			<h1 class="white center">Centre for Higher Education <br>Research, Policy &amp; Practice</h1><br>
 			<!-- Call to action button -->
-			<span class="white center" style="font-family: 'Raleway', sans-serif !important; letter-spacing: .5px;">An international collaborative project hosted by the University <br>of Ontario Institute of Technology, Durham College, and the <br>Technological University for Dublin Alliance</span><br>
+			<span class="white center" style="font-family: 'Raleway', sans-serif !important; letter-spacing: .5px;">An international collaborative project hosted by the University of Ontario Institute of Technology, Durham College, and the Technological University for Dublin Alliance</span><br>
 			<span class="center">
-			<a href="<?php echo get_page_link( get_page_by_title( 'About' )->ID ); ?>" class="button button-white">Learn more</a></span>
+			<a href="<?php echo get_page_link( get_page_by_title( 'About' )->ID ); ?>" class="button home-button">Learn more</a></span>
 		</div>
 	</div>
 </section><!-- #page-title end -->
@@ -26,7 +26,7 @@ get_header();
 ============================================= -->
 <section id="content">
 
-	<div class="content-wrap" style="background-color: #F9F9F9;">
+	<div class="content-wrap" style="background-color: #ffffff;">
 
 		<div class="container clearfix" >
 
@@ -40,11 +40,12 @@ get_header();
 				<div class="col-sm-4 col-eq">
 					<div class="whats-new promo-flat">
 						<!-- Item title -->
-						<h3>Call for Papers: <br>UDHEIT Congress 2018</h3>
+						<h3>Call for Abstracts: <br>UDHEIT Congress 2018</h3>
 						<!-- Item description -->
 						<span>
-							<p>The Call for Papers and Workshops for UDHEIT Congress 2018 is now open! UDHEIT2018 invites new and challenging paper submissions from any area or discipline of Design or Education.</p> 
-							<p><b>Abstract Submission Deadline Extension:</b> <br>February 19, 2018</p>
+							<p>Abstract submission is now closed! </p> 
+							<p><b>Notification of Abstract Acceptance:</b> <br>March 14, 2018<br><br>
+							<b>Full Paper Submission:</b> <br>July 31, 2018</p>
 						</span>
 						<!-- Item call to action button -->
 	           			<div class="info-button">

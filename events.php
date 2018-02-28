@@ -18,7 +18,6 @@ get_header();
 	</div>
 </section><!-- #page-title end -->
 
-
 <!-- Page Content
 ============================================= -->
 <section id="content">
@@ -60,7 +59,7 @@ get_header();
     				// Loop through array of events with a future date
     				$loop = new WP_Query($args);
 
-    				// If at least one upcoming event is schedulde...
+    				// If at least one upcoming event is scheduled...
     				if ( $loop->have_posts() ) :
 		  			
 			  			// For each event in the array...
@@ -70,6 +69,10 @@ get_header();
 							$date = get_field('date', false, false);
 		     				$date = new DateTime($date); 
 
+		     				// Retrieve event end date
+		     				$end_date = get_field('end_date', false, false);
+		     				$end_date = new DateTime($end_date); 
+
 		     				// Retrieve event type
 		     				$type = get_field('type'); ?>
 			
@@ -77,7 +80,7 @@ get_header();
 								<div class="entry clearfix">
 									<div class="entry-image">
 										<a href="#">
-											<!-- Event date -->
+											<!-- Event date in circle-->
 											<div class="entry-date"><?php echo $date->format('j'); ?><span><?php echo $date->format('M'); ?></span></div>
 										</a>
 									</div>
@@ -92,8 +95,24 @@ get_header();
 											<!-- Event type -->
 											<?php echo '<li><span class="label label-' . $type . '">' . $type . '</span></li>'; ?>
 
+											<!-- Event date -->
+											<li>
+												<i class="icon-calendar"></i>
+												<!-- If end date field is empty, display full event date -->
+												<?php if ( get_field('end_date') == "") { ?>
+													<?php echo $date->format('F j, Y'); ?>
+												<?php } ?>
+
+												<!-- If multi-day event, display event start and end date without repeating year -->
+												<?php if ( get_field('end_date') ) { ?>
+													<?php echo $date->format('F j'); ?> - <?php echo $end_date->format('F j, Y'); ?> 
+												<?php } ?>
+											</li>
+
 											<!-- Event time -->
-											<li><i class="icon-time"></i> <?php the_field('time'); ?></li>
+											<?php if ( get_field('time') ) { ?>
+												<li><i class="icon-time"></i> <?php the_field('time'); ?></li>
+											<?php } ?>
 
 											<!-- Event location -->
 											<li><i class="icon-map-marker2"></i> <?php the_field('location'); ?></li>
@@ -104,7 +123,7 @@ get_header();
 											<p><?php the_field('description'); ?></p>
 
 											<!-- Event call to action button -->
-											<a href="<?php the_field('link'); ?>" target="_blank" class="button button-small button-dark blue-button"><?php the_field('button_text'); ?></a>
+											<a href="<?php the_field('link'); ?>" class="button button-small button-dark blue-button"><?php the_field('button_text'); ?></a>
 										</div>
 
 									</div>
@@ -164,6 +183,10 @@ get_header();
 						$date = get_field('date', false, false);
 	     				$date = new DateTime($date); 
 
+	     				// Retrieve event end date
+		     			$end_date = get_field('end_date', false, false);
+		     			$end_date = new DateTime($end_date); 
+
 	     				// Retrieve event type
 	     				$type = get_field('type'); ?>
 		
@@ -171,7 +194,7 @@ get_header();
 							<div class="entry clearfix">
 								<div class="entry-image">
 									<a href="#">
-										<!-- Event date -->
+										<!-- Event date in circle-->
 										<div class="entry-date"><?php echo $date->format('j'); ?><span><?php echo $date->format('M'); ?></span></div>
 									</a>
 								</div>
@@ -186,8 +209,24 @@ get_header();
 										<!-- Event type -->
 										<?php echo '<li><span class="label label-' . $type . '">' . $type . '</span></li>'; ?>
 
+										<!-- Event date -->
+										<li>
+											<i class="icon-calendar"></i>
+											<!-- If end date field is empty, display full event date -->
+											<?php if ( get_field('end_date') == "") { ?>
+												<?php echo $date->format('F j, Y'); ?>
+											<?php } ?>
+
+											<!-- If multi-day event, display event start and end date without repeating year -->
+											<?php if ( get_field('end_date') ) { ?>
+												<?php echo $date->format('F j'); ?> - <?php echo $end_date->format('F j, Y'); ?> 
+											<?php } ?>
+										</li>
+
 										<!-- Event time -->
-										<li><i class="icon-time"></i> <?php the_field('time'); ?></li>
+										<?php if ( get_field('time') ) { ?>
+											<li><i class="icon-time"></i> <?php the_field('time'); ?></li>
+										<?php } ?>
 
 										<!-- Event location -->
 										<li><i class="icon-map-marker2"></i> <?php the_field('location'); ?></li>
