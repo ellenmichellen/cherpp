@@ -5,17 +5,6 @@
 
 get_header();
 
-$conference_name = get_field('conference_name');					// Variable to store conference name
-$conference_date = get_field('conference_date');					// Variable to store conference date
-$conference_location = get_field('conference_location');			// Variable to store conference location
-$conference_image = get_field('conference_image');					// Variable to store conference image
-$leading_text = get_field('leading_text');							// Variable to store leading body text
-$streams_summary_text = get_field('streams_summary_text');			// Variable to store summary text for streams section
-$papers_description_text = get_field('papers_description_text');	// Variable to store text for paper description section
-$papers_button_link = get_field('papers_button_link');				// Variable to store link for HEIT papers collection
-$highlights_video_text = get_field('highlights_video_text');		// Variable to store text for highlights video section
-$highlights_video_link = get_field('highlights_video_link');		// Variable to store link for highlights video section
-
 ?>
 
 <!-- Page Title
@@ -24,7 +13,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
-			<h1 class="white center"><?php echo $conference_name; ?></h1>
+			<h1 class="white center">Higher Education in Transformation Symposium</h1>
 		</div>
 	</div>
 </section><!-- #page-title end -->
@@ -58,7 +47,9 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 
 				<div class="col_three_fourth">
 					<!-- Description -->
-					<?php echo $leading_text; ?>
+					<p class="large-body">Emerging from the ongoing discussion and debate regarding the future landscape of Irish higher education, the inaugural Ireland-Canada symposium was held in the spring of 2015.</p>
+
+					<p class="large-body">HEIT 2015 was jointly organised by the TU4Dublin Alliance (DIT, ITTD and ITB), and Canadian partners UOIT, OCADU, Trent University, and Durham College. The symposium took place over three days and comprised of one day of workshops and a two-day conference designed to attract educators across the seven organizing institutions and beyond.</p>
 				</div>
 
 				<div class="col_one_fourth col_last">
@@ -69,8 +60,8 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 						</div>
 						<div class="panel-body">
 							<ul class="iconlist nobottommargin">
-								<li><i class="icon-calendar3"></i> <?php echo $conference_date; ?></li>
-								<li><i class="icon-map-marker2"></i> <?php echo $conference_location; ?></li>
+								<li><i class="icon-calendar3"></i> March 30-April 1, 2015</li>
+								<li><i class="icon-map-marker2"></i> Dublin, Ireland</li>
 							</ul>
 						</div>
 					</div>
@@ -81,7 +72,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						<div class="block divcenter" style="max-width: 700px;">
 							<div class="center clearfix" style="padding: 50px;">
-								<iframe src="<?php echo $highlights_video_link; ?>" width="700" height="410" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<iframe src="https://www.youtube.com/embed/uOJ3dX1xtzQ" width="700" height="410" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
@@ -99,10 +90,10 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 			<!-- Important links section -->
 			<div class="col_full common-height">
 
-				<!-- Registration section -->
+				<!-- Program with abstracts section -->
 				<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
 					<div>
-						<a href="http://localhost/wordpress/wp-content/uploads/2017/09/heit-2015-program-abstracts.pdf" target="_blank">
+						<a href="https://cherpp.ca/wp-content/uploads/2017/09/heit-2015-program-abstracts.pdf" target="_blank">
 							<h2 class="center" style="font-weight: 600;">Program with Abstracts</h2>
 							<span style="line-height: 1.8;" class="before-heading white center">View the Conference Program featuring keynote information and abstracts for all submissions</span>
 							<i class="icon-line-paper bgicon"></i>
@@ -110,10 +101,10 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 					</div>
 				</div>
 
-				<!-- Papers section -->
+				<!-- Workshop program section -->
 				<div class="col-md-4 dark col-padding ohidden" style="background-color: #4aaaa5;">
 					<div>
-						<a href="http://localhost/wordpress/wp-content/uploads/2017/09/heit-2015-workshop-abstracts.pdf" target="_blank">
+						<a href="https://cherpp.ca/wp-content/uploads/2017/09/heit-2015-workshop-abstracts.pdf" target="_blank">
 							<h2 class="center" style="font-weight: 600;">Workshop Program</h2>
 							<span style="line-height: 1.8;" class="before-heading white center">View the Workshop Program, including detailed information about workshops</span>
 							<i class="icon-line2-book-open bgicon"></i>
@@ -121,7 +112,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 					</div>
 				</div>
 
-				<!-- UDHEIT 2018 section -->
+				<!-- Paper collection section -->
 				<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
 					<div>
 						<a href="https://arrow.dit.ie/tu4dcon/" target="_blank">
@@ -147,7 +138,7 @@ $highlights_video_link = get_field('highlights_video_link');		// Variable to sto
 					<h3></h3>
 					<!-- Steams description text -->
 					<span>
-						<?php echo $streams_summary_text; ?>
+						Over 45 papers were accepted for the symposium, all reflecting and presenting on the key foundation themes that will shape the future higher education landscape. The papers published as part of the HEIT 2015 collection fall under the following streams:
 					</span>
 				</div>
 			</div>

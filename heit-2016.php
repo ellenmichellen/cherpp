@@ -5,15 +5,6 @@
 
 get_header();
 
-$conference_name = get_field('conference_name');					// Variable to store conference name
-$conference_date = get_field('conference_date');					// Variable to store conference date
-$conference_location = get_field('conference_location');			// Variable to store conference location
-$conference_image = get_field('conference_image');					// Variable to store conference image
-$leading_text = get_field('leading_text');							// Variable to store leading body text
-$themes_summary_text = get_field('themes_summary_text');			// Variable to store summary text for themes section
-$papers_description_text = get_field('papers_description_text');	// Variable to store text for paper description section
-$papers_button_link = get_field('papers_button_link');				// Variable to store link for HEIT papers collection
-
 ?>
 
 <!-- Page Title
@@ -22,7 +13,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
-			<h1 class="white center"><?php echo $conference_name; ?></h1>
+			<h1 class="white center">Higher Education in Transformation Symposium</h1>
 		</div>
 	</div>
 </section><!-- #page-title end -->
@@ -56,7 +47,9 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 
 				<div class="col_three_fourth">
 					<!-- Description -->
-					<?php echo $leading_text; ?>
+					<p class="large-body">Within the context of a rapidly changing higher education landscape internationally, a group of universities and higher education institutes from Canada and Ireland hosted a Joint Symposium for higher education professionals in the fall of 2016.</p>
+
+					<p class="large-body">This symposium of workshops and conference will be of interest to educational professionals within universities and institutes of higher education at third and fourth level, including senior management, faculty, professional services, government officials and higher education authorities internationally. The conference papers will also be of interest to members of industry with a research and development function, who collaborate with higher education, or have a strategic interest in the direction of higher education.</p>
 				</div>
 
 				<div class="col_one_fourth col_last">
@@ -67,8 +60,8 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 						</div>
 						<div class="panel-body">
 							<ul class="iconlist nobottommargin">
-								<li><i class="icon-calendar3"></i> <?php echo $conference_date; ?></li>
-								<li><i class="icon-map-marker2"></i> <?php echo $conference_location; ?></li>
+								<li><i class="icon-calendar3"></i> November 2-4, 2016</li>
+								<li><i class="icon-map-marker2"></i> Oshawa, ON</li>
 							</ul>
 						</div>
 					</div>
@@ -133,7 +126,7 @@ $papers_button_link = get_field('papers_button_link');				// Variable to store l
 				<div class="heading-block center nobottomborder themes">
 					<!-- Themes description text -->
 					<span>
-						<?php echo $themes_summary_text; ?>
+						The overall theme was Designing Higher Education for the Twenty-First Century. This theme addresses the many ways that colleges and universities are actively reinventing and reinvigorating higher education. The papers published as part of the HEIT 2016 collection fall under eight categories:
 					</span>
 				</div>
 			</div>

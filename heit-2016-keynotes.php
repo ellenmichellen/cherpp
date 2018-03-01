@@ -5,8 +5,6 @@
 
 get_header();
 
-$page_title = get_field('page_title');	// Variable to store page title 
-
 ?>
 
 <!-- Page Title
@@ -15,7 +13,7 @@ $page_title = get_field('page_title');	// Variable to store page title
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
-			<h1 class="white center"><?php echo $page_title; ?></h1>
+			<h1 class="white center">Keynote Speakers</h1>
 		</div>
 	</div>
 </section><!-- #page-title end -->

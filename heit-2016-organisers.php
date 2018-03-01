@@ -5,10 +5,6 @@
 
 get_header();
 
-$page_title = get_field('page_title');									// Variable to store page title
-$first_organiser_category = get_field('first_organiser_category');		// Variable to store first caregory of organisers
-$second_organiser_category = get_field('second_organiser_category');	// Variable to store second category of organisers
-
 ?>
 
 <!-- Page Title
@@ -17,7 +13,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
-			<h1 class="white center"><?php echo $page_title; ?></h1>
+			<h1 class="white center">Organizers</h1>
 		</div>
 	</div>
 </section><!-- #page-title end -->
@@ -51,7 +47,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 			============================================= -->
 			<div class="heading-block center">
 				<!-- First organiser category title -->
-				<h3><?php echo $first_organiser_category; ?></h3>
+				<h3>Presidents</h3>
 			</div>
 
 			<div class="col-md-12 bottommargin">
@@ -99,7 +95,7 @@ $second_organiser_category = get_field('second_organiser_category');	// Variable
 			============================================== -->
 			<div class="heading-block center">
 				<!-- Second organiser category title -->
-				<h3><?php echo $second_organiser_category; ?></h3>
+				<h3>Steering Committee</h3>
 			</div>
 
 			<div class="col-md-12 bottommargin">
