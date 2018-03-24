@@ -5,6 +5,8 @@
 
 get_header();
 
+$leading_text = get_field('leading_text'); 					 // Variable to store leading text
+
 ?>
 
 <!-- Page Title
@@ -26,6 +28,23 @@ get_header();
 	<div class="content-wrap">
 
 		<div class="container clearfix">
+
+			<!-- If there is leading text, display -->
+			<?php if ( get_field('leading_text') ) { ?>
+
+				<!-- Leading text section -->
+				<div class="row nobottommargin">
+					<div class="col-md-12 center">
+						<div class="heading-block center themes">
+							<!-- Leading text -->
+							<span>
+								<?php echo $leading_text; ?>
+							</span>
+						</div>
+					</div>
+				</div><!-- leading text section end -->
+
+			<?php } ?>
 
 			<div class="col-md-12 bottommargin">
 
