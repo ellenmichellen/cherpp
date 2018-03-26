@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: about-us
+	Template Name: people
 */
 
 get_header();
@@ -38,9 +38,9 @@ $leading_text = get_field('leading_text');							// Variable to store leading bo
 			  	// For each speaker in the array...
 				while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-					<div class="col-md-4 bottommargin">
+					<div class="col-md-3 bottommargin-lg">
 						<div class="team team-list clearfix">
-							<div class="team-image" style="width: 250px;">
+							<div class="team-image" style="width: 200px;">
 								<img class="img-circle" src="<?php the_field('image'); ?>" alt="<?php the_title(); ?>"><br>
 								<div class="team-title"><center><h5><a class="unstyled" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5><span><?php the_field('title'); ?>, <em><?php the_field('affiliated_institution'); ?></em></span></center></div>
 							</div>

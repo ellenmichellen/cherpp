@@ -5,15 +5,13 @@
 
 get_header();
 
+$leading_text = get_field('leading_text'); 					 // Variable to store leading text
 $heit_2015_text = get_field('heit_2015_text');				 // Variable to store HEIT 2015 text
 $heit_2015_image = get_field('heit_2015_image');			 // Variable to store HEIT 2015 image
-$heit_2015_button_text = get_field('heit_2015_button_text'); // Variable to store HEIT 2015 button text
 $heit_2016_text = get_field('heit_2016_text');				 // Variable to store HEIT 2016 text
 $heit_2016_image = get_field('heit_2016_image');			 // Variable to store HEIT 2016 image
-$heit_2016_button_text = get_field('heit_2016_button_text'); // Variable to store HEIT 2015 button text
 $heit_2018_text = get_field('heit_2018_text');				 // Variable to store HEIT 2018 text
 $heit_2018_image = get_field('heit_2018_image');			 // Variable to store HEIT 2018 image
-$heit_2018_button_text = get_field('heit_2018_button_text'); // Variable to store HEIT 2018 button text
 
 ?>
 
@@ -31,6 +29,34 @@ $heit_2018_button_text = get_field('heit_2018_button_text'); // Variable to stor
 <!-- Page Content
 ============================================= -->
 <section id="content">
+
+	<!-- If there is leading text, display -->
+	<?php if ( get_field('leading_text') ) { ?>
+
+		<div class="content-wrap nobottommargin">
+
+			<div class="container clearfix">
+
+				<!-- Leading text section -->
+				<div class="row notopmargin">
+					<div class="col-md-12 center">
+						<div class="heading-block center nobottomborder themes">
+							<!-- Leading text -->
+							<span>
+								<?php echo $leading_text; ?>
+							</span>
+						</div>
+					</div>
+				</div><!-- leading text section end -->
+
+			</div>
+
+		</div>
+
+		<!-- Divider line -->
+		<div class="line notopmargin nobottommargin"></div>
+
+	<?php } ?>
 
 	<div class="heading-block center topmargin-lg">
 		<h3>Upcoming Symposia</h3>
@@ -53,7 +79,7 @@ $heit_2018_button_text = get_field('heit_2018_button_text'); // Variable to stor
 				<!-- Conference description text -->
 				<span class="before-heading"><?php echo $heit_2018_text; ?></span><br>
 				<!-- Conference call to action button with link to main page for conference -->
-				<a href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2018_button_text; ?></span></a>
+				<a href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018' )->ID ); ?>" class="button button-dark blue-button"><span>Learn more</span></a>
 			</div>
 		</div>
 
@@ -79,7 +105,7 @@ $heit_2018_button_text = get_field('heit_2018_button_text'); // Variable to stor
 				<!-- Conference description text -->
 				<span class="before-heading"><?php echo $heit_2016_text; ?></span><br>
 				<!-- Conference call to action button with link to main page for conference -->
-				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2016' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2016_button_text; ?></span></a>
+				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2016' )->ID ); ?>" class="button button-dark blue-button"><span>Learn more</span></a>
 			</div>
 		</div>
 
@@ -106,7 +132,7 @@ $heit_2018_button_text = get_field('heit_2018_button_text'); // Variable to stor
 				<!-- Conference description text -->
 				<span class="before-heading"><?php echo $heit_2015_text; ?></span><br>
 				<!-- Conference call to action button with link to main page for conference -->
-				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2015' )->ID ); ?>" class="button button-dark blue-button"><span><?php echo $heit_2015_button_text; ?></span></a>
+				<a href="<?php echo get_page_link( get_page_by_title( 'HEIT 2015' )->ID ); ?>" class="button button-dark blue-button"><span>Learn more</span></a>
 			</div>
 		</div>
 
