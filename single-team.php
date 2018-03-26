@@ -33,7 +33,7 @@ get_header();
 					</div>
 					<div class="team-desc">
 						<div class="team-title"><h5><?php the_title(); ?></h5><span><?php the_field('title'); ?>, <em><?php the_field('affiliated_institution'); ?></em></span></div>
-						<div class="team-content"><?php the_field('long_bio'); ?></div>
+						<div class="team-content"><?php the_field('bio'); ?></div>
 						<div class="line topmargin-sm nobottommargin"></div>
 
 						<!-- If member has email address, display -->

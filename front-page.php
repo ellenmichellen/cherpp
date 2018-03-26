@@ -5,6 +5,19 @@
 
 get_header();
 
+$whats_new_item_1_title = get_field('whats_new_item_1_title');				// Variable to store title for what's new item 1
+$whats_new_item_1_description = get_field('whats_new_item_1_description');	// Variable to store description for what's new item 1
+$whats_new_item_1_button_text = get_field('whats_new_item_1_button_text');	// Variable to store button text for what's new item 1
+$whats_new_item_1_button_link = get_field('whats_new_item_1_button_link');	// Variable to store button link for what's new item 1
+$whats_new_item_2_title = get_field('whats_new_item_2_title');				// Variable to store title for what's new item 2
+$whats_new_item_2_description = get_field('whats_new_item_2_description');	// Variable to store description for what's new item 2
+$whats_new_item_2_button_text = get_field('whats_new_item_2_button_text');	// Variable to store button text for what's new item 2
+$whats_new_item_2_button_link = get_field('whats_new_item_2_button_link');	// Variable to store button link for what's new item 2
+$whats_new_item_3_title = get_field('whats_new_item_3_title');				// Variable to store title for what's new item 3
+$whats_new_item_3_description = get_field('whats_new_item_3_description');	// Variable to store description for what's new item 3
+$whats_new_item_3_button_text = get_field('whats_new_item_3_button_text');	// Variable to store button text for what's new item 3
+$whats_new_item_3_button_link = get_field('whats_new_item_3_button_link');	// Variable to store button link for what's new item 3
+
 ?>
 
 <!-- Page Title
@@ -36,45 +49,73 @@ get_header();
 		
 			<div class="row row-eq bottommargin">
 
-				<!-- First column -->
+				<!-- First column featuring first What's New item -->
 				<div class="col-sm-4 col-eq">
 					<div class="whats-new promo-flat">
 						<!-- Item title -->
-						<h3>Call for Abstracts: <br>UDHEIT Congress 2018</h3>
+						<h3><?php echo $whats_new_item_1_title; ?></h3>
 						<!-- Item description -->
 						<span>
-							<p>Abstract submission is now closed! </p> 
-							<p><b>Notification of Abstract Acceptance:</b> <br>March 14, 2018<br><br>
-							<b>Full Paper Submission:</b> <br>July 31, 2018</p>
+							<?php echo $whats_new_item_1_description; ?>
 						</span>
 						<!-- Item call to action button -->
 	           			<div class="info-button">
-	                		<a class="button button-dark blue-button" href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018 Call for Papers' )->ID ); ?>">Learn more</a>
+	                		<a class="button button-dark blue-button" href="<?php echo $whats_new_item_1_button_link ?>"><?php echo $whats_new_item_1_button_text ?></a>
 	            		</div>
 					</div>
 				</div>
 
-				<!-- Second column -->
-				<div class="col-sm-4 col-eq odd">
-					<div class="whats-new promo-flat">
-						<!-- Item title -->
-						<h3>Registration: <br>UDHEIT Congress 2018</h3>
-						<!-- Item description -->
-						<span>
-							<p>Registration for the Universal Design &amp; Higher Education in Transformation Congress is now open! Register now for the exciting four-day event to be held in Dublin, Ireland.</p>
-							<p><b>Early Bird Registration Deadline:</b> <br>May 31, 2018</p>
+				<!-- If second What's New item exists, display it -->
+				<?php if ( get_field('whats_new_item_2') == "Yes") { ?>
+					<!-- Second column -->
+					<div class="col-sm-4 col-eq odd">
+						<div class="whats-new promo-flat">
+							<!-- Item title -->
+							<h3><?php echo $whats_new_item_2_title; ?></h3>
+							<!-- Item description -->
+							<span>
+								<?php echo $whats_new_item_2_description; ?>
 							</span>
-						<!-- Item call to action button -->
-	           			<div class="info-button">
-	                		<a class="button button-dark green-button" href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank">Register</a>
-	            		</div>
+							<!-- Item call to action button -->
+		           			<div class="info-button">
+		                		<a class="button button-dark green-button" href="<?php echo $whats_new_item_2_button_text ?>" target="_blank"><?php echo $whats_new_item_2_button_text ?></a>
+		            		</div>
+						</div>
 					</div>
-				</div>
+				<?php } ?>
 
-				<!-- Third column -->
-				<div class="col-sm-4">
-					
-				</div>
+				<!-- If no second What's new item, display nothing -->
+				<?php if ( get_field('whats_new_item_2') == "No") { ?>
+					<div class="col-sm-4">
+						
+					</div>
+				<?php } ?>
+
+				<!-- If third What's New item exists, display it -->
+				<?php if ( get_field('whats_new_item_3') == "Yes") { ?>
+					<!-- Second column -->
+					<div class="col-sm-4 col-eq">
+						<div class="whats-new promo-flat">
+							<!-- Item title -->
+							<h3><?php echo $whats_new_item_3_title; ?></h3>
+							<!-- Item description -->
+							<span>
+								<?php echo $whats_new_item_3_description; ?>
+							</span>
+							<!-- Item call to action button -->
+		           			<div class="info-button">
+		                		<a class="button button-dark green-button" href="<?php echo $whats_new_item_3_button_text ?>" target="_blank"><?php echo $whats_new_item_3_button_text ?></a>
+		            		</div>
+						</div>
+					</div>
+				<?php } ?>
+
+				<!-- If no third What's New item, display nothing -->
+				<?php if ( get_field('whats_new_item_3') == "No") { ?>
+					<div class="col-sm-4">
+						
+					</div>
+				<?php } ?>
 
 			</div>
 
