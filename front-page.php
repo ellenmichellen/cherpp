@@ -22,7 +22,7 @@ $whats_new_item_3_button_link = get_field('whats_new_item_3_button_link');	// Va
 
 <!-- Page Title
 ============================================= -->
-<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/hands.jpg?>') no-repeat; background-size: cover" data-height-lg="400" data-height-md="400" data-height-sm="450" data-height-xs="400" data-height-xxs="500">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(51, 198, 222, 0.85), rgba(53, 218, 174, 0.85)), url('<?php  bloginfo('template_url');  ?>/images/hands.jpg?>') no-repeat; background-size: cover" data-height-lg="400" data-height-md="400" data-height-sm="450" data-height-xs="400" data-height-xxs="500">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->

@@ -9,7 +9,7 @@ get_header();
 
 <!-- Page Title
 ============================================= -->
-<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/heit-2016-main-image.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(51, 198, 222, 0.85), rgba(53, 218, 174, 0.85)), url('<?php  bloginfo('template_url');  ?>/images/heit-2016-main-image.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
@@ -80,7 +80,7 @@ get_header();
 			<div class="col_full common-height">
 
 				<!-- Registration section -->
-				<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
+				<div class="col-md-4 dark col-padding ohidden" style="background-color: #51cfc5;">
 					<div>
 						<a href="https://cherpp.ca/wp-content/uploads/2017/09/heit-2016-program.pdf" target="_blank">
 							<h2 class="center" style="font-weight: 600;">Conference Program</h2>
@@ -91,7 +91,7 @@ get_header();
 				</div>
 
 				<!-- Papers section -->
-				<div class="col-md-4 dark col-padding ohidden" style="background-color: #4aaaa5;">
+				<div class="col-md-4 dark col-padding ohidden" style="background-color: #11ab9f;">
 					<div>
 						<a href="https://cherpp.ca/wp-content/uploads/2017/09/heit-2016-program-abstracts.pdf" target="_blank">
 							<h2 class="center" style="font-weight: 600;">Program with Abstracts</h2>
@@ -102,7 +102,7 @@ get_header();
 				</div>
 
 				<!-- UDHEIT 2018 section -->
-				<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
+				<div class="col-md-4 dark col-padding ohidden" style="background-color: #51cfc5;">
 					<div>
 						<a href="http://arrow.dit.ie/tuheit16/" target="_blank">
 							<h2 class="center" style="font-weight: 600;">Paper Collection</h2>

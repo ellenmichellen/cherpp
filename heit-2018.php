@@ -15,7 +15,7 @@ $conference_image = get_field('conference_image');					// Variable to store conf
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/dublincastlelandscape.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="150" data-height-xxs="150">
+<section id="page-title" class="slider-parallax" style="background: linear-gradient(rgba(51, 198, 222, 0.85), rgba(53, 218, 174, 0.85)), url('<?php  bloginfo('template_url');  ?>/images/dublincastlelandscape.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="150" data-height-xxs="150">
 	<div class="container clearfix">
 		<div class="heading-block center nobottomborder nobottommargin">
 				<!-- UDHEIT 2018 logo -->
@@ -87,7 +87,7 @@ $conference_image = get_field('conference_image');					// Variable to store conf
 		<div class="col_full bottommargin-lg common-height">
 
 			<!-- Registration section -->
-			<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
+			<div class="col-md-4 dark col-padding ohidden" style="background-color: #51cfc5;">
 				<div>
 					<a href="https://abbey.eventsair.com/ud-heit-2018/registration" target="_blank">
 						<h2 class="center" style="font-weight: 600;">Register</h2>
@@ -98,7 +98,7 @@ $conference_image = get_field('conference_image');					// Variable to store conf
 			</div>
 
 			<!-- Papers section -->
-			<div class="col-md-4 dark col-padding ohidden" style="background-color: #4aaaa5;">
+			<div class="col-md-4 dark col-padding ohidden" style="background-color: #11ab9f;">
 				<div>
 					<a href="<?php echo get_page_link( get_page_by_title( 'UDHEIT 2018 Call for Papers' )->ID ); ?>">
 						<h2 class="center" style="font-weight: 600;">Call for Papers</h2>
@@ -109,7 +109,7 @@ $conference_image = get_field('conference_image');					// Variable to store conf
 			</div>
 
 			<!-- UDHEIT 2018 section -->
-			<div class="col-md-4 dark col-padding ohidden" style="background-color: #7accc8;">
+			<div class="col-md-4 dark col-padding ohidden" style="background-color: #51cfc5;">
 				<div>
 					<a href="https://www.udheit2018.com/" target="_blank">
 						<h2 class="center" style="font-weight: 600;">Learn More</h2>

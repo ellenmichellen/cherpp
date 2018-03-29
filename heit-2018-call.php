@@ -13,7 +13,7 @@ $important_dates = get_field('important_dates');					// Variable to store import
 
 <!-- Page Title
 ============================================= -->
-<section id="page-title" class="page-title-paralla" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/castle.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
+<section id="page-title" class="page-title-paralla" style="background: linear-gradient(rgba(51, 198, 222, 0.85), rgba(53, 218, 174, 0.85)), url('<?php  bloginfo('template_url');  ?>/images/castle.jpg?>') no-repeat; background-size: cover" data-height-lg="300" data-height-md="300" data-height-sm="250" data-height-xs="250" data-height-xxs="250">
 	<div class="container clearfix">
 		<div class="heading-block center nobottomborder nobottommargin topmargin-lg">
 				<!-- Page heading on parallax background -->

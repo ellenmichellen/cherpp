@@ -13,11 +13,11 @@ $conference_videos_link = get_field('conference_videos_link');		// Variable to s
 
 <!-- Page Title
 ============================================= -->
-<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(46, 179, 214, 0.80), rgba(67, 204, 158, 0.80)), url('<?php  bloginfo('template_url');  ?>/images/heit-2016-gallery.jpg?>') no-repeat; background-size: cover" data-height-lg="250" data-height-md="250" data-height-sm="200" data-height-xs="200" data-height-xxs="200">
+<section id="slider" class="slider-parallax" style="background: linear-gradient(rgba(51, 198, 222, 0.85), rgba(53, 218, 174, 0.85)), url('<?php  bloginfo('template_url');  ?>/images/heit-2016-gallery.jpg?>') no-repeat; background-size: cover" data-height-lg="250" data-height-md="250" data-height-sm="200" data-height-xs="200" data-height-xxs="200">
 	<div class="container clearfix">
 		<div class="vertical-middle dark center">
 			<!-- Page heading on parallax background -->
-			<h1 class="white center"><?php echo $page_title; ?></h1>
+			<h1 class="white center">Photo Gallery</h1>
 		</div>
 	</div>
 </section><!-- #page-title end -->
@@ -83,9 +83,9 @@ $conference_videos_link = get_field('conference_videos_link');		// Variable to s
 	<div class="promo promo-light promo-small header-stick topborder-lg" style="background: #e9e8e5">
 		<div class="container clearfix">
 			<!-- Conference videos description text -->
-			<h3><?php echo $conference_videos_text; ?></h3>
+			<h3>Watch videos of each day of the HEIT 2016 conference held in Oshawa, Ontario</h3>
 			<!-- Conference videos call to action button with link to videos -->
-			<a href="<?php echo $conference_videos_link; ?>" target="_blank" class="button button-dark blue-button"><span>Click here</span></a>
+			<a href="https://mediasite.uoit.ca/Mediasite/Catalog/Full/21a9468490744840bd0766069c3717d921" target="_blank" class="button button-dark blue-button"><span>Click here</span></a>
 		</div>
 	</div><!-- conference papers collection section end -->
 
